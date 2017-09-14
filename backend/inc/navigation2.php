@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index">HUB4GROWTH Admin</a>
+                <a class="navbar-brand" href="index">SB Admin</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -116,41 +116,29 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="index" title="Dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                        <a href="index"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <?php if($_SESSION['role'] != 2){ ?> 
                        <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#about"><i class="fa fa-fw fa-users"></i> About HUB4GROWTH<i class="fa fa-fw fa-caret-down"></i></a>
-                         <ul class="collapse" id="about">   
+                        <a href="javascript:;" data-toggle="collapse" data-target="#users"><i class="fa fa-fw fa-users"></i> Users<i class="fa fa-fw fa-caret-down"></i></a>
+                         <ul class="collapse" id="users">   
                             <li>
-                                <a href="about_vision.php" title='Vision & Mission'><i class="fa fa-fw fa-plus"></i> Vision & Mission</a>
-                            </li>
-
-                            <li>
-                                <a href="about_contribution"><i class="fa fa-fw fa-list"></i>Contribution to National &nbsp &nbsp &nbsp Development</a>
+                                <a href="#"><i class="fa fa-fw fa-plus"></i> Add User</a>
                             </li>
                             <li>
-                                <a href="about_collaboration"><i class="fa fa-fw fa-list"></i>Collaboration</a>
-                            </li>
-                            <li>
-                                <a href="about_research"><i class="fa fa-fw fa-list"></i>Research & Technology</a>
+                                <a href="#"><i class="fa fa-fw fa-list"></i> List User</a>
                             </li>
                         </ul>
                     </li>
                         <li>
-                                <a href="position" title="position"><i class="fa fa-fw fa-plus"></i> Add Position</a>
+                                <a href="position"><i class="fa fa-fw fa-plus"></i> Add Position</a>
                         </li>
-
                     <?php } ?>
-                    <li>
-                                <a href="contact" title="Contact Info"><i class="fa fa-fw fa-plus"></i> Contact Info</a>
-                        </li>
-
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#events"><i class="fa fa-fw fa-calendar"></i> Events<i class="fa fa-fw fa-caret-down"></i></a>
                          <ul class="collapse" id="events">   
                             <li>
-                                <a href="events"><i class="fa fa-fw fa-plus"></i> &nbsp;Add Events</a>
+                                <a href="#"><i class="fa fa-fw fa-plus"></i> &nbsp;Add Events</a>
                             </li>
                              <li>
                                         <a href="#"><i class="fa fa-fw fa-table"></i> List Events</a>

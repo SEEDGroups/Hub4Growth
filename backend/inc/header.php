@@ -35,6 +35,8 @@
             font-family: cursive;
         }
     </style>
+        <!-- jQuery -->
+    <script src="<?php echo JS_URL; ?>jquery.js"></script>
 </head>
 
 <body>

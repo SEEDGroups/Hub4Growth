@@ -2,7 +2,7 @@
 <?php 
     include 'inc/header.php';
     include 'security_inside.php';
-    include 'inc/navigation.php';
+    include 'inc/navigation2.php';
 ?>
     <div id="wrapper">
 

@@ -10,6 +10,6 @@
 
 	const DBNAME = 'cids';
 	const DBHOST = 'localhost';
-	const DBPASSWORD = '';
+	const DBPASSWORD = 'noroto';
 	const DBUSER = 'root';
 ?>

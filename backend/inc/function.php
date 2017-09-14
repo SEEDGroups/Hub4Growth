@@ -102,6 +102,7 @@
 			}return $data;
 		}
 	}
+
 	function getVision(){
 		global $conn;
 		$sql = "SELECT * FROM about_org WHERE id=1";
@@ -155,5 +156,35 @@ function getContribution (){
 			}return $data;
 		}
 	}
+
+		function getContact(){
+		global $conn;
+		$sql = "SELECT * from contact WHERE id=1";
+		$query = mysqli_query($conn, $sql);
+		if(mysqli_num_rows($query) <= 0){
+			return 0;
+		}else{
+			$data= array();
+			while($rows = mysqli_fetch_assoc($query)){
+				$data[]=$rows;
+			}return $data;
+		}
+	}
+
+	function getEvents(){
+		global $conn;
+		$sql = "SELECT * from achievement";
+		$query = mysqli_query($conn, $sql);
+		if(mysqli_num_rows($query) <= 0){
+			return 0;
+		}else{
+			$data= array();
+			while($rows = mysqli_fetch_assoc($query)){
+				$data[]=$rows;
+			}return $data;
+		}
+	}
+
+
 
 ?>

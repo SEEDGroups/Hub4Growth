@@ -15,11 +15,15 @@
 
                 <!-- Page Heading -->
                 <div class="row">
+                  <?php $contact=getContact();
+                  foreach($contact as $listContact){
+                    ?>
+
                    
                     <div class="col-lg-12">
                       <?php include 'inc/notification.php';?>
 
-                        <h1 class="page-header">Add New Contact Info </h1>
+                        <h1 class="page-header">Update Contact Info </h1>
 
                     </div>
                 </div>
@@ -30,15 +34,15 @@
                           <div class="form-group">
                             <label class="col-sm-2 control-label">Contact Description</label>
                             <div class="col-sm-6">
-                             <textarea name="description" id="decription" class="form-control" rows="6" style="resize:vertical;" placeholder="Contact Description"></textarea>
+                             <textarea name="description" id="description" class="form-control" rows="6" style="resize:vertical;" ><?php echo $listContact['description']; ?></textarea>
                             </div>
                           </div>
-                          
-                        
+                         
+                         
                             <div class="form-group">
                             <label class="col-sm-2 control-label">Email</label>
                             <div class="col-sm-6">
-                              <input type="email" required class="form-control" name="email" placeholder="Enter Email">
+                              <input type="email" required class="form-control" name="email" value="<?php echo $listContact['email']; ?>" >
                             </div>
                           </div>
 
@@ -48,7 +52,7 @@
                             <div class="form-group">
                             <label class="col-sm-2 control-label">Phone</label>
                             <div class="col-sm-6">
-                              <input type="text" required class="form-control" name="phone" placeholder="Enter phone No.">
+                              <input type="text" required class="form-control" name="phone" value="<?php echo $listContact['phone']; ?>">
                             </div>
                           </div>
                           
@@ -56,7 +60,7 @@
                             <div class="form-group">
                             <label class="col-sm-2 control-label">Fax</label>
                             <div class="col-sm-6">
-                              <input type="text" required class="form-control" name="fax" placeholder="Enter Fax No.">
+                              <input type="text" required class="form-control" name="fax" value="<?php echo $listContact['fax']; ?>">
                             </div>
                           </div>
 
@@ -64,7 +68,7 @@
                             <div class="form-group">
                             <label class="col-sm-2 control-label">Address</label>
                             <div class="col-sm-6">
-                              <input type="text" required class="form-control" name="address" placeholder="Enter Address ">
+                              <input type="text" required class="form-control" name="address" value="<?php echo $listContact['address']; ?>">
                             </div>
                           </div>
 
@@ -72,7 +76,7 @@
                             <div class="form-group">
                             <label class="col-sm-2 control-label">PO Box</label>
                             <div class="col-sm-6">
-                              <input type="text" required class="form-control" name="pobox" placeholder="Enter PO Box No.">
+                              <input type="text" required class="form-control" name="pobox" value="<?php echo $listContact['pobox']; ?>">
                             </div>
                           </div>
 
@@ -80,7 +84,7 @@
                             <div class="form-group">
                             <label class="col-sm-2 control-label">Facebook link</label>
                             <div class="col-sm-6">
-                              <input type="text" class="form-control" name="link" placeholder="Enter Facebook Url">
+                              <input type="link" class="form-control" name="link" value="<?php echo $listContact['link']; ?>">
                             </div>
                           </div>
 
@@ -88,14 +92,16 @@
 
                           <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-6">
-                              <button type="submit" class="btn btn-success">Add</button>
-                              <button type="Reset" class="btn btn-danger">Reset</button>
+                              <button type="submit" class="btn btn-success">Update</button>
+                             
                           
                             </div>
                           </div>
                         </form>
                   </div>
-               
+               <?php
+                  }
+                   ?>
                 <!-- /.row -->
 
             </div>
