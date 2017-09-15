@@ -10,17 +10,17 @@
         </ul>
 </div>
 <div class="container_wapper">
-    <div id="templatemo_banner_menu">
+    <div id="templatemo_banner_menu" style="background-color: white !important;">
         <div class="container-fluid">
             <div class="col-xs-4 templatemo_logo">
             	<a href="#">
-                	<img src="<?php echo IMAGE_URL; ?>templatemo_logo.jpg" id="logo_img" alt="dragonfruit website template" title="Dragonfruit Template" />
-                	<h1 id="logo_text"><span>CIDS</span></h1>
+                	<img src="<?php echo IMAGE_URL; ?>logo.PNG" id="logo_img" alt="HUB4GROWTH" title="HUB4GROWTH" />
+                	<h1 id="logo_text" style="text-decoration: none;"><span style="font-weight: 600; color: darkblue;">HUB<span style="color: dodgerblue;">4</span>GROWTH</span></h1>
                 </a>
             </div>
             <div class="col-sm-8 hidden-xs">
                 <ul class="nav nav-justified">
-                    <li><a href="#templatemo_banner_slide">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#templatemo_about">About</a></li>
                     <li><a href="#templatemo_events">Events</a></li>
                     <li><a href="#templatemo_timeline">Timeline</a></li>

@@ -1,8 +1,8 @@
-/* 
+/*
 
-Dragonfruit Template 
+Dragonfruit Template
 
-http://www.templatemo.com/preview/templatemo_411_dragonfruit 
+http://www.templatemo.com/preview/templatemo_411_dragonfruit
 
 */
 
@@ -78,7 +78,7 @@ h1 {
 
     height: 100%;
 
-    background: #f9f9f9;
+    background: white;
 
     position: fixed;
 
@@ -118,7 +118,7 @@ h1 {
 
     height: 94px;
 
-    border-bottom: 1px solid #f15556;
+    border-bottom: 1px solid #005960;
 
     position: fixed;
 
@@ -132,7 +132,7 @@ h1 {
 
     max-height: 90px;
 
-    float: left; 
+    float: left;
 
 }
 
@@ -152,7 +152,7 @@ h1 {
 
 #templatemo_banner_menu #logo_text span {
 
-    color: #9fb038;
+    color: ##3f647e;
 
 }
 
@@ -168,7 +168,7 @@ h1 {
 
     color: #000;
 
-    background: repeat-x url("../images/banner_bg.jpg") 0 -94px ;
+    background: repeat-x url("../images/NEW.png") 0 -94px ;
 
     transition-duration: .5s;
 
@@ -182,7 +182,7 @@ h1 {
 
     background-position: 0 0px ;
 
-    background-color: #f15556;
+    background-color: #87CEEB;
 
     color: #ffffff;
 
@@ -202,7 +202,7 @@ h1 {
 
 /*banner slide*/
 
-.banner { 
+.banner {
 
     width: 100%;
 
@@ -210,23 +210,23 @@ h1 {
 
     margin-top: 94px;
 
-    position: relative; 
+    position: relative;
 
     overflow: hidden;
 
 }
 
-.banner ul { 
+.banner ul {
 
-    list-style: none; 
+    list-style: none;
 
     padding: 0;
 
 }
 
-.banner ul li { 
+.banner ul li {
 
-    float: left; 
+    float: left;
 
     background-size:50px 50px;
 
@@ -253,7 +253,7 @@ float: bottom;
     background-color: white ;
 
     text-align: center;
-   
+
 
     color: black;
 
@@ -587,7 +587,7 @@ float: bottom;
 
 #templatemo_timeline .time_line_caption {
 
-    background: #f15556;
+    background: #1e90ff;
 
     padding: 10px 20px 10px 20px ;
 
@@ -597,7 +597,7 @@ float: bottom;
 
     clear: both;
 
-    color: #fff; 
+    color: #fff;
 
 }
 
@@ -883,7 +883,7 @@ float: bottom;
 
 /*  Small devices (tablets, 768px and up)  */
 
-@media (max-width: 768px ) { 
+@media (max-width: 768px ) {
 
     #templatemo_about .pre_next {
 

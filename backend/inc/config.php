@@ -1,8 +1,9 @@
-<?php 
+<?php
 	const SITE_MAP = "http://localhost/CIDS/backend/";
 	const ASSETS = SITE_MAP."assets/";
 	const CSS_URL = ASSETS."css/";
 	const JS_URL = ASSETS."js/";
+	const IMAGE_URL = ASSETS."images/";
 	const FONTAWE_URL = ASSETS."font-awesome/";
 	const FONT_URL = ASSETS."fonts/";
 	const INC_URL = SITE_MAP."inc/";
@@ -15,7 +16,7 @@
 	const DB_HOST = "localhost";
 	const DB_NAME = "cids";
 	const DB_USER = "root";
-	const DB_PASSWORD = "noroto";
+	const DB_PASSWORD = "";
 
 	$allowed_image_ext = array("jpg", "jpeg", "png", "bitmap");
 ?>

@@ -2,11 +2,11 @@
 
 
 
-/* 
+/*
 
-Dragonfruit Template 
+Dragonfruit Template
 
-http://www.templatemo.com/preview/templatemo_411_dragonfruit 
+http://www.templatemo.com/preview/templatemo_411_dragonfruit
 
 */
 
@@ -18,7 +18,7 @@ jQuery(function(){
 
     $(window).load( function() {
 
-        $('.external-link').unbind('click');    
+        $('.external-link').unbind('click');
 
     });
 
@@ -98,11 +98,11 @@ jQuery(function(){
 
     });
 
-	
+
 
 	/*
 
-	var dt = window.atob('IHwgPGEgcmVsPSJub2ZvbGxvdyIgaHJlZj0iaHR0cDovL3d3dy50ZW1wbGF0ZW1vLmNvbS9wcmV2aWV3L3RlbXBsYXRlbW9fNDExX2RyYWdvbmZydWl0Ij5EcmFnb25mcnVpdDwvYT4gYnkgPGEgcmVsPSJub2ZvbGxvdyIgaHJlZj0iaHR0cDovL3d3dy50ZW1wbGF0ZW1vLmNvbSI+dGVtcGxhdGVtbzwvYT4='); 
+	var dt = window.atob('IHwgPGEgcmVsPSJub2ZvbGxvdyIgaHJlZj0iaHR0cDovL3d3dy50ZW1wbGF0ZW1vLmNvbS9wcmV2aWV3L3RlbXBsYXRlbW9fNDExX2RyYWdvbmZydWl0Ij5EcmFnb25mcnVpdDwvYT4gYnkgPGEgcmVsPSJub2ZvbGxvdyIgaHJlZj0iaHR0cDovL3d3dy50ZW1wbGF0ZW1vLmNvbSI+dGVtcGxhdGVtbzwvYT4=');
 
 	var y = document.getElementById('footer');
 
@@ -110,7 +110,7 @@ jQuery(function(){
 
 	*/
 
-	
+
 
     //about textimonial
 
@@ -296,7 +296,7 @@ jQuery(function(){
 
                 //put on right
 
-                $(this).css({   
+                $(this).css({
 
                                     'left': 70,
 
@@ -312,7 +312,7 @@ jQuery(function(){
 
                 $.timeline_right_position_top = $.timeline_right_position_top + $(this).outerHeight() + 40 ;
 
-                $(this).prepend("<a href=\"#\" class=\"right_timer\"><span class=\"glyphicon glyphicon-time\"></span></a>");
+                $(this).prepend("<a href=\"javascript:;\" class=\"right_timer\"><span class=\"glyphicon glyphicon-time\"></span></a>");
 
                 $(this).children("a.right_timer").css({left:-86, width: 60 ,});
 
@@ -322,7 +322,7 @@ jQuery(function(){
 
                 //put on left
 
-                $(this).css({   
+                $(this).css({
 
                                     'left':0,
 
@@ -338,7 +338,7 @@ jQuery(function(){
 
                 $.timeline_left_position_top = $.timeline_left_position_top + $(this).outerHeight() + 40 ;
 
-                $(this).prepend("<a href=\"#\" class=\"left_timer\"><span class=\"glyphicon glyphicon-time\"></span></a>");
+                $(this).prepend("<a href=\"javascript:;\" class=\"left_timer\"><span class=\"glyphicon glyphicon-time\"></span></a>");
 
                 $(this).children("a.left_timer").css({left:$.timeline_item_width-50,});
 
@@ -350,7 +350,7 @@ jQuery(function(){
 
                 //put on right
 
-                $(this).css({   
+                $(this).css({
 
                                     'left': $.timeline_item_width + 79,
 
@@ -366,7 +366,7 @@ jQuery(function(){
 
                 $.timeline_right_position_top = $.timeline_right_position_top + $(this).outerHeight() + 40 ;
 
-                $(this).prepend("<a href=\"#\" class=\"right_timer\"><span class=\"glyphicon glyphicon-time\"></span></a>");
+                $(this).prepend("<a href=\"javascript:;\" class=\"right_timer\"><span class=\"glyphicon glyphicon-time\"></span></a>");
 
                 $(this).children("a.right_timer").css({left:-99,});
 
@@ -394,7 +394,7 @@ jQuery(function(){
 
                 $.timeline_left_position_top = $.timeline_left_position_top + $(this).outerHeight() + 40 ;
 
-                $(this).prepend("<a href=\"#\" class=\"left_timer\"><span class=\"glyphicon glyphicon-time\"></span></a>");
+                $(this).prepend("<a href=\"javascript:;\" class=\"left_timer\"><span class=\"glyphicon glyphicon-time\"></span></a>");
 
                 $(this).children("a.left_timer").css({left:$.timeline_item_width-50,});
 
@@ -454,7 +454,7 @@ jQuery(function(){
 
             speed : 1100
 
-        }, settings);	
+        }, settings);
 
         return this.each(function(){
 
@@ -498,7 +498,7 @@ jQuery(function(){
 
     //animate scroll function calll
 
-    $("#templatemo_mobile_menu a").anchorAnimate();    
+    $("#templatemo_mobile_menu a").anchorAnimate();
 
     //about
 
@@ -590,7 +590,7 @@ jQuery(function(){
 
         }
 
-    }); 
+    });
 
 });
 
@@ -676,7 +676,7 @@ function initialize(){
 
         map: map,
 
-        title: 'Welcome to CIDS'
+        title: 'Welcome to HUB4GROWTH'
 
     });
 
