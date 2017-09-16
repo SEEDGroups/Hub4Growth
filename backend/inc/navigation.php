@@ -133,12 +133,12 @@
                                 <a href="about_collaboration"><i class="fa fa-fw fa-list"></i>Collaboration</a>
                             </li>
                             <li>
-                                <a href="about_research"><i class="fa fa-fw fa-list"></i>Research & Technology</a>
+                                <a href="about_research" title="Research & Technology"><i class="fa fa-fw fa-list"></i>Research & Technology</a>
                             </li>
                         </ul>
                     </li>
                         <li>
-                                <a href="position" title="position"><i class="fa fa-fw fa-plus"></i> Add Position</a>
+                                <a href="list_position" title="Member's lists"><i class="fa fa-fw fa-bars"></i> List Members</a>
                         </li>
 
                     <?php } ?>
@@ -161,7 +161,7 @@
                                 <a href="achievements"><i class="fa fa-fw fa-plus-circle"></i> Add Achievements</a>
                     </li>
                     <li>
-                                <a href="#"><i class="fa fa-fw fa-trophy"></i> List Achievements</a>
+                                <a href="banner_list"><i class="fa fa-fw fa-picture-o"></i> Banners</a>
                     </li>
                     <li>
                                 <a href="enquiry"><i class="fa fa-fw fa-server"></i> List Enquries</a>

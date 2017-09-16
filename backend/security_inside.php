@@ -3,11 +3,11 @@
     if((!isset($_COOKIE['is_logged_in']) || $_COOKIE['is_logged_in'] == "")){
 
         $_SESSION['error'] = "Please login first";
-        @header('location: login.php');
+        @header('location: index');
         exit;
     }
 }
 
 
-    
+
 ?>
