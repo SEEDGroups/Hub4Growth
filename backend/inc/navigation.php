@@ -22,7 +22,7 @@
                                         <img class="media-object" src="http://placehold.it/50x50" alt="image2">
                                     </span>
                                     <div class="media-body">
-                                       
+
                                         <h5 class="media-heading"><strong><?php echo $_SESSION['fullname'];?></strong>
                                         </h5>
                                         <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
@@ -66,48 +66,13 @@
                         </li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
-                    <ul class="dropdown-menu alert-dropdown">
-                        <li>
-                            <a href="#">first Name <span class="label label-default">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">View All</a>
-                        </li>
-                    </ul>
-                </li>
+
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $_SESSION['fullname'];?>
-                                            
+
                      <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
+
                         <li>
                             <a href="logout"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
@@ -120,10 +85,10 @@
                     <li class="active">
                         <a href="index" title="Dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
-                    <?php if($_SESSION['role'] != 2){ ?> 
+                    <?php if($_SESSION['role'] != 2){ ?>
                        <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#about"><i class="fa fa-fw fa-users"></i> About HUB4GROWTH<i class="fa fa-fw fa-caret-down"></i></a>
-                         <ul class="collapse" id="about">   
+                         <ul class="collapse" id="about">
                             <li>
                                 <a href="about_vision.php" title='Vision & Mission'><i class="fa fa-fw fa-plus"></i> Vision & Mission</a>
                             </li>
@@ -150,7 +115,7 @@
 
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#events"><i class="fa fa-fw fa-calendar"></i> Events<i class="fa fa-fw fa-caret-down"></i></a>
-                         <ul class="collapse" id="events">   
+                         <ul class="collapse" id="events">
                             <li>
                                 <a href="events"><i class="fa fa-fw fa-plus"></i> &nbsp;Add Events</a>
                             </li>
@@ -159,18 +124,16 @@
                             </li>
                          </ul>
                     </li>
-                     <li>
-                                <a href="achievements"><i class="fa fa-fw fa-plus-circle"></i> Add Achievements</a>
-                    </li>
+
                     <li>
                                 <a href="banner_list"><i class="fa fa-fw fa-picture-o"></i> Banners</a>
                     </li>
                     <li>
                                 <a href="enquiry"><i class="fa fa-fw fa-server"></i> List Enquries</a>
                     </li>
-                    
-                    
-                    
+
+
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

@@ -1,4 +1,4 @@
-
+<?php $getAllBanner = getBanners(); ?>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -9,23 +9,24 @@
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox" style="width: 100% !important; max-height: 800px !important; ">
+
+
     <div class="item active">
-      <img src="<?php echo IMAGE_URL; ?>3.jpg" style="width: 100%; height: 800px !important;" alt="...">
+      <img src="<?php echo UPLOADED_IMAGE.$getAllBanner[0]['banner_title']; ?>" style="width: 100%; height: 800px !important;" alt="<?php $getAllBanner[0]['caption']; ?>">
       <div class="carousel-caption">
-       <h2> LONDON BRIDGE</h2>
+       <h2><?php echo $getAllBanner[0]['caption']; ?></h2>
       </div>
     </div>
     <div class="item">
-      <img src="<?php echo IMAGE_URL; ?>1.jpg" alt="..." style="width: 100%; height:800px !important;" >
+      <img src="<?php echo UPLOADED_IMAGE.$getAllBanner[1]['banner_title']; ?>" style="width: 100%; height: 800px !important;" alt="<?php $getAllBanner[1]['caption']; ?>">
       <div class="carousel-caption">
-         <h2> HUB4GROWTH ko project ko lagi aayeka manche haru</h2>
+      <h2><?php echo $getAllBanner[1]['caption']; ?></h2>
       </div>
     </div>
     <div class="item">
-      <img src="<?php echo IMAGE_URL; ?>2.jpg" alt="..." style="width: 100%; height: 800px !important;">
+      <img src="<?php echo UPLOADED_IMAGE.$getAllBanner[2]['banner_title']; ?>" style="width: 100%; height: 800px !important;" alt="<?php $getAllBanner[2]['caption']; ?>">
       <div class="carousel-caption">
-         <h2> radio karyekram</h2>
-         <p>Mahindra ba</p>
+      <h2><?php echo $getAllBanner[2]['caption']; ?></h2>
       </div>
     </div>
 

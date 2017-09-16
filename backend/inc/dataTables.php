@@ -13,13 +13,13 @@ $(document).ready(function(){
 	$('#listEnquiry').dataTable();
 });
 $(document).ready(function(){
-<<<<<<< HEAD
+
 	$('#listEvents').dataTable();
 });
 
 </script>
-=======
+
 	$('#getBanners').dataTable();
 });
 </script>
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
+

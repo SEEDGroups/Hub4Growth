@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-<?php 
-	const SITE_MAP = "http://localhost/CIDS/backend/";
-=======
+
 <?php
-	const SITE_MAP = "http://hub4growthtu.com.np/backend/";
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
+	const SITE_MAP = "http://localhost/seeds/hub4growth/backend/";
 	const ASSETS = SITE_MAP."assets/";
 	const CSS_URL = ASSETS."css/";
 	const JS_URL = ASSETS."js/";
@@ -19,9 +15,9 @@
 
 	/* database ko connection ko lagi */
 	const DB_HOST = "localhost";
-	const DB_NAME = "hub4growth";
+	const DB_NAME = "cids";
 	const DB_USER = "root";
-	const DB_PASSWORD = "noroto";
+	const DB_PASSWORD = "";
 
 	$allowed_image_ext = array("jpg", "jpeg", "png", "bitmap");
 ?>

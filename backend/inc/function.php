@@ -196,7 +196,7 @@ function getContribution (){
      return false;
     }
 	}
-	
+
 	function updateMember($data){
 		global $conn;
 		$fields = array_keys($data);
@@ -211,7 +211,7 @@ function getContribution (){
         return false;
         }
 	}
-	
+
 	function getAllInfoOfMemberById($value){
 		global $conn;
 		$sql = "SELECT positions.*, member_image.image_title FROM positions left join member_image ON positions.id = member_image.member_id where positions.id = ".$value."";
@@ -240,7 +240,7 @@ function getContribution (){
             return false;
         }
     }
-    
+
 	function getBanners(){
 		global $conn;
 		$sql = "SELECT banner_info.*, banner_image.banner_title FROM banner_info LEFT JOIN banner_image on banner_info.id = banner_image.banner_id ORDER BY banner_info.id desc limit 3";
@@ -254,7 +254,7 @@ function getContribution (){
 			}return $data;
 		}
 	}
-    
+
     function upDateData($tablename, $field, $value){
         global $conn;
 
@@ -267,7 +267,7 @@ function getContribution (){
             return false;
         }
     }
-    
+
 	function getFileExtension($fileName){
 		$ext = pathinfo($fileName, PATHINFO_EXTENSION);
 		return $ext;
@@ -283,8 +283,8 @@ function getContribution (){
             return false;
         }
     }
-    
-    
+
+
 	function addBannerInfo($data){
 		global $conn;
 		$fields = array_keys($data);
@@ -299,10 +299,10 @@ function getContribution (){
      return false;
     }
 	}
-	
+
     function addBannerImage($images, $banner_id){
      global $conn;
-        $sql = "INSERT INTO banner_image SET image_title = '$images', member_id='$banner_id'";
+        $sql = "INSERT INTO banner_image SET banner_title = '$images', banner_id='$banner_id'";
         $query = mysqli_query($conn, $sql);
         if($query){
             return true;
@@ -310,6 +310,6 @@ function getContribution (){
             return false;
         }
 	}
-    
+
 
 ?>

@@ -1,5 +1,5 @@
-<?php 
-	
+<?php
+
 	function debugger($array, $is_die = false){
 		echo "<pre>";
 		print_r($array);
@@ -19,7 +19,7 @@
 		return $string;
 	}
 
-	
+
 
 function getContactInfo(){
 		global $conn;
@@ -47,7 +47,7 @@ function getAllabout(){
 				$data= $rows;
 			}return $data;
 		}
-	}	
+	}
 
 		function getVision(){
 		global $conn;
@@ -89,7 +89,7 @@ function getContribution (){
 			}return $data;
 		}
 	}
-	
+
 	function getResearch(){
 		global $conn;
 		$sql = "SELECT * FROM about_org WHERE id=4";
@@ -130,6 +130,35 @@ function getContribution (){
 			}return $data;
 		}
 	}
+
+	function getBanners(){
+		global $conn;
+		$sql = "SELECT banner_info.*, banner_image.banner_title FROM banner_info LEFT JOIN banner_image on banner_info.id = banner_image.banner_id ORDER BY banner_info.id desc limit 3";
+		$query = mysqli_query($conn, $sql);
+		if(mysqli_num_rows($query) <1){
+			return 0;
+		}else{
+			$data = array();
+			while($rows = mysqli_fetch_assoc($query)){
+				$data[] = $rows;
+			}return $data;
+		}
+	}
+
+	function getMemberList(){
+		global $conn;
+		$sql = "SELECT positions.*, member_image.image_title FROM positions LEFT JOIN member_image on positions.id = member_image.member_id WHERE positions.type=1 ORDER BY positions.id desc";
+		$query = mysqli_query($conn, $sql);
+		if(mysqli_num_rows($query) <1){
+			return 0;
+		}else{
+			$data = array();
+			while($rows = mysqli_fetch_assoc($query)){
+				$data[] = $rows;
+			}return $data;
+		}
+	}
+
 
 
 ?>
