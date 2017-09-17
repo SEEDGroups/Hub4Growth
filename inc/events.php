@@ -49,7 +49,7 @@
                     <img src="<?php echo IMAGE_URL; ?>templatemo_event_04.jpg" class="img-responsive" alt="" />
                 </div>
                 <div class="event_box_caption">
-                    <h1 data-toggle="modal" data-target="#myModal4"><?php echo $getEvents[3]['event_location']; ?></h1>
+                    <h1 data-toggle="modal" data-target="#myModal4"><?php echo $getEvents[3]['event_title']; ?></h1>
                      <p><span class="glyphicon glyphicon-map-marker"></span> <?php echo $getEvents[3]['event_location']; ?>&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-calendar">&nbsp;<?php echo $getEvents[3]['event_date']; ?></span>&nbsp;&nbsp;&nbsp; <span class="glyphicon glyphicon-time"></span> <?php echo $getEvents[3]['event_time']; ?> </p> 
                     <p><?php echo $getEvents[3]['event_summary']; ?> </p>
                 </div>
@@ -78,7 +78,7 @@
               </div>
               <div class="row" style="margin-top: 15px;">
                 <label class="col-sm-2 control-label">Description</label>
-                <div class = "col-sm-10"><?php echo $getEvents[0]['event_description']; ?></div>
+                <div class = "col-sm-10"><?php echo html_entity_decode($getEvents[0]['event_description']); ?></div>
               </div>
             </div>
             <div class="modal-footer">
@@ -108,7 +108,7 @@
               </div>
               <div class="row" style="margin-top: 15px;">
                 <label class="col-sm-2 control-label">Description</label>
-                <div class = "col-sm-10"><?php echo $getEvents[1]['event_description']; ?></div>
+                <div class = "col-sm-10"><?php echo html_entity_decode($getEvents[1]['event_description']); ?></div>
               </div>
             </div>
             <div class="modal-footer">
@@ -138,7 +138,7 @@
               </div>
               <div class="row" style="margin-top: 15px;">
                 <label class="col-sm-2 control-label">Description</label>
-                <div class = "col-sm-10"><?php echo $getEvents[2]['event_description']; ?></div>
+                <div class = "col-sm-10"><?php echo html_entity_decode($getEvents[2]['event_description']); ?></div>
               </div>
             </div>
             <div class="modal-footer">
@@ -168,7 +168,7 @@
               </div>
               <div class="row" style="margin-top: 15px;">
                 <label class="col-sm-2 control-label">Description</label>
-                <div class = "col-sm-10"><?php echo $getEvents[3]['event_description']; ?></div>
+                <div class = "col-sm-10"><?php echo html_entity_decode($getEvents[3]['event_description']); ?></div>
               </div>
             </div>
             <div class="modal-footer">

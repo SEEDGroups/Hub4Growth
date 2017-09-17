@@ -45,7 +45,7 @@
                             <div class="form-group">
                             <label class="col-sm-2 control-label">Description</label>
                             <div class="col-sm-6">
-                             <textarea name="description" id="description" class="form-control" rows="7" style="resize:vertical;" ><?php echo $getContributionList['description']; ?></textarea>
+                             <textarea name="description" id="description" class="form-control" rows="7" style="resize:vertical;" ><?php echo html_entity_decode($getContributionList['description'];) ?></textarea>
                             </div>
                           </div
 

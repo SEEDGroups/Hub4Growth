@@ -5,7 +5,7 @@
             <!-- <div id="templatemo_contact_map"></div> -->
             <?php include 'inc/map.php'; ?>
         </div>
-        <?php $contact=getContactInfo(); 
+        <?php $contact=getContactInfo();
 
    ?>
 
@@ -20,43 +20,43 @@
                     <a href="#"><i class="fa fa-linkedin"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a> 
+                    <a href="#"><i class="fa fa-twitter"></i></a>
                 </li> -->
                 <li>
-                    <a href="<?php echo $contact['link']; ?>" title="CIDS Nepal"><i class="fa fa-facebook"></i></a> 
+                    <a href="<?php echo $contact['link']; ?>" title="CIDS Nepal"><i class="fa fa-facebook"></i></a>
                 </li>
                 <!-- <li>
-                    <a href="#"><i class="fa fa-youtube"></i></a> 
+                    <a href="#"><i class="fa fa-youtube"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-github"></i></a> 
+                    <a href="#"><i class="fa fa-github"></i></a>
                 </li> -->
            </ul>
         </div>
-         
-        <form action="#" method="post" class="col-md-8">
+
+        <form action="inc/enquiry_process.php" method="post" class="col-md-8">
             <div class="row">
                 <div class="col-md-12">
                 <h2>Send Enquiry</h2>
                 </div>
                 <div class="col-md-6">
                     <p>Name</p>
-                    <input type="text" name="name" id="name" placeholder="Your Name" />
+                    <input type="text" required name="name" id="name" placeholder="Your Name" />
                 </div>
                 <div class="col-md-6">
                     <p>Email</p>
-                    <input type="text" name="email" id="email" placeholder="Your Email" />
+                    <input type="email" required name="email" id="email" placeholder="Your Email" />
                 </div>
                 <div class="col-md-12">
                     <p>Subject</p>
-                    <input type="text" name="subject" id="subject" placeholder="Subject" />
+                    <input type="text" required name="subject" id="subject" placeholder="Subject" />
                 </div>
                 <div class="col-md-12">
                     <p>Message</p>
-                    <textarea name="message" id="message"  placeholder="Write your message here..."></textarea>
+                    <textarea name="message" required id="message"  placeholder="Write your message here..."></textarea>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-offset-6">
-                    <button type="submit">Send</button>
+                    <button type="submit" onclick="notifyMe()">Send</button>
                 </div>
                 <div class="col-xs-6 col-sm-3">
                     <button type="reset">Reset</button>
@@ -66,8 +66,9 @@
     </div>
 </div>
 <div id="templatemo_footer">
-    <div>
-        <p id="footer">Copyright &copy; 2015 CIDS</p>
+    <div  class="container-fluid">
+        <p  id="footer">Copyright &copy; 2015 HUB4GROWTH  <span  class="pull-right" > Designed & Developed by Seeds Group</span> </p>
+
     </div>
 </div>
 <script src="<?php echo JS_URL; ?>jquery.min.js"></script>

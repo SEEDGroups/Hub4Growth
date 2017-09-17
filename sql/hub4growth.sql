@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 16, 2017 at 04:58 PM
+-- Generation Time: Sep 17, 2017 at 08:49 AM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.8
 
@@ -76,7 +76,9 @@ CREATE TABLE `enquiry` (
 
 INSERT INTO `enquiry` (`id`, `fullname`, `email`, `subject`, `message`, `added_date`) VALUES
 (1, 'Ansuman', 'smechailes@gmail.com', 'What is your goal?', 'I would like to know what is your goal.', '2017-08-26 10:47:11'),
-(2, 'Binod', 'binod@gmail.com', 'hello', 'hello', '2017-08-26 14:24:22');
+(2, 'Binod', 'binod@gmail.com', 'hello', 'hello', '2017-08-26 14:24:22'),
+(3, 'Samyam Bro', 'samyam@gmail.com', 'Chair person', 'I wanna be chairperson', '2017-09-17 11:40:42'),
+(4, 'Devendra Shrestha', 'Devendrashrestha16@gmail.com', 'Checking', 'Seat person ko post khali cha ta?', '2017-09-17 11:58:37');
 
 -- --------------------------------------------------------
 
@@ -198,7 +200,7 @@ ALTER TABLE `contact`
 -- AUTO_INCREMENT for table `enquiry`
 --
 ALTER TABLE `enquiry`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `org_events`
 --

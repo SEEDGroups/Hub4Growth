@@ -1,7 +1,7 @@
 <h1>About Our Organization</h1>
 <div class="col-sm-6 col-md-3 about_icon">
    <?php $vision=getVision();
-   foreach($vision as $visionDetail){ 
+   foreach($vision as $visionDetail){
   ?>
     <div class="imgwap mission"><i class="fa fa-fw fa-rocket"></i></div>
     <h2 class="about_org_color" data-toggle="modal" data-target="#modalVision">Vision and Mission</h2>
@@ -21,7 +21,7 @@
                 </div>
                 <div class="row" style="margin-top: 15px;">
                   <label class="col-sm-2 control-label">Description</label>
-                  <div class = "col-sm-10"><?php echo $visionDetail['description']; ?></div>
+                  <div class = "col-sm-10"><?php echo html_entity_decode($visionDetail['description']); ?></div>
                 </div>
               </div>
 
@@ -43,7 +43,7 @@
     <!-- modal for Contribution -->
     <div id="modalContribution" class="modal fade" role="dialog" style="margin-top: 44px">
         <div class="modal-dialog">
-          
+
             <div class="modal-content modal-lg">
                 <div class="modal-header" style="padding: 25px;">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -56,7 +56,7 @@
                   </div>
                   <div class="row" style="margin-top: 15px;">
                     <label class="col-sm-2 control-label">Description</label>
-                    <div class = "col-sm-10"><?php echo $contributionDetail['description']?></div>
+                    <div class = "col-sm-10"><?php echo html_entity_decode($contributionDetail['description'])?></div>
                   </div>
                 </div>
                 <div class="modal-footer">
@@ -66,7 +66,7 @@
         </div>
     </div>
 </div>
-<?php } 
+<?php }
           $collaboration=getCollaboration();
           foreach($collaboration as $collaborationDetail){
 ?>
@@ -78,7 +78,7 @@
     <!-- modal for Collaboration -->
     <div id="modalCollaboration" class="modal fade" role="dialog" style="margin-top: 44px">
         <div class="modal-dialog">
-          
+
             <div class="modal-content modal-lg">
                 <div class="modal-header" style="padding: 25px;">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -91,7 +91,7 @@
                   </div>
                   <div class="row" style="margin-top: 15px;">
                     <label class="col-sm-2 control-label">Description</label>
-                    <div class = "col-sm-10"><?php echo $collaborationDetail['description']?></div>
+                    <div class = "col-sm-10"><?php echo html_entity_decode($collaborationDetail['description'])?></div>
                   </div>
                 </div>
                 <div class="modal-footer">
@@ -101,7 +101,7 @@
         </div>
     </div>
 <?php }
-  
+
 
       $research=getResearch();
       foreach($research as $researchDetail){
@@ -115,7 +115,7 @@
     <!-- modal for research -->
     <div id="modalResearch" class="modal fade" role="dialog" style="margin-top: 44px">
         <div class="modal-dialog">
-         
+
             <div class="modal-content modal-lg">
                 <div class="modal-header" style="padding: 25px;">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -128,7 +128,7 @@
                   </div>
                   <div class="row" style="margin-top: 15px;">
                     <label class="col-sm-2 control-label">Description</label>
-                    <div class = "col-sm-10"><?php echo $researchDetail['description']?></div>
+                    <div class = "col-sm-10"><?php echo html_entity_decode($researchDetail['description'])?></div>
                   </div>
                 </div>
                 <div class="modal-footer">

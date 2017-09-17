@@ -61,24 +61,24 @@
 <!-- modal for Contribution -->
 <div id="myModal1" class="modal fade" role="dialog" style="margin-top: 44px">
     <div class="modal-dialog">
-      <p>Sed do eiusmod tempor incididunt ut labore et.</p>
+      
         <div class="modal-content modal-lg">
             <div class="modal-header" style="padding: 25px;">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h3 class="modal-title" style="text-align-last: center">Contribution to National Developments</h3>
+                <h3 class="modal-title" style="text-align-last: center"><?php echo $getTimeline[0]['event_title']; ?></h3>
                 <medium>
-                  <p class="pull-left"><i class="fa fa-fw fa-map-marker"></i>Location</p>
-                  <p class="pull-right"><i class="fa fa-fw fa-calendar"></i>Calendar</p>
+                  <p class="pull-left"><i class="fa fa-fw fa-map-marker"></i><?php echo $getTimeline[0]['event_Location']; ?></p>
+                  <p class="pull-right"><i class="fa fa-fw fa-calendar"></i><?php echo $getTimeline[0]['event_date']; ?></p>
                 </medium>
             </div>
             <div class="modal-body">
               <div class="row" style="border-bottom: 1px solid #e5e5e5">
                 <label class="col-sm-2 control-label">Summary</label>
-                <div class = "col-sm-10" style="border-bottom: 1px solid #fff">Summary of Contribution to National Developments</div>
+                <div class = "col-sm-10" style="border-bottom: 1px solid #fff"><?php echo $getTimeline[0]['event_summary']; ?></div>
               </div>
               <div class="row" style="margin-top: 15px;">
                 <label class="col-sm-2 control-label">Description</label>
-                <div class = "col-sm-10">Description of Contribution to National Developments</div>
+                <div class = "col-sm-10"><?php echo html_entity_decode($getTimeline[0]['event_description']); ?></div>
               </div>
             </div>
             <div class="modal-footer">
@@ -91,14 +91,13 @@
 <!-- modal for Contribution -->
 <div id="myModal2" class="modal fade" role="dialog" style="margin-top: 44px">
     <div class="modal-dialog">
-      <p>Sed do eiusmod tempor incididunt ut labore et.</p>
         <div class="modal-content modal-lg">
             <div class="modal-header" style="padding: 25px;">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h3 class="modal-title" style="text-align-last: center">Contribution to National Developments</h3>
+                <h3 class="modal-title" style="text-align-last: center"><?php echo $getTimeline[1]['event_title']; ?></h3>
                 <medium>
-                  <p class="pull-left"><i class="fa fa-fw fa-map-marker"></i>Location</p>
-                  <p class="pull-right"><i class="fa fa-fw fa-calendar"></i>Calendar</p>
+                  <p class="pull-left"><i class="fa fa-fw fa-map-marker"></i><?php echo $getTimeline[1]['event_location']; ?></p>
+                  <p class="pull-right"><i class="fa fa-fw fa-calendar"></i><?php echo $getTimeline[1]['event_date']; ?></p>
                 </medium>
             </div>
             <div class="modal-body">
@@ -211,14 +210,14 @@
 <!-- modal for Contribution -->
 <div id="myModal6" class="modal fade" role="dialog" style="margin-top: 44px">
     <div class="modal-dialog">
-      <p>Sed do eiusmod tempor incididunt ut labore et.</p>
+     
         <div class="modal-content modal-lg">
             <div class="modal-header" style="padding: 25px;">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h3 class="modal-title" style="text-align-last: center">Contribution to National Developments</h3>
                 <medium>
                   <p class="pull-left"><i class="fa fa-fw fa-map-marker"></i>Location</p>
-                  <p class="pull-right"><i class="fa fa-fw fa-calendar"></i>Calendar</p>
+                  <p class="pull-right"><i class="fa fa-fw fa-calendar"></i><?php echo $getTimeline[5]['event_date']; ?></p>
                 </medium>
             </div>
             <div class="modal-body">
