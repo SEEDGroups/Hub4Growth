@@ -2,6 +2,7 @@
 	include 'config.php';
 	include 'dbconnect.php';
 	include 'function.php';
+	$type=getEvents();
 
 	if(isset($_POST) && !empty($_POST)){
 		$event_title = sanitize($_POST['event_title']);

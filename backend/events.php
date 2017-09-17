@@ -42,7 +42,7 @@
                     <div class="col-lg-12">
 
                       <?php include 'inc/notification.php';?>
-                        <h1 class="page-header"> <?php echo $page; ?> Event </h1>
+                        <h1 class="page-header"> <?php echo $page; ?> Event / Timeline </h1>
                     </div>
                   
                 </div>
