@@ -1,8 +1,8 @@
-<?php session_start(); include 'inc/config.php'; include 'inc/dbconnect.php'; include 'inc/function.php'; ?>
-<?php 
-	include 'inc/header.php';	 
+<?php session_start(); include 'inc/config.php'; include 'inc/dbconnect.php'; include 'inc/function.php'; include 'inc/navigation.php';?>
+<?php include 'inc/header.php';	 ?>
+<?php
 	include 'security_inside.php';
-	include 'inc/navigation.php';
+
 ?>
 
  <div id="wrapper">
@@ -15,7 +15,7 @@
 
                 <!-- Page Heading -->
                 <div class="row">
-                   
+
                    <?php $vision=getVision(); ?>
 
                     <div class="col-lg-12">
@@ -28,7 +28,7 @@
                 <!-- /.row -->
                 <div class="row">
                  <form class="form-horizontal" method="POST" action="inc/about_process">
-                 <?php foreach($vision as $getVisionList){ 
+                 <?php foreach($vision as $getVisionList){
                   ?>
                           <div class="form-group">
                             <label class="col-sm-2 control-label">Summary</label>
@@ -36,7 +36,7 @@
                              <textarea name="summary" id="summary" class="form-control" rows="3" style="resize:vertical;" ><?php echo $getVisionList['summary']; ?></textarea>
                             </div>
                           </div>
-                          
+
                         <div class="form-group">
                             <label class="col-sm-2 control-label"></label>
                             <div class="col-sm-6">
@@ -51,14 +51,14 @@
                             </div>
                           </div>
 
-                                        
+
 
 
                           <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-6">
                               <button type="submit" class="btn btn-success">Update</button>
-                          
-                          
+
+
                             </div>
                           </div>
                         </form>

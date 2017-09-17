@@ -9,6 +9,23 @@
          include 'inc/function.php'; include 'inc/dbconnect.php';
         include 'security_inside.php';
 
+        if(isset($_GET['id']) && !empty($_GET['act'])) {
+            $id = sanitize($_GET['id']);
+            $field = "id";
+            $tableName = "enquiry";
+            $del = deleteData($tableName, $field, $id);
+
+            if($del == 1){
+                $_SESSION['success'] = "Enquiry has been removed successfully";
+                @header('location: enquiry');
+            exit;
+            }else{
+                $_SESSION['error'] = "Enquiry couldn't be removed at this moment. Please try again later.";
+                @header('location: enquiry');
+            exit;
+            }
+        }
+
     ?>
 
 
@@ -43,6 +60,7 @@
                           <th>Subject</th>
                           <th>Message</th>
                           <th>Date</th>
+                          <th>Action</th>
 
                         </thead>
                          <tbody>
@@ -55,6 +73,7 @@
                                 <td><?php echo $listEnquiry['subject'];?></td>
                                 <td><?php echo $listEnquiry['message'];?></td>
                                 <td><?php echo $listEnquiry['added_date']; ?></td>
+                                <td><a onclick="return confirm('Are you sure you want to delete this enquiry?')" href="enquiry?id=<?php echo $listEnquiry['id']; ?>&act=<?php echo substr(sha1('delete-'.$listEnquiry['id']), 4, 9);?>" style="text-decoration: none;"><i class="fa fa-fw fa-trash fa-2x"></i></a></td>
 
                               </tr>
                               <?php

@@ -159,7 +159,8 @@ function getContribution (){
 
 	function getEvents(){
 		global $conn;
-		$sql = "SELECT * from achievement";
+		$sql = "SELECT achievement.*, event_image.image_title from achievement LEFT JOIN event_image on achievement.id = event_image.event_id ORDER BY id desc";
+		// debugger($sql); exit;
 		$query = mysqli_query($conn, $sql);
 		if(mysqli_num_rows($query) <= 0){
 			return 0;
@@ -309,7 +310,64 @@ function getContribution (){
         }else{
             return false;
         }
-	}
+			}
 
+			function addEventImage($images, $event_id){
+				global $conn;
+				$sql = "INSERT INTO event_image SET image_title = '$images', event_id = '$event_id'";
+				$query = mysqli_query($conn, $sql);
+				if($query){
+					return true;
+				}else{
+					return false;
+				}
+			}
+
+			function getAllMemberImages(){
+				global $conn;
+				$sql = "SELECT * FROM member_image";
+				//debugger($sql); exit;
+				$query= mysqli_query($conn, $sql);
+				if(mysqli_num_rows($query) <= 0){
+					return false;
+		        }else{
+					$data[]=array();
+					while($rows = mysqli_fetch_assoc($query)){
+						$data = $rows;
+					}
+					return $data;
+				}
+			}
+			function getAllBannerImages(){
+				global $conn;
+				$sql = "SELECT * FROM banner_image";
+				//debugger($sql); exit;
+				$query= mysqli_query($conn, $sql);
+				if(mysqli_num_rows($query) <=0){
+					return false;
+		        }else{
+					$data[]=array();
+					while($rows = mysqli_fetch_assoc($query)){
+						$data = $rows;
+					}
+					return $data;
+				}
+			}
+
+			function getAllEventImages(){
+				global $conn;
+				$sql = "SELECT * FROM event_image";
+				//debugger($sql); exit;
+				$query= mysqli_query($conn, $sql);
+				if(mysqli_num_rows($query) <=0){
+					return false;
+		        }else{
+					$data[]=array();
+					while($rows = mysqli_fetch_assoc($query)){
+						$data = $rows;
+					}
+					return $data;
+				}
+			}
 
 ?>

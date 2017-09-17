@@ -4,8 +4,5 @@
       <?php include "inc/about_org.php";
             include "inc/slider.php";
       ?>
-
-
-
     </div>
 </div><!--templatemo_about-->

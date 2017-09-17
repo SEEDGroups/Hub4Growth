@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 	const SITE_URL = 'http://localhost/org3/';
 	const assets_url = SITE_URL.'assets/';

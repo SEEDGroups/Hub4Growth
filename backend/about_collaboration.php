@@ -1,22 +1,15 @@
-<?php session_start(); include 'inc/config.php'; include 'inc/dbconnect.php'; include 'inc/function.php'; ?>
-<?php 
-  include 'inc/header.php';  
-  include 'security_inside.php';
+<?php session_start(); include 'inc/config.php'; include 'inc/dbconnect.php'; include 'inc/function.php';  include 'security_inside.php';?>
+<?php include 'inc/header.php';	 ?>
+<?php
   include 'inc/navigation.php';
 ?>
-
- <div id="wrapper">
-
-       <?php include 'inc/navigation.php';?>
-
-        <div id="page-wrapper">
-
-            <div class="container-fluid">
-
-                <!-- Page Heading -->
-                <div class="row">
-                   
-                   <?php $Collaboration=getCollaboration(); ?>
+<div id="wrapper">
+  <?php include 'inc/navigation.php';?>
+    <div id="page-wrapper">
+      <div class="container-fluid">
+        <!-- Page Heading -->
+        <div class="row">
+          <?php $Collaboration=getCollaboration(); ?>
                     <div class="col-lg-12">
                       <?php include 'inc/notification.php';?>
 
@@ -28,7 +21,7 @@
                 <div class="row">
                  <form class="form-horizontal" method="POST" action="inc/about_process">
                  <?php foreach($Collaboration as $getCollaborationList){ ?>
-                 
+
                           <div class="form-group">
                             <label class="col-sm-2 control-label">Summary</label>
                             <div class="col-sm-6">
@@ -42,26 +35,21 @@
                              <input type="hidden" name="page" id="page" value="collaboration" class="form-control">
                             </div>
                           </div>
-                          
-                        
-                            <div class="form-group">
+
+                          <div class="form-group">
                             <label class="col-sm-2 control-label">Description</label>
                             <div class="col-sm-6">
                              <textarea name="description" id="description" class="form-control" rows="7" style="resize:vertical;"><?php echo html_entity_decode($getCollaborationList['description']); ?></textarea>
                             </div>
                           </div>
 
-                                        
-
-
                           <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-6">
                               <button type="submit" class="btn btn-success">Update</button>
-                             
-                          
                             </div>
                           </div>
-                        </form>
+
+                    </form>
                   </div>
                <?php
                   }
@@ -77,6 +65,6 @@
     </div>
     <!-- /#wrapper -->
 
-<?php 
+<?php
 include 'inc/tinymce_init.php';
 include 'inc/footer.php'; ?>

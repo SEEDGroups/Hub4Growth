@@ -25,9 +25,43 @@
                     </div>
                 </div>
                 <!-- /.row -->
+                <?php $totalEvents = getEvents();
+                  $totalMembers = getPositionofOrg();
+                  $getBannerImages = getAllBannerImages();
+                  $getEventImages = getAllEventImages();
+                  $getMemberImages = getAllMemberImages();
+                  $i = count($getBannerImages);
+                   $j = count($getEventImages);
+                   $k= count($getMemberImages);
+                   $totalImages = $i + $j + $k;
 
+                 ?>
                 <div class="row">
+                  <div class="col-lg-4">
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h3 class="panel-title"><i class="fa fa-area-chart fa-fw"></i> Tasks done</h3>
+                          </div>
+                          <div class="panel-body">
+                              <div class="list-group">
+                                  <a href="#" class="list-group-item">
+                                      <span class="badge"><?php echo count($totalEvents); ?></span>
+                                      <i class="fa fa-fw fa-calendar"></i> Total Events
+                                  </a>
+                                  <a href="#" class="list-group-item">
+                                      <span class="badge"><?php echo $totalImages; ?></span>
+                                      <i class="fa fa-fw fa-picture-o"></i> Total images uploaded
+                                  </a>
+                                  <a href="#" class="list-group-item">
+                                      <span class="badge"><?php echo count($totalMembers); ?></span>
+                                      <i class="fa fa-fw fa-users"></i> Total members
+                                  </a>
 
+                              </div>
+
+                          </div>
+                      </div>
+                  </div>
                 </div>
                 <!-- /.row -->
 

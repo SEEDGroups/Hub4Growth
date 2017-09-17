@@ -1,3 +1,4 @@
+<?php $current_page_active = basename($_SERVER['REQUEST_URI']);//$current_page = $_SERVER ?>
  <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -12,62 +13,7 @@
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
-                    <ul class="dropdown-menu message-dropdown">
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="image2">
-                                    </span>
-                                    <div class="media-body">
-
-                                        <h5 class="media-heading"><strong><?php echo $_SESSION['fullname'];?></strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="image3">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading"><strong><?php echo $_SESSION['fullname'];?></strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="image4">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading"><strong><?php echo $_SESSION['fullname'];?></strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-footer">
-                            <a href="#">Read All New Messages</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="dropdown">
+              <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $_SESSION['fullname'];?>
 
                      <b class="caret"></b></a>
@@ -82,53 +28,54 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li class="active">
-                        <a href="index" title="Dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    <li class="<?php echo ($current_page_active == "dashboard") ? 'active' : ''; ?>">
+                        <a href="dashboard" title="Dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
-                    <?php if($_SESSION['role'] != 2){ ?>
-                       <li>
+
+                    <li class="<?php echo ($current_page_active == "about_vision" || $current_page_active == "about_contribution" || $current_page_active == "about_collaboration" || $current_page_active == "about_research") ? 'active' : ''; ?>">
                         <a href="javascript:;" data-toggle="collapse" data-target="#about"><i class="fa fa-fw fa-users"></i> About HUB4GROWTH<i class="fa fa-fw fa-caret-down"></i></a>
                          <ul class="collapse" id="about">
-                            <li>
-                                <a href="about_vision.php" title='Vision & Mission'><i class="fa fa-fw fa-plus"></i> Vision & Mission</a>
+                            <li class="<?php echo ($current_page_active == "about_vision") ? 'active' : ''; ?>">
+                                <a href="about_vision" title='Vision & Mission'><i class="fa fa-fw fa-plus"></i> Vision & Mission</a>
                             </li>
 
-                            <li>
+                            <li class="<?php echo ($current_page_active == "about_contribution") ? 'active' : ''; ?>">
                                 <a href="about_contribution"><i class="fa fa-fw fa-list"></i>Contribution to National &nbsp &nbsp &nbsp Development</a>
                             </li>
-                            <li>
+                            <li class="<?php echo ($current_page_active == "about_collaboration") ? '' : ''; ?>">
                                 <a href="about_collaboration"><i class="fa fa-fw fa-list"></i>Collaboration</a>
                             </li>
-                            <li>
+                            <li class="<?php echo ($current_page_active == "about_research") ? 'active' : ''; ?>">
                                 <a href="about_research" title="Research & Technology"><i class="fa fa-fw fa-list"></i>Research & Technology</a>
                             </li>
                         </ul>
                     </li>
-                        <li>
-                                <a href="list_position" title="Member's lists"><i class="fa fa-fw fa-bars"></i> List Members</a>
-                        </li>
 
-                    <?php } ?>
-                    <li>
-                                <a href="contact" title="Contact Info"><i class="fa fa-fw fa-plus"></i> Contact Info</a>
-                        </li>
+                    <li class="<?php echo ($current_page_active == "list_position") ? 'active' : ''; ?>">
+                            <a href="list_position" title="Member's lists"><i class="fa fa-fw fa-bars"></i> List Members</a>
+                    </li>
 
-                    <li>
+                    <li class="<?php echo ($current_page_active == "contact") ? 'active' : ''; ?>">
+                            <a href="contact" title="Contact Info"><i class="fa fa-fw fa-plus"></i> Contact Info</a>
+                    </li>
+
+                    <li class="<?php echo ($current_page_active == "list_events" || $current_page_active == "events") ? 'active' : ''; ?>">
                         <a href="javascript:;" data-toggle="collapse" data-target="#events"><i class="fa fa-fw fa-calendar"></i> Events<i class="fa fa-fw fa-caret-down"></i></a>
                          <ul class="collapse" id="events">
-                            <li>
-                                <a href="events"><i class="fa fa-fw fa-plus"></i> &nbsp;Add Events</a>
+                            <li class="<?php echo ($current_page_active == "banner_list") ? 'active' : ''; ?>">
+                                <a href="events" title="Event Add"><i class="fa fa-fw fa-plus"></i> &nbsp;Add Events</a>
                             </li>
-                             <li>
+                             <li class="<?php echo ($current_page_active == "banner_list") ? 'active' : ''; ?>">
                                         <a href="list_events"><i class="fa fa-fw fa-table"></i> List Events</a>
                             </li>
                          </ul>
                     </li>
 
-                    <li>
+                    <li class="<?php echo ($current_page_active == "banner_list") ? 'active' : ''; ?>">
                                 <a href="banner_list"><i class="fa fa-fw fa-picture-o"></i> Banners</a>
                     </li>
-                    <li>
+
+                    <li class="<?php echo ($current_page_active == "enquiry") ? 'active' : ''; ?>">
                                 <a href="enquiry"><i class="fa fa-fw fa-server"></i> List Enquries</a>
                     </li>
 
