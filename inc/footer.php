@@ -23,7 +23,7 @@
                     <a href="#"><i class="fa fa-twitter"></i></a> 
                 </li> -->
                 <li>
-                    <a href="<?php echo $contact[link]; ?>" title="CIDS Nepal"><i class="fa fa-facebook"></i></a> 
+                    <a href="<?php echo $contact['link']; ?>" title="CIDS Nepal"><i class="fa fa-facebook"></i></a> 
                 </li>
                 <!-- <li>
                     <a href="#"><i class="fa fa-youtube"></i></a> 

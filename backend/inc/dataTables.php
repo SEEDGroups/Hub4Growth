@@ -12,4 +12,8 @@ $(document).ready(function() {
 $(document).ready(function(){
 	$('#listEnquiry').dataTable();
 });
+$(document).ready(function(){
+	$('#listEvents').dataTable();
+});
+
 </script>

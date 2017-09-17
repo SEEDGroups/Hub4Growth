@@ -48,7 +48,88 @@ function getAllabout(){
 			}return $data;
 		}
 	}	
+
+		function getVision(){
+		global $conn;
+		$sql = "SELECT * FROM about_org WHERE id=1";
+		$query = mysqli_query($conn, $sql);
+		if(mysqli_num_rows($query) <1){
+			return 0;
+		}else{
+			$data = array();
+			while($rows = mysqli_fetch_assoc($query)){
+				$data[] = $rows;
+			}return $data;
+		}
+	}
+
+function getContribution (){
+		global $conn;
+		$sql = "SELECT * FROM about_org WHERE id=2";
+		$query = mysqli_query($conn, $sql);
+		if(mysqli_num_rows($query) <1){
+			return 0;
+		}else{
+			$data = array();
+			while($rows = mysqli_fetch_assoc($query)){
+				$data[] = $rows;
+			}return $data;
+		}
+	}
+	function getCollaboration(){
+		global $conn;
+		$sql = "SELECT * FROM about_org WHERE id=3";
+		$query = mysqli_query($conn, $sql);
+		if(mysqli_num_rows($query) <1){
+			return 0;
+		}else{
+			$data = array();
+			while($rows = mysqli_fetch_assoc($query)){
+				$data[] = $rows;
+			}return $data;
+		}
+	}
 	
-	
+	function getResearch(){
+		global $conn;
+		$sql = "SELECT * FROM about_org WHERE id=4";
+		$query = mysqli_query($conn, $sql);
+		if(mysqli_num_rows($query) <1){
+			return 0;
+		}else{
+			$data = array();
+			while($rows = mysqli_fetch_assoc($query)){
+				$data[] = $rows;
+			}return $data;
+		}
+	}
+
+	function getEvents(){
+		global $conn;
+		$sql = "SELECT * FROM achievement WHERE event_type=1";
+		$query = mysqli_query($conn, $sql);
+		if(mysqli_num_rows($query) <1){
+			return 0;
+		}else{
+			$data = array();
+			while($rows = mysqli_fetch_assoc($query)){
+				$data[] = $rows;
+			}return $data;
+		}
+	}
+	function getTimeline(){
+		global $conn;
+		$sql = "SELECT * FROM achievement WHERE event_type=2";
+		$query = mysqli_query($conn, $sql);
+		if(mysqli_num_rows($query) <1){
+			return 0;
+		}else{
+			$data = array();
+			while($rows = mysqli_fetch_assoc($query)){
+				$data[] = $rows;
+			}return $data;
+		}
+	}
+
 
 ?>

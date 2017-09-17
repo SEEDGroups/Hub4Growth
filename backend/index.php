@@ -2,7 +2,7 @@
 <?php 
     include 'inc/header.php';
     include 'security_inside.php';
-    include 'inc/navigation2.php';
+    include 'inc/navigation.php';
 ?>
     <div id="wrapper">
 
@@ -14,8 +14,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <?php include 'inc/notification.php'; ?>
-                        <h1 class="page-header">
-                            Dashboard <small>Design by Ansuman</small>
+                        <h1 class="page-header">Admin 
+                            Dashboard <small></small>
                         </h1>
                         <ol class="breadcrumb">
                             <li class="active">

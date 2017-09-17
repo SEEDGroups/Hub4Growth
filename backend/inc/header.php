@@ -17,7 +17,9 @@
     <!-- Custom CSS -->
     <link href="<?php echo CSS_URL; ?>sb-admin.css" rel="stylesheet">
 
-   
+    <!-- Morris Charts CSS -->
+    <link href="<?php echo CSS_URL; ?>plugins/morris.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="<?php echo FONTAWE_URL; ?>css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -33,8 +35,6 @@
             font-family: cursive;
         }
     </style>
-        <!-- jQuery -->
-    <script src="<?php echo JS_URL; ?>jquery.js"></script>
 </head>
 
 <body>

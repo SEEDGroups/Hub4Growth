@@ -1,9 +1,8 @@
-<?php
+<?php 
 	const SITE_MAP = "http://localhost/CIDS/backend/";
 	const ASSETS = SITE_MAP."assets/";
 	const CSS_URL = ASSETS."css/";
 	const JS_URL = ASSETS."js/";
-	const IMAGE_URL = ASSETS."images/";
 	const FONTAWE_URL = ASSETS."font-awesome/";
 	const FONT_URL = ASSETS."fonts/";
 	const INC_URL = SITE_MAP."inc/";

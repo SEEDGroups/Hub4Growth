@@ -1,10 +1,12 @@
+<?php $getTimeline=getTimeline(); ?>
 <div id="templatemo_timeline" class="container_wapper">
+
     <h1>Timeline</h1>
     <div class="container-fluid">
         <div class="time_line_wap">
             <div class="time_line_caption">10 days ago</div>
             <div class="time_line_paragraph">
-                <h1 data-toggle="modal" data-target="#myModal1">Lorem ipsum dolor sit amet</h1>
+                <h1 data-toggle="modal" data-target="#myModal1">1111</h1>
 
                 <p>Aliquam adipiscing nibh sem, vitae aliquet ipsum rutrum nec. Nulla nec fermentum libero. Duis quis fermentum libero. Nunc facilisis ultrices fringilla. Nullam sed ligula ac libero venenatis pellentesque vitae nec mauris.</p>
             </div>

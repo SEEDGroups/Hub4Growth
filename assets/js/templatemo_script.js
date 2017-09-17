@@ -1,15 +1,3 @@
-/*  Free Template by www.templatemo.com  */
-
-
-
-/*
-
-Dragonfruit Template
-
-http://www.templatemo.com/preview/templatemo_411_dragonfruit
-
-*/
-
 
 
 jQuery(function(){

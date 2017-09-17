@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index">HUB4GROWTH Admin</a>
+                <a class="navbar-brand" href="index">HUB4GROWTH Admin Panel</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -19,7 +19,7 @@
                             <a href="#">
                                 <div class="media">
                                     <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="image2">
                                     </span>
                                     <div class="media-body">
                                        
@@ -35,7 +35,7 @@
                             <a href="#">
                                 <div class="media">
                                     <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="image3">
                                     </span>
                                     <div class="media-body">
                                         <h5 class="media-heading"><strong><?php echo $_SESSION['fullname'];?></strong>
@@ -50,7 +50,7 @@
                             <a href="#">
                                 <div class="media">
                                     <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="image4">
                                     </span>
                                     <div class="media-body">
                                         <h5 class="media-heading"><strong><?php echo $_SESSION['fullname'];?></strong>
@@ -70,7 +70,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
                     <ul class="dropdown-menu alert-dropdown">
                         <li>
-                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                            <a href="#">first Name <span class="label label-default">Alert Badge</span></a>
                         </li>
                         <li>
                             <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
@@ -94,7 +94,9 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $_SESSION['fullname'];?> <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $_SESSION['fullname'];?>
+                                            
+                     <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
@@ -153,7 +155,7 @@
                                 <a href="events"><i class="fa fa-fw fa-plus"></i> &nbsp;Add Events</a>
                             </li>
                              <li>
-                                        <a href="#"><i class="fa fa-fw fa-table"></i> List Events</a>
+                                        <a href="list_events"><i class="fa fa-fw fa-table"></i> List Events</a>
                             </li>
                          </ul>
                     </li>
