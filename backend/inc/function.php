@@ -1,11 +1,11 @@
-<?php 
-	
+<?php
+
 	function debugger($array, $is_die = false){
 		echo "<pre>";
 		print_r($array);
 		echo "</pre>";
 		if($is_die){
-			echo "There is some problem";
+
 			exit;
 		}
 	}
@@ -19,20 +19,6 @@
 		return $string;
 	}
 
-	function getSuperuser($username){
-		global $conn;
-		$sql = "SELECT * FROM root_user WHERE username = '$username'";
-		$query = mysqli_query($conn, $sql); 
-		if(mysqli_num_rows($query) <= 0){
-			return 0;
-		}else{
-			$data[]= array(); //becomes a single array
-			while($rows = mysqli_fetch_assoc($query)){
-				$data = $rows; //takes only one array
-			}return($data);
-		}
-	}
-
 	function getUser($username){
 		global $conn;
 		$sql = "SELECT * from users where username = '$username'";
@@ -40,9 +26,9 @@
 		if(mysqli_num_rows($query) <= 0){
 			return 0;
 		}else{
-			$data[]= array(); 
+			$data[]= array();
 			while($rows = mysqli_fetch_assoc($query)){
-				$data = $rows; 
+				$data = $rows;
 			}return $data;
 		}
 	}
@@ -91,9 +77,9 @@
 
 	function getPositionofOrg(){
 		global $conn;
-		$sql = "SELECT * FROM positions ORDER BY pos_title asc";
+		$sql = "SELECT positions.*, member_image.image_title FROM positions LEFT JOIN member_image on positions.id = member_image.member_id ORDER BY positions.id desc";
 		$query = mysqli_query($conn, $sql);
-		if(mysqli_num_rows($query) <=1){
+		if(mysqli_num_rows($query) <1){
 			return 0;
 		}else{
 			$data = array();
@@ -196,6 +182,134 @@ function getContribution (){
 	}
 
 
+	function addMember($data){
+		global $conn;
+		$fields = array_keys($data);
+		$values = array_values($data);
+		$sql= "INSERT INTO positions (".implode(", ", $fields).")VALUES('".implode("', '", $values)."')";
+    $query = mysqli_query($conn, $sql);
 
+		if($query){
+   		$last_id = $conn->insert_id;
+			return $last_id;
+    }else{
+     return false;
+    }
+	}
+	
+	function updateMember($data){
+		global $conn;
+		$fields = array_keys($data);
+		$values = array_values($data);
+		$sql= "UPDATE positions (".implode(", ", $fields).")VALUES('".implode("', '", $values)."')";
+        $query = mysqli_query($conn, $sql);
+
+		if($query){
+   		$last_id = $conn->insert_id;
+			return $last_id;
+        }else{
+        return false;
+        }
+	}
+	
+	function getAllInfoOfMemberById($value){
+		global $conn;
+		$sql = "SELECT positions.*, member_image.image_title FROM positions left join member_image ON positions.id = member_image.member_id where positions.id = ".$value."";
+		//debugger($sql); exit;
+		$query= mysqli_query($conn, $sql);
+		if(mysqli_num_rows($query) <1){
+			return false;
+        }else{
+			$data[]=array();
+			while($rows = mysqli_fetch_assoc($query)){
+				$data = $rows;
+			}
+			return $data;
+		}
+	}
+
+	function deleteData($tablename, $field, $value){
+        global $conn;
+
+        $sql= "DELETE FROM ".$tablename." WHERE ".$field." = ".$value."";
+        $query = mysqli_query($conn, $sql);
+        if($query){
+            return true;
+    }
+        else{
+            return false;
+        }
+    }
+    
+	function getBanners(){
+		global $conn;
+		$sql = "SELECT banner_info.*, banner_image.banner_title FROM banner_info LEFT JOIN banner_image on banner_info.id = banner_image.banner_id ORDER BY banner_info.id desc limit 3";
+		$query = mysqli_query($conn, $sql);
+		if(mysqli_num_rows($query) <1){
+			return 0;
+		}else{
+			$data = array();
+			while($rows = mysqli_fetch_assoc($query)){
+				$data[] = $rows;
+			}return $data;
+		}
+	}
+    
+    function upDateData($tablename, $field, $value){
+        global $conn;
+
+        $sql= "UPDATE ".$tablename." WHERE ".$field." = ".$value."";
+        $query = mysqli_query($conn, $sql);
+        if($query){
+            return true;
+    }
+        else{
+            return false;
+        }
+    }
+    
+	function getFileExtension($fileName){
+		$ext = pathinfo($fileName, PATHINFO_EXTENSION);
+		return $ext;
+	}
+
+	function addProfileImages($images, $member_id){
+        global $conn;
+        $sql = "INSERT INTO member_image SET image_title = '$images', member_id='$member_id'";
+        $query = mysqli_query($conn, $sql);
+        if($query){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    
+    
+	function addBannerInfo($data){
+		global $conn;
+		$fields = array_keys($data);
+		$values = array_values($data);
+		$sql= "INSERT INTO banner_info (".implode(", ", $fields).")VALUES('".implode("', '", $values)."')";
+    $query = mysqli_query($conn, $sql);
+
+		if($query){
+   		$last_id = $conn->insert_id;
+			return $last_id;
+    }else{
+     return false;
+    }
+	}
+	
+    function addBannerImage($images, $banner_id){
+     global $conn;
+        $sql = "INSERT INTO banner_image SET image_title = '$images', member_id='$banner_id'";
+        $query = mysqli_query($conn, $sql);
+        if($query){
+            return true;
+        }else{
+            return false;
+        }
+	}
+    
 
 ?>

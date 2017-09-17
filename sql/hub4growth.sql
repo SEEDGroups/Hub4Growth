@@ -1,4 +1,5 @@
 -- phpMyAdmin SQL Dump
+<<<<<<< HEAD
 -- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
@@ -6,6 +7,15 @@
 -- Generation Time: Sep 17, 2017 at 03:44 AM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.8
+=======
+-- version 4.7.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:3306
+-- Generation Time: Sep 16, 2017 at 04:44 AM
+-- Server version: 5.7.18
+-- PHP Version: 7.1.7
+>>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,14 +29,20 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
+<<<<<<< HEAD
 -- Database: `cids`
 --
 CREATE DATABASE IF NOT EXISTS `cids` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `cids`;
+=======
+-- Database: `hub4growth`
+--
+>>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Table structure for table `about_org`
 --
 
@@ -71,10 +87,23 @@ INSERT INTO `about_org_id` (`id`, `about_title`, `added_date`, `updated_date`) V
 (2, 'Contribution to National Development', '2017-09-13 14:07:22', NULL),
 (3, 'Collaboration', '2017-09-13 14:07:22', NULL),
 (4, 'Research & Technology', '2017-09-13 14:07:22', NULL);
+=======
+-- Table structure for table `banner_image`
+--
+
+CREATE TABLE `banner_image` (
+  `id` int(11) NOT NULL,
+  `banner_title` text COLLATE utf8_unicode_ci,
+  `banner_id` int(11) DEFAULT NULL,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+>>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Table structure for table `achievement`
 --
 
@@ -116,6 +145,30 @@ CREATE TABLE `banner` (
   `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
   `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+=======
+-- Table structure for table `banner_info`
+--
+
+CREATE TABLE `banner_info` (
+  `id` int(11) NOT NULL,
+  `caption` text COLLATE utf8_unicode_ci,
+  `description` text COLLATE utf8_unicode_ci,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `banner_info`
+--
+
+INSERT INTO `banner_info` (`id`, `caption`, `description`, `added_date`, `updated_date`) VALUES
+(1, 'London Bridge', 'London ma bhayeko bridge', '2017-09-16 16:19:01', NULL),
+(2, 'London Bridge', 'London ma bhayeko bridge', '2017-09-16 16:33:55', NULL),
+(3, 'London Bridge', 'London ma bhayeko bridge', '2017-09-16 16:36:11', NULL),
+(4, 'hello', 'hello', '2017-09-16 16:38:25', NULL),
+(5, 'London Bridge', 'London ma bhayeko bridge', '2017-09-16 16:45:01', NULL),
+(6, 'London Bridge', 'London ma bhayeko bridge', '2017-09-16 16:52:32', NULL);
+>>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 
 -- --------------------------------------------------------
 
@@ -141,7 +194,18 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`id`, `description`, `email`, `phone`, `fax`, `address`, `pobox`, `link`, `added_date`, `updated_date`) VALUES
+<<<<<<< HEAD
 (1, 'This is Our Contact Info1.', 'admin@test.com', '9876543210', '01-5512647', 'Pulchowk, Lalitpur, Nepal', '7765', 'https://www.facebook.com/nepal', '2017-09-12 15:54:55', '2017-09-16 13:10:01');
+=======
+(1, 'This is Our New Contact Info.', '', '9876543210', '', '', '7765', 'fb.com/cids', '2017-09-12 15:54:55', NULL),
+(2, 'segs', '', 'sgsfd', '', '', 'gsfgs', '', '2017-09-12 15:58:45', NULL),
+(3, '', 'fafadf', 'fadf', 'fadsfad', 'fad', 'afadf', '', '2017-09-12 16:02:17', NULL),
+(4, '', 'info@cids.com', '0987654321', '014478332', 'Pulchowk,Lalitpur', '6532', 'fb.com/cidsnepal', '2017-09-12 16:03:50', NULL),
+(5, '', 'info@cids.com', '0987654321', '014478332', 'Pulchowk,Lalitpur', '6532', 'fb.com/cidsnepal', '2017-09-12 16:04:29', NULL),
+(6, 'dsaf', 'new@cids.com', '9801234567', '5357463', 'ktm', '1242', 'fb.com/cids', '2017-09-12 16:08:01', NULL),
+(7, 'efa', 'fjiab@jhsaobvo', 'ue387238', '878987987', 'shfi', '7878', 'ahdfoua/afca', '2017-09-12 16:32:59', NULL),
+(8, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec arcu vestibulum, elementum ligula a, finibus augue. Donec euismod, velit et rutrum pulvinar, turpis diam luctus enim, quis egestas neque ex sit amet ipsum. Nunc sit amet interdum massa. Ut tincidunt est eros, sed scelerisque lacus pellentesque ut. Sed augue arcu, auctor non aliquet quis, ultrices quis ante. Donec imperdiet metus ac magna finibus sodales. Donec iaculis urna sollicitudin auctor rhoncus.', 'info@cids.com', '+977-9841806109, +977-9851215787', '+977-1-5525830', 'Pulchowk, Lalitpur, Nepal', '1157', 'https://www.facebook.com/nepal', '2017-09-12 16:53:43', NULL);
+>>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 
 -- --------------------------------------------------------
 
@@ -169,6 +233,31 @@ INSERT INTO `enquiry` (`id`, `fullname`, `email`, `subject`, `message`, `added_d
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
+=======
+-- Table structure for table `member_image`
+--
+
+CREATE TABLE `member_image` (
+  `id` int(11) NOT NULL,
+  `image_title` text COLLATE utf8_unicode_ci,
+  `member_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `member_image`
+--
+
+INSERT INTO `member_image` (`id`, `image_title`, `member_id`) VALUES
+(3, 'Hub4Growth-164843201.jpg', NULL),
+(4, 'Hub4Growth-228780728.jpg', NULL),
+(5, 'Hub4Growth-436747300.jpg', 107),
+(6, 'Hub4Growth-33083279.jpg', 110);
+
+-- --------------------------------------------------------
+
+--
+>>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 -- Table structure for table `org_events`
 --
 
@@ -196,6 +285,11 @@ CREATE TABLE `positions` (
   `pos_title` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
   `pos_description` text COLLATE utf8_unicode_ci,
   `message` text COLLATE utf8_unicode_ci,
+<<<<<<< HEAD
+=======
+  `name` text COLLATE utf8_unicode_ci,
+  `type` int(11) DEFAULT NULL,
+>>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
   `added_by` int(11) DEFAULT NULL,
   `status` int(11) DEFAULT NULL,
   `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
@@ -206,8 +300,14 @@ CREATE TABLE `positions` (
 -- Dumping data for table `positions`
 --
 
+<<<<<<< HEAD
 INSERT INTO `positions` (`id`, `pos_title`, `pos_description`, `message`, `added_by`, `status`, `added_date`, `updated_date`) VALUES
 (1, 'CEO', 'Main person of company', NULL, 1, 1, '2017-08-26 14:59:33', NULL);
+=======
+INSERT INTO `positions` (`id`, `pos_title`, `pos_description`, `message`, `name`, `type`, `added_by`, `status`, `added_date`, `updated_date`) VALUES
+(107, 'Researcher', 'A TYPE OF RESSEARCHER', 'dummy text', 'Tej Binod Pandey', 1, NULL, 1, '2017-09-16 10:38:05', '2017-09-16 13:23:20'),
+(110, 'Chairperson', 'Chair ma basne manche', 'Chair aaram dai hos', 'Samyam Bro', 0, NULL, 1, '2017-09-16 14:20:35', NULL);
+>>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 
 -- --------------------------------------------------------
 
@@ -231,14 +331,19 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `fullname`, `username`, `user_password`, `status`, `role_id`, `added_date`, `updated_date`) VALUES
+<<<<<<< HEAD
 (1, 'Admin', 'admin', 'e62a3f6cb73ede63968f989b2c9584f32ec8c420', 1, 1, '2017-08-26 11:06:43', '2017-09-12 14:52:58'),
 (2, 'user', 'user', '12dea96fec20593566ab75692c9949596833adc9', NULL, NULL, '2017-09-15 15:43:35', '2017-09-15 15:49:38');
+=======
+(1, 'Admin', 'admin', 'e62a3f6cb73ede63968f989b2c9584f32ec8c420', 1, 1, '2017-08-26 11:06:43', '2017-09-12 14:52:58');
+>>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 
 --
 -- Indexes for dumped tables
 --
 
 --
+<<<<<<< HEAD
 -- Indexes for table `about_org`
 --
 ALTER TABLE `about_org`
@@ -261,6 +366,18 @@ ALTER TABLE `achievement`
 -- Indexes for table `banner`
 --
 ALTER TABLE `banner`
+=======
+-- Indexes for table `banner_image`
+--
+ALTER TABLE `banner_image`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `banner_id` (`banner_id`);
+
+--
+-- Indexes for table `banner_info`
+--
+ALTER TABLE `banner_info`
+>>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
   ADD PRIMARY KEY (`id`);
 
 --
@@ -276,6 +393,16 @@ ALTER TABLE `enquiry`
   ADD PRIMARY KEY (`id`);
 
 --
+<<<<<<< HEAD
+=======
+-- Indexes for table `member_image`
+--
+ALTER TABLE `member_image`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `member_id` (`member_id`);
+
+--
+>>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 -- Indexes for table `org_events`
 --
 ALTER TABLE `org_events`
@@ -300,6 +427,7 @@ ALTER TABLE `users`
 --
 
 --
+<<<<<<< HEAD
 -- AUTO_INCREMENT for table `about_org`
 --
 ALTER TABLE `about_org`
@@ -319,17 +447,40 @@ ALTER TABLE `achievement`
 --
 ALTER TABLE `banner`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+=======
+-- AUTO_INCREMENT for table `banner_image`
+--
+ALTER TABLE `banner_image`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `banner_info`
+--
+ALTER TABLE `banner_info`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+>>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 --
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+>>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 --
 -- AUTO_INCREMENT for table `enquiry`
 --
 ALTER TABLE `enquiry`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
+<<<<<<< HEAD
+=======
+-- AUTO_INCREMENT for table `member_image`
+--
+ALTER TABLE `member_image`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+>>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 -- AUTO_INCREMENT for table `org_events`
 --
 ALTER TABLE `org_events`
@@ -338,21 +489,36 @@ ALTER TABLE `org_events`
 -- AUTO_INCREMENT for table `positions`
 --
 ALTER TABLE `positions`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=111;
+>>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+>>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 --
 -- Constraints for dumped tables
 --
 
 --
+<<<<<<< HEAD
 -- Constraints for table `about_org`
 --
 ALTER TABLE `about_org`
   ADD CONSTRAINT `about_org_ibfk_1` FOREIGN KEY (`about_org_id`) REFERENCES `about_org_id` (`id`) ON DELETE SET NULL ON UPDATE CASCADE;
+=======
+-- Constraints for table `member_image`
+--
+ALTER TABLE `member_image`
+  ADD CONSTRAINT `member_image_ibfk_1` FOREIGN KEY (`member_id`) REFERENCES `positions` (`id`) ON DELETE SET NULL ON UPDATE CASCADE;
+>>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 
 --
 -- Constraints for table `org_events`
@@ -365,6 +531,7 @@ ALTER TABLE `org_events`
 --
 ALTER TABLE `positions`
   ADD CONSTRAINT `positions_ibfk_1` FOREIGN KEY (`added_by`) REFERENCES `users` (`id`) ON DELETE SET NULL ON UPDATE CASCADE;
+<<<<<<< HEAD
 --
 -- Database: `phpmyadmin`
 --
@@ -831,6 +998,8 @@ ALTER TABLE `pma__savedsearches`
 --
 CREATE DATABASE IF NOT EXISTS `test` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `test`;
+=======
+>>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
