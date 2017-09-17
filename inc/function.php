@@ -133,7 +133,7 @@ function getContribution (){
 
 	function getBanners(){
 		global $conn;
-		$sql = "SELECT banner_info.*, banner_image.banner_title FROM banner_info LEFT JOIN banner_image on banner_info.id = banner_image.banner_id ORDER BY banner_info.id desc limit 3";
+		$sql = "SELECT banner_info.*, banner_image.banner_title FROM banner_info LEFT JOIN banner_image on banner_info.id = banner_image.banner_id ORDER BY banner_info.id desc limit 4";
 		$query = mysqli_query($conn, $sql);
 		if(mysqli_num_rows($query) <1){
 			return 0;

@@ -5,6 +5,7 @@
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
   </ol>
 
   <!-- Wrapper for slides -->
@@ -25,6 +26,12 @@
     </div>
     <div class="item">
       <img src="<?php echo UPLOADED_IMAGE.$getAllBanner[2]['banner_title']; ?>" style="width: 100%; height: 800px !important;" alt="<?php $getAllBanner[2]['caption']; ?>">
+      <div class="carousel-caption">
+      <h2><?php echo $getAllBanner[2]['caption']; ?></h2>
+      </div>
+    </div>
+    <div class="item">
+      <img src="<?php echo UPLOADED_IMAGE.$getAllBanner[3]['banner_title']; ?>" style="width: 100%; height: 800px !important;" alt="<?php $getAllBanner[2]['caption']; ?>">
       <div class="carousel-caption">
       <h2><?php echo $getAllBanner[2]['caption']; ?></h2>
       </div>
