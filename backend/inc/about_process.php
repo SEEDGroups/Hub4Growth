@@ -5,7 +5,7 @@
 
 	if(isset($_POST) && !empty($_POST)){
 		$summary = sanitize($_POST['summary']);
-		$description = sanitize($_POST['description']);
+		$description = htmlentities($_POST['description']);
 		$page = sanitize($_POST['page']);
 		if($page=="Vision and mission"){
 			$id=1;

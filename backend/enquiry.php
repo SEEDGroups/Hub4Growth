@@ -8,22 +8,7 @@
 <?php
          include 'inc/function.php'; include 'inc/dbconnect.php';
         include 'security_inside.php';
-if(isset($_GET['id']) && !empty($_GET['id'])){
-  $id = sanitize($_GET['id']);
-
-  $del = deleteData('user_registration', 'id', $id);
-  
-  if($del == 1){
-    $_SESSION['SUCCESS'] = "User has been deleted successfully";
-     @header('location: usr_list.php');
-   exit;
-   }else{
-    $_SESSION['ERROR'] = "User couldn't be deleted at this moment.";   
-     @header('location: usr_list.php');
-   exit;
-   }
-}
-        
+    
     ?>
 
 

@@ -21,7 +21,7 @@
                 </div>
                 <div class="row" style="margin-top: 15px;">
                   <label class="col-sm-2 control-label">Description</label>
-                  <div class = "col-sm-10"><?php echo $visionDetail['description']; ?></div>
+                  <div class = "col-sm-10"><?php echo html_entity_decode($visionDetail['description']); ?></div>
                 </div>
               </div>
 
@@ -56,7 +56,7 @@
                   </div>
                   <div class="row" style="margin-top: 15px;">
                     <label class="col-sm-2 control-label">Description</label>
-                    <div class = "col-sm-10"><?php echo $contributionDetail['description']?></div>
+                    <div class = "col-sm-10"><?php echo html_entity_decode($contributionDetail['description'])?></div>
                   </div>
                 </div>
                 <div class="modal-footer">
@@ -91,7 +91,7 @@
                   </div>
                   <div class="row" style="margin-top: 15px;">
                     <label class="col-sm-2 control-label">Description</label>
-                    <div class = "col-sm-10"><?php echo $collaborationDetail['description']?></div>
+                    <div class = "col-sm-10"><?php echo html_entity_decode($collaborationDetail['description'])?></div>
                   </div>
                 </div>
                 <div class="modal-footer">
@@ -128,7 +128,7 @@
                   </div>
                   <div class="row" style="margin-top: 15px;">
                     <label class="col-sm-2 control-label">Description</label>
-                    <div class = "col-sm-10"><?php echo $researchDetail['description']?></div>
+                    <div class = "col-sm-10"><?php echo html_entity_decode($researchDetail['description'])?></div>
                   </div>
                 </div>
                 <div class="modal-footer">

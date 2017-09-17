@@ -1,6 +1,7 @@
 
 <?php session_start(); include 'inc/config.php'; include 'inc/dbconnect.php'; include 'inc/function.php'; $page="Add"; ?>
 <?php include 'inc/header.php'; ?>
+
 <?php 
       include 'security_inside.php'; 
       if(isset($_GET['id']) && isset($_GET['act'])){
@@ -64,7 +65,7 @@
                           <div class="form-group">
                             <label class="col-sm-2 control-label">Summary</label>
                             <div class="col-sm-6">
-                             <textarea class="form-control" name="event_summary" id="event_summary"rows="3" style="resize:none;"></textarea>
+                             <textarea class="form-control" name="event_summary" id="event_summary" rows="3" style="resize:vertical;"></textarea>
                             </div>
                           </div>
                           <div class="form-group">
@@ -130,7 +131,7 @@
 
     </div>
     <!-- /#wrapper -->
- 
 
-<?php include 'inc/footer.php';?>
-
+<?php 
+include 'inc/tinymce_init.php';
+include 'inc/footer.php';?>

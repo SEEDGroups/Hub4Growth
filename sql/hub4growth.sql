@@ -1,21 +1,11 @@
 -- phpMyAdmin SQL Dump
-<<<<<<< HEAD
 -- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 17, 2017 at 03:44 AM
+-- Generation Time: Sep 17, 2017 at 06:56 AM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.8
-=======
--- version 4.7.1
--- https://www.phpmyadmin.net/
---
--- Host: localhost:3306
--- Generation Time: Sep 16, 2017 at 04:44 AM
--- Server version: 5.7.18
--- PHP Version: 7.1.7
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -29,20 +19,12 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
-<<<<<<< HEAD
 -- Database: `cids`
 --
-CREATE DATABASE IF NOT EXISTS `cids` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `cids`;
-=======
--- Database: `hub4growth`
---
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 
 -- --------------------------------------------------------
 
 --
-<<<<<<< HEAD
 -- Table structure for table `about_org`
 --
 
@@ -60,7 +42,7 @@ CREATE TABLE `about_org` (
 --
 
 INSERT INTO `about_org` (`id`, `about_org_id`, `summary`, `description`, `added_date`, `updated_date`) VALUES
-(1, 1, 'Hub4Growth has published â€˜Developing Employability and Entrepreneurship in Higher Education - Handbook 2017â€™. The publication includes interesting data and examples of good practice in enterprise and employability activities in Higher Education in three EU countries...', 'vision Description', '2017-09-13 17:08:17', '2017-09-16 17:18:37'),
+(1, 1, 'Hub4Growth has published â€˜Developing Employability and Entrepreneurship in Higher Education - Handbook 2017â€™. The publication includes interesting data and examples of good practice in enterprise and employability activities in Higher Education in three EU countries...1223', '&lt;!DOCTYPE html&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;\r\n&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;p&gt;vision Description3&lt;span style=&quot;text-decoration: line-through;&quot;&gt;2323 &amp;nbsp; &amp;nbsp;&lt;/span&gt; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #ff0000;&quot;&gt;DACDACCCXZ&lt;/span&gt;c &amp;nbsp; &amp;nbsp;csdvczvczxvvcvcx&lt;span style=&quot;color: #0000ff;&quot;&gt;vxzvz xz vzvfdvzvzxvcxvxz&amp;nbsp;&lt;span style=&quot;background-color: #3366ff; color: #ffffff;&quot;&gt;vzvzdfvzxvzxcvzxcvxczvxczvvcv &amp;nbsp;z&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\r\n&lt;p&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&lt;span style=&quot;background-color: #3366ff; color: #ffffff;&quot;&gt;&amp;nbsp; vsdvczxcvzxvczxc&lt;/span&gt;zvzxcvzxcvxzcvxczv&lt;/span&gt;&lt;/p&gt;\r\n&lt;p&gt;vzxcvxczvzxcvcxzvzxcv&lt;span style=&quot;color: #ffff00;&quot;&gt;x&lt;em&gt;&lt;strong&gt;czvxzcvzxcvxcz&lt;/strong&gt;&lt;/em&gt;&lt;em&gt;&lt;strong&gt;&lt;span style=&quot;color: #000000;&quot;&gt;zxcvxczvzxcvzxcv&lt;/span&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;\r\n&lt;p&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&lt;span style=&quot;background-color: #3366ff; color: #ffffff;&quot;&gt;xcvzxcvxzcvvxxzcvzxcvvzxcvxzcv&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;', '2017-09-13 17:08:17', '2017-09-16 20:12:23'),
 (2, 2, 'contribution summary', 'contribution Description', '2017-09-13 17:09:26', '2017-09-14 11:48:52'),
 (3, 3, 'collaboration summary', 'collaboration description', '2017-09-13 17:09:26', '2017-09-14 11:48:59'),
 (4, 4, 'Research summary', 'Research description', '2017-09-13 17:09:26', '2017-09-14 11:49:08');
@@ -87,23 +69,10 @@ INSERT INTO `about_org_id` (`id`, `about_title`, `added_date`, `updated_date`) V
 (2, 'Contribution to National Development', '2017-09-13 14:07:22', NULL),
 (3, 'Collaboration', '2017-09-13 14:07:22', NULL),
 (4, 'Research & Technology', '2017-09-13 14:07:22', NULL);
-=======
--- Table structure for table `banner_image`
---
-
-CREATE TABLE `banner_image` (
-  `id` int(11) NOT NULL,
-  `banner_title` text COLLATE utf8_unicode_ci,
-  `banner_id` int(11) DEFAULT NULL,
-  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
-  `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 
 -- --------------------------------------------------------
 
 --
-<<<<<<< HEAD
 -- Table structure for table `achievement`
 --
 
@@ -127,9 +96,16 @@ CREATE TABLE `achievement` (
 
 INSERT INTO `achievement` (`id`, `event_title`, `event_summary`, `event_description`, `event_location`, `event_date`, `event_time`, `event_type`, `status`, `added_date`, `updated_date`) VALUES
 (15, 'field vist', 'field vistsummary', 'field Description', 'tatopani', '2017-09-15', '02:30:00', 1, 0, '2017-09-15 19:12:46', NULL),
-(501, 'test', NULL, NULL, 'everywhere', NULL, NULL, 1, 0, '2017-09-16 14:42:30', NULL),
 (502, 'Seminar', 'Seminar summary', 'Seminar Description', 'Kathmandu', '2017-09-16', '15:05:00', 1, 0, '2017-09-16 15:05:26', NULL),
-(503, 'Building Construct', 'Construction summary', 'Construction Description', 'Lalitpur', '2017-09-10', '14:30:00', 1, 0, '2017-09-16 15:06:42', NULL);
+(505, 'timeline1', 'timeline1 summary', 'timeline1 Description', 'ktm', '2017-09-15', '15:04:00', 2, 0, '2017-09-16 19:01:28', NULL),
+(506, 'timeline2', 'timeline2 summary', 'timeline2 Description', 'Lalitpur', '2017-09-09', '15:02:00', 2, 0, '2017-09-16 19:02:03', NULL),
+(507, 'timeline3', 'timeline3 summary', 'timeline3 Description', 'Bhaktapur', '2017-09-28', '03:02:00', 2, 0, '2017-09-16 19:02:43', NULL),
+(508, 'timeline4', 'timeline4 summary', 'timeline4 Description', 'kathmandu', '2017-09-22', '14:57:00', 2, 0, '2017-09-16 19:03:18', NULL),
+(509, 'timeline5', 'timeline5 summary', 'Timeline5 Description', 'kathmandu', '2017-09-11', '04:03:00', 2, 0, '2017-09-16 19:03:59', NULL),
+(510, 'Timeline6', 'Timeline6 Summary', 'Timeline6 Description', 'kathmandu', '2017-09-14', '06:44:00', 2, 0, '2017-09-16 19:04:34', NULL),
+(511, 'Timeline7', 'Timeline7 Summary', 'Timeline7 Description', 'Kavre', '2017-09-15', '06:01:00', 2, 0, '2017-09-16 19:05:09', NULL),
+(514, 'event10', 'event10 summary', 'Event Description here . text style here', 'kathmandu', '2017-09-14', '00:00:00', 1, 0, '2017-09-16 20:00:53', NULL),
+(515, 'rvgsgv', 'fvsvs', 'svsvsdvsdvsvssvfvsvsvsvsvsvsdvs s s vsdvsdfvsd s vsssdfsd s sgss &nbsp; s &nbsp; &nbsp;sgffgsfgsfgsfgsg sfg ssg s s s gsgsfgsffgsdhgh&nbsp; sg sdgsfdg sfd &nbsp; gsrgs gsg s gs gsfd', 'sfdvs', '2017-09-21', '00:00:00', 1, 0, '2017-09-16 20:04:49', NULL);
 
 -- --------------------------------------------------------
 
@@ -145,7 +121,24 @@ CREATE TABLE `banner` (
   `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
   `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-=======
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `banner_image`
+--
+
+CREATE TABLE `banner_image` (
+  `id` int(11) NOT NULL,
+  `banner_title` text COLLATE utf8_unicode_ci,
+  `banner_id` int(11) DEFAULT NULL,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `banner_info`
 --
 
@@ -168,7 +161,6 @@ INSERT INTO `banner_info` (`id`, `caption`, `description`, `added_date`, `update
 (4, 'hello', 'hello', '2017-09-16 16:38:25', NULL),
 (5, 'London Bridge', 'London ma bhayeko bridge', '2017-09-16 16:45:01', NULL),
 (6, 'London Bridge', 'London ma bhayeko bridge', '2017-09-16 16:52:32', NULL);
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 
 -- --------------------------------------------------------
 
@@ -194,18 +186,7 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`id`, `description`, `email`, `phone`, `fax`, `address`, `pobox`, `link`, `added_date`, `updated_date`) VALUES
-<<<<<<< HEAD
 (1, 'This is Our Contact Info1.', 'admin@test.com', '9876543210', '01-5512647', 'Pulchowk, Lalitpur, Nepal', '7765', 'https://www.facebook.com/nepal', '2017-09-12 15:54:55', '2017-09-16 13:10:01');
-=======
-(1, 'This is Our New Contact Info.', '', '9876543210', '', '', '7765', 'fb.com/cids', '2017-09-12 15:54:55', NULL),
-(2, 'segs', '', 'sgsfd', '', '', 'gsfgs', '', '2017-09-12 15:58:45', NULL),
-(3, '', 'fafadf', 'fadf', 'fadsfad', 'fad', 'afadf', '', '2017-09-12 16:02:17', NULL),
-(4, '', 'info@cids.com', '0987654321', '014478332', 'Pulchowk,Lalitpur', '6532', 'fb.com/cidsnepal', '2017-09-12 16:03:50', NULL),
-(5, '', 'info@cids.com', '0987654321', '014478332', 'Pulchowk,Lalitpur', '6532', 'fb.com/cidsnepal', '2017-09-12 16:04:29', NULL),
-(6, 'dsaf', 'new@cids.com', '9801234567', '5357463', 'ktm', '1242', 'fb.com/cids', '2017-09-12 16:08:01', NULL),
-(7, 'efa', 'fjiab@jhsaobvo', 'ue387238', '878987987', 'shfi', '7878', 'ahdfoua/afca', '2017-09-12 16:32:59', NULL),
-(8, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec arcu vestibulum, elementum ligula a, finibus augue. Donec euismod, velit et rutrum pulvinar, turpis diam luctus enim, quis egestas neque ex sit amet ipsum. Nunc sit amet interdum massa. Ut tincidunt est eros, sed scelerisque lacus pellentesque ut. Sed augue arcu, auctor non aliquet quis, ultrices quis ante. Donec imperdiet metus ac magna finibus sodales. Donec iaculis urna sollicitudin auctor rhoncus.', 'info@cids.com', '+977-9841806109, +977-9851215787', '+977-1-5525830', 'Pulchowk, Lalitpur, Nepal', '1157', 'https://www.facebook.com/nepal', '2017-09-12 16:53:43', NULL);
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 
 -- --------------------------------------------------------
 
@@ -228,13 +209,14 @@ CREATE TABLE `enquiry` (
 
 INSERT INTO `enquiry` (`id`, `fullname`, `email`, `subject`, `message`, `added_date`) VALUES
 (1, 'Ansuman', 'smechailes@gmail.com', 'What is your goal?', 'I would like to know what is your goal.', '2017-08-26 10:47:11'),
-(2, 'Binod', 'binod@gmail.com', 'hello', 'hello', '2017-08-26 14:24:22');
+(2, 'Binod', 'binod@gmail.com', 'hello', 'hello', '2017-08-26 14:24:22'),
+(3, 'vavbasdv', 'sdavdawv', 'vdavasdv', 'dssvsda', '2017-09-16 20:53:15'),
+(4, 'vavbasdv', 'sdavdawv', 'vdavasdv', 'dssvsda', '2017-09-16 20:54:01'),
+(5, 'vasdvasd', 'fdbdfb@ga', 'vasdvsda', 'gadgadsg', '2017-09-16 20:55:22');
 
 -- --------------------------------------------------------
 
 --
-<<<<<<< HEAD
-=======
 -- Table structure for table `member_image`
 --
 
@@ -257,7 +239,6 @@ INSERT INTO `member_image` (`id`, `image_title`, `member_id`) VALUES
 -- --------------------------------------------------------
 
 --
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 -- Table structure for table `org_events`
 --
 
@@ -282,14 +263,10 @@ CREATE TABLE `org_events` (
 
 CREATE TABLE `positions` (
   `id` int(11) NOT NULL,
+  `name` text COLLATE utf8_unicode_ci NOT NULL,
   `pos_title` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
   `pos_description` text COLLATE utf8_unicode_ci,
   `message` text COLLATE utf8_unicode_ci,
-<<<<<<< HEAD
-=======
-  `name` text COLLATE utf8_unicode_ci,
-  `type` int(11) DEFAULT NULL,
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
   `added_by` int(11) DEFAULT NULL,
   `status` int(11) DEFAULT NULL,
   `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
@@ -300,14 +277,8 @@ CREATE TABLE `positions` (
 -- Dumping data for table `positions`
 --
 
-<<<<<<< HEAD
-INSERT INTO `positions` (`id`, `pos_title`, `pos_description`, `message`, `added_by`, `status`, `added_date`, `updated_date`) VALUES
-(1, 'CEO', 'Main person of company', NULL, 1, 1, '2017-08-26 14:59:33', NULL);
-=======
-INSERT INTO `positions` (`id`, `pos_title`, `pos_description`, `message`, `name`, `type`, `added_by`, `status`, `added_date`, `updated_date`) VALUES
-(107, 'Researcher', 'A TYPE OF RESSEARCHER', 'dummy text', 'Tej Binod Pandey', 1, NULL, 1, '2017-09-16 10:38:05', '2017-09-16 13:23:20'),
-(110, 'Chairperson', 'Chair ma basne manche', 'Chair aaram dai hos', 'Samyam Bro', 0, NULL, 1, '2017-09-16 14:20:35', NULL);
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
+INSERT INTO `positions` (`id`, `name`, `pos_title`, `pos_description`, `message`, `added_by`, `status`, `added_date`, `updated_date`) VALUES
+(1, '', 'CEO', 'Main person of company', NULL, 1, 1, '2017-08-26 14:59:33', NULL);
 
 -- --------------------------------------------------------
 
@@ -331,19 +302,14 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `fullname`, `username`, `user_password`, `status`, `role_id`, `added_date`, `updated_date`) VALUES
-<<<<<<< HEAD
 (1, 'Admin', 'admin', 'e62a3f6cb73ede63968f989b2c9584f32ec8c420', 1, 1, '2017-08-26 11:06:43', '2017-09-12 14:52:58'),
 (2, 'user', 'user', '12dea96fec20593566ab75692c9949596833adc9', NULL, NULL, '2017-09-15 15:43:35', '2017-09-15 15:49:38');
-=======
-(1, 'Admin', 'admin', 'e62a3f6cb73ede63968f989b2c9584f32ec8c420', 1, 1, '2017-08-26 11:06:43', '2017-09-12 14:52:58');
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 
 --
 -- Indexes for dumped tables
 --
 
 --
-<<<<<<< HEAD
 -- Indexes for table `about_org`
 --
 ALTER TABLE `about_org`
@@ -366,18 +332,12 @@ ALTER TABLE `achievement`
 -- Indexes for table `banner`
 --
 ALTER TABLE `banner`
-=======
--- Indexes for table `banner_image`
---
-ALTER TABLE `banner_image`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `banner_id` (`banner_id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `banner_info`
 --
 ALTER TABLE `banner_info`
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
   ADD PRIMARY KEY (`id`);
 
 --
@@ -393,8 +353,6 @@ ALTER TABLE `enquiry`
   ADD PRIMARY KEY (`id`);
 
 --
-<<<<<<< HEAD
-=======
 -- Indexes for table `member_image`
 --
 ALTER TABLE `member_image`
@@ -402,7 +360,6 @@ ALTER TABLE `member_image`
   ADD KEY `member_id` (`member_id`);
 
 --
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 -- Indexes for table `org_events`
 --
 ALTER TABLE `org_events`
@@ -427,7 +384,6 @@ ALTER TABLE `users`
 --
 
 --
-<<<<<<< HEAD
 -- AUTO_INCREMENT for table `about_org`
 --
 ALTER TABLE `about_org`
@@ -441,46 +397,28 @@ ALTER TABLE `about_org_id`
 -- AUTO_INCREMENT for table `achievement`
 --
 ALTER TABLE `achievement`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=504;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=516;
 --
 -- AUTO_INCREMENT for table `banner`
 --
 ALTER TABLE `banner`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-=======
--- AUTO_INCREMENT for table `banner_image`
---
-ALTER TABLE `banner_image`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `banner_info`
 --
 ALTER TABLE `banner_info`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 --
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-=======
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 --
 -- AUTO_INCREMENT for table `enquiry`
 --
 ALTER TABLE `enquiry`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
-<<<<<<< HEAD
-=======
--- AUTO_INCREMENT for table `member_image`
---
-ALTER TABLE `member_image`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
---
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 -- AUTO_INCREMENT for table `org_events`
 --
 ALTER TABLE `org_events`
@@ -489,36 +427,21 @@ ALTER TABLE `org_events`
 -- AUTO_INCREMENT for table `positions`
 --
 ALTER TABLE `positions`
-<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-=======
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=111;
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-=======
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 --
 -- Constraints for dumped tables
 --
 
 --
-<<<<<<< HEAD
 -- Constraints for table `about_org`
 --
 ALTER TABLE `about_org`
   ADD CONSTRAINT `about_org_ibfk_1` FOREIGN KEY (`about_org_id`) REFERENCES `about_org_id` (`id`) ON DELETE SET NULL ON UPDATE CASCADE;
-=======
--- Constraints for table `member_image`
---
-ALTER TABLE `member_image`
-  ADD CONSTRAINT `member_image_ibfk_1` FOREIGN KEY (`member_id`) REFERENCES `positions` (`id`) ON DELETE SET NULL ON UPDATE CASCADE;
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 
 --
 -- Constraints for table `org_events`
@@ -531,475 +454,6 @@ ALTER TABLE `org_events`
 --
 ALTER TABLE `positions`
   ADD CONSTRAINT `positions_ibfk_1` FOREIGN KEY (`added_by`) REFERENCES `users` (`id`) ON DELETE SET NULL ON UPDATE CASCADE;
-<<<<<<< HEAD
---
--- Database: `phpmyadmin`
---
-CREATE DATABASE IF NOT EXISTS `phpmyadmin` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
-USE `phpmyadmin`;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pma__bookmark`
---
-
-CREATE TABLE `pma__bookmark` (
-  `id` int(11) NOT NULL,
-  `dbase` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `user` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `label` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT '',
-  `query` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Bookmarks';
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pma__central_columns`
---
-
-CREATE TABLE `pma__central_columns` (
-  `db_name` varchar(64) COLLATE utf8_bin NOT NULL,
-  `col_name` varchar(64) COLLATE utf8_bin NOT NULL,
-  `col_type` varchar(64) COLLATE utf8_bin NOT NULL,
-  `col_length` text COLLATE utf8_bin,
-  `col_collation` varchar(64) COLLATE utf8_bin NOT NULL,
-  `col_isNull` tinyint(1) NOT NULL,
-  `col_extra` varchar(255) COLLATE utf8_bin DEFAULT '',
-  `col_default` text COLLATE utf8_bin
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Central list of columns';
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pma__column_info`
---
-
-CREATE TABLE `pma__column_info` (
-  `id` int(5) UNSIGNED NOT NULL,
-  `db_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `table_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `column_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `comment` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT '',
-  `mimetype` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT '',
-  `transformation` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `transformation_options` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `input_transformation` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `input_transformation_options` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT ''
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Column information for phpMyAdmin';
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pma__designer_settings`
---
-
-CREATE TABLE `pma__designer_settings` (
-  `username` varchar(64) COLLATE utf8_bin NOT NULL,
-  `settings_data` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Settings related to Designer';
-
---
--- Dumping data for table `pma__designer_settings`
---
-
-INSERT INTO `pma__designer_settings` (`username`, `settings_data`) VALUES
-('root', '{\"angular_direct\":\"direct\",\"snap_to_grid\":\"off\",\"relation_lines\":\"true\"}');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pma__export_templates`
---
-
-CREATE TABLE `pma__export_templates` (
-  `id` int(5) UNSIGNED NOT NULL,
-  `username` varchar(64) COLLATE utf8_bin NOT NULL,
-  `export_type` varchar(10) COLLATE utf8_bin NOT NULL,
-  `template_name` varchar(64) COLLATE utf8_bin NOT NULL,
-  `template_data` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Saved export templates';
-
---
--- Dumping data for table `pma__export_templates`
---
-
-INSERT INTO `pma__export_templates` (`id`, `username`, `export_type`, `template_name`, `template_data`) VALUES
-(2, 'root', 'database', 'hub_9/13/2017-2', '{\"quick_or_custom\":\"quick\",\"what\":\"sql\",\"structure_or_data_forced\":\"0\",\"table_select[]\":[\"about_org\",\"about_org_id\",\"banner\",\"contact\",\"enquiry\",\"org_events\",\"positions\",\"users\"],\"table_structure[]\":[\"about_org\",\"about_org_id\",\"banner\",\"contact\",\"enquiry\",\"org_events\",\"positions\",\"users\"],\"table_data[]\":[\"about_org\",\"about_org_id\",\"banner\",\"contact\",\"enquiry\",\"org_events\",\"positions\",\"users\"],\"output_format\":\"sendit\",\"filename_template\":\"@DATABASE@\",\"remember_template\":\"on\",\"charset\":\"utf-8\",\"compression\":\"none\",\"maxsize\":\"\",\"codegen_structure_or_data\":\"data\",\"codegen_format\":\"0\",\"csv_separator\":\",\",\"csv_enclosed\":\"\\\"\",\"csv_escaped\":\"\\\"\",\"csv_terminated\":\"AUTO\",\"csv_null\":\"NULL\",\"csv_structure_or_data\":\"data\",\"excel_null\":\"NULL\",\"excel_columns\":\"something\",\"excel_edition\":\"win\",\"excel_structure_or_data\":\"data\",\"htmlword_structure_or_data\":\"structure_and_data\",\"htmlword_null\":\"NULL\",\"json_structure_or_data\":\"data\",\"latex_caption\":\"something\",\"latex_structure_or_data\":\"structure_and_data\",\"latex_structure_caption\":\"Structure of table @TABLE@\",\"latex_structure_continued_caption\":\"Structure of table @TABLE@ (continued)\",\"latex_structure_label\":\"tab:@TABLE@-structure\",\"latex_relation\":\"something\",\"latex_comments\":\"something\",\"latex_mime\":\"something\",\"latex_columns\":\"something\",\"latex_data_caption\":\"Content of table @TABLE@\",\"latex_data_continued_caption\":\"Content of table @TABLE@ (continued)\",\"latex_data_label\":\"tab:@TABLE@-data\",\"latex_null\":\"\\\\textit{NULL}\",\"mediawiki_structure_or_data\":\"structure_and_data\",\"mediawiki_caption\":\"something\",\"mediawiki_headers\":\"something\",\"ods_null\":\"NULL\",\"ods_structure_or_data\":\"data\",\"odt_structure_or_data\":\"structure_and_data\",\"odt_relation\":\"something\",\"odt_comments\":\"something\",\"odt_mime\":\"something\",\"odt_columns\":\"something\",\"odt_null\":\"NULL\",\"pdf_report_title\":\"\",\"pdf_structure_or_data\":\"structure_and_data\",\"phparray_structure_or_data\":\"data\",\"sql_include_comments\":\"something\",\"sql_header_comment\":\"\",\"sql_use_transaction\":\"something\",\"sql_compatibility\":\"NONE\",\"sql_structure_or_data\":\"structure_and_data\",\"sql_create_table\":\"something\",\"sql_auto_increment\":\"something\",\"sql_create_view\":\"something\",\"sql_procedure_function\":\"something\",\"sql_create_trigger\":\"something\",\"sql_backquotes\":\"something\",\"sql_type\":\"INSERT\",\"sql_insert_syntax\":\"both\",\"sql_max_query_size\":\"50000\",\"sql_hex_for_binary\":\"something\",\"sql_utc_time\":\"something\",\"texytext_structure_or_data\":\"structure_and_data\",\"texytext_null\":\"NULL\",\"xml_structure_or_data\":\"data\",\"xml_export_events\":\"something\",\"xml_export_functions\":\"something\",\"xml_export_procedures\":\"something\",\"xml_export_tables\":\"something\",\"xml_export_triggers\":\"something\",\"xml_export_views\":\"something\",\"xml_export_contents\":\"something\",\"yaml_structure_or_data\":\"data\",\"\":null,\"lock_tables\":null,\"as_separate_files\":null,\"csv_removeCRLF\":null,\"csv_columns\":null,\"excel_removeCRLF\":null,\"htmlword_columns\":null,\"json_pretty_print\":null,\"ods_columns\":null,\"sql_dates\":null,\"sql_relation\":null,\"sql_mime\":null,\"sql_disable_fk\":null,\"sql_views_as_tables\":null,\"sql_metadata\":null,\"sql_create_database\":null,\"sql_drop_table\":null,\"sql_if_not_exists\":null,\"sql_truncate\":null,\"sql_delayed\":null,\"sql_ignore\":null,\"texytext_columns\":null}'),
-(3, 'root', 'database', 'hub4growth_00/14/2017', '{\"quick_or_custom\":\"quick\",\"what\":\"sql\",\"structure_or_data_forced\":\"0\",\"table_select[]\":[\"about_org\",\"about_org_id\",\"achievement\",\"banner\",\"contact\",\"enquiry\",\"org_events\",\"positions\",\"users\"],\"table_structure[]\":[\"about_org\",\"about_org_id\",\"achievement\",\"banner\",\"contact\",\"enquiry\",\"org_events\",\"positions\",\"users\"],\"table_data[]\":[\"about_org\",\"about_org_id\",\"achievement\",\"banner\",\"contact\",\"enquiry\",\"org_events\",\"positions\",\"users\"],\"output_format\":\"sendit\",\"filename_template\":\"@DATABASE@\",\"remember_template\":\"on\",\"charset\":\"utf-8\",\"compression\":\"none\",\"maxsize\":\"\",\"codegen_structure_or_data\":\"data\",\"codegen_format\":\"0\",\"csv_separator\":\",\",\"csv_enclosed\":\"\\\"\",\"csv_escaped\":\"\\\"\",\"csv_terminated\":\"AUTO\",\"csv_null\":\"NULL\",\"csv_structure_or_data\":\"data\",\"excel_null\":\"NULL\",\"excel_columns\":\"something\",\"excel_edition\":\"win\",\"excel_structure_or_data\":\"data\",\"htmlword_structure_or_data\":\"structure_and_data\",\"htmlword_null\":\"NULL\",\"json_structure_or_data\":\"data\",\"latex_caption\":\"something\",\"latex_structure_or_data\":\"structure_and_data\",\"latex_structure_caption\":\"Structure of table @TABLE@\",\"latex_structure_continued_caption\":\"Structure of table @TABLE@ (continued)\",\"latex_structure_label\":\"tab:@TABLE@-structure\",\"latex_relation\":\"something\",\"latex_comments\":\"something\",\"latex_mime\":\"something\",\"latex_columns\":\"something\",\"latex_data_caption\":\"Content of table @TABLE@\",\"latex_data_continued_caption\":\"Content of table @TABLE@ (continued)\",\"latex_data_label\":\"tab:@TABLE@-data\",\"latex_null\":\"\\\\textit{NULL}\",\"mediawiki_structure_or_data\":\"structure_and_data\",\"mediawiki_caption\":\"something\",\"mediawiki_headers\":\"something\",\"ods_null\":\"NULL\",\"ods_structure_or_data\":\"data\",\"odt_structure_or_data\":\"structure_and_data\",\"odt_relation\":\"something\",\"odt_comments\":\"something\",\"odt_mime\":\"something\",\"odt_columns\":\"something\",\"odt_null\":\"NULL\",\"pdf_report_title\":\"\",\"pdf_structure_or_data\":\"structure_and_data\",\"phparray_structure_or_data\":\"data\",\"sql_include_comments\":\"something\",\"sql_header_comment\":\"\",\"sql_use_transaction\":\"something\",\"sql_compatibility\":\"NONE\",\"sql_structure_or_data\":\"structure_and_data\",\"sql_create_table\":\"something\",\"sql_auto_increment\":\"something\",\"sql_create_view\":\"something\",\"sql_procedure_function\":\"something\",\"sql_create_trigger\":\"something\",\"sql_backquotes\":\"something\",\"sql_type\":\"INSERT\",\"sql_insert_syntax\":\"both\",\"sql_max_query_size\":\"50000\",\"sql_hex_for_binary\":\"something\",\"sql_utc_time\":\"something\",\"texytext_structure_or_data\":\"structure_and_data\",\"texytext_null\":\"NULL\",\"xml_structure_or_data\":\"data\",\"xml_export_events\":\"something\",\"xml_export_functions\":\"something\",\"xml_export_procedures\":\"something\",\"xml_export_tables\":\"something\",\"xml_export_triggers\":\"something\",\"xml_export_views\":\"something\",\"xml_export_contents\":\"something\",\"yaml_structure_or_data\":\"data\",\"\":null,\"lock_tables\":null,\"as_separate_files\":null,\"csv_removeCRLF\":null,\"csv_columns\":null,\"excel_removeCRLF\":null,\"htmlword_columns\":null,\"json_pretty_print\":null,\"ods_columns\":null,\"sql_dates\":null,\"sql_relation\":null,\"sql_mime\":null,\"sql_disable_fk\":null,\"sql_views_as_tables\":null,\"sql_metadata\":null,\"sql_create_database\":null,\"sql_drop_table\":null,\"sql_if_not_exists\":null,\"sql_truncate\":null,\"sql_delayed\":null,\"sql_ignore\":null,\"texytext_columns\":null}');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pma__favorite`
---
-
-CREATE TABLE `pma__favorite` (
-  `username` varchar(64) COLLATE utf8_bin NOT NULL,
-  `tables` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Favorite tables';
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pma__history`
---
-
-CREATE TABLE `pma__history` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `username` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `db` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `table` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `timevalue` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `sqlquery` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='SQL history for phpMyAdmin';
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pma__navigationhiding`
---
-
-CREATE TABLE `pma__navigationhiding` (
-  `username` varchar(64) COLLATE utf8_bin NOT NULL,
-  `item_name` varchar(64) COLLATE utf8_bin NOT NULL,
-  `item_type` varchar(64) COLLATE utf8_bin NOT NULL,
-  `db_name` varchar(64) COLLATE utf8_bin NOT NULL,
-  `table_name` varchar(64) COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Hidden items of navigation tree';
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pma__pdf_pages`
---
-
-CREATE TABLE `pma__pdf_pages` (
-  `db_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `page_nr` int(10) UNSIGNED NOT NULL,
-  `page_descr` varchar(50) CHARACTER SET utf8 NOT NULL DEFAULT ''
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='PDF relation pages for phpMyAdmin';
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pma__recent`
---
-
-CREATE TABLE `pma__recent` (
-  `username` varchar(64) COLLATE utf8_bin NOT NULL,
-  `tables` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Recently accessed tables';
-
---
--- Dumping data for table `pma__recent`
---
-
-INSERT INTO `pma__recent` (`username`, `tables`) VALUES
-('root', '[{\"db\":\"cids\",\"table\":\"achievement\"},{\"db\":\"cids\",\"table\":\"about_org\"},{\"db\":\"cids\",\"table\":\"about_org_id\"},{\"db\":\"cids\",\"table\":\"users\"},{\"db\":\"cids\",\"table\":\"enquiry\"},{\"db\":\"cids\",\"table\":\"contact\"},{\"db\":\"cids\",\"table\":\"org_events\"},{\"db\":\"cids\",\"table\":\"banner\"},{\"db\":\"cids\",\"table\":\"positions\"}]');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pma__relation`
---
-
-CREATE TABLE `pma__relation` (
-  `master_db` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `master_table` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `master_field` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `foreign_db` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `foreign_table` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `foreign_field` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT ''
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Relation table';
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pma__savedsearches`
---
-
-CREATE TABLE `pma__savedsearches` (
-  `id` int(5) UNSIGNED NOT NULL,
-  `username` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `db_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `search_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `search_data` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Saved searches';
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pma__table_coords`
---
-
-CREATE TABLE `pma__table_coords` (
-  `db_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `table_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `pdf_page_number` int(11) NOT NULL DEFAULT '0',
-  `x` float UNSIGNED NOT NULL DEFAULT '0',
-  `y` float UNSIGNED NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Table coordinates for phpMyAdmin PDF output';
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pma__table_info`
---
-
-CREATE TABLE `pma__table_info` (
-  `db_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `table_name` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT '',
-  `display_field` varchar(64) COLLATE utf8_bin NOT NULL DEFAULT ''
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Table information for phpMyAdmin';
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pma__table_uiprefs`
---
-
-CREATE TABLE `pma__table_uiprefs` (
-  `username` varchar(64) COLLATE utf8_bin NOT NULL,
-  `db_name` varchar(64) COLLATE utf8_bin NOT NULL,
-  `table_name` varchar(64) COLLATE utf8_bin NOT NULL,
-  `prefs` text COLLATE utf8_bin NOT NULL,
-  `last_update` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Tables'' UI preferences';
-
---
--- Dumping data for table `pma__table_uiprefs`
---
-
-INSERT INTO `pma__table_uiprefs` (`username`, `db_name`, `table_name`, `prefs`, `last_update`) VALUES
-('root', 'cids', 'about_org_id', '{\"CREATE_TIME\":\"2017-09-13 14:01:48\",\"col_order\":[\"0\",\"1\",\"2\",\"3\"],\"col_visib\":[\"1\",\"1\",\"1\",\"1\"]}', '2017-09-14 01:04:09'),
-('root', 'cids', 'contact', '[]', '2017-09-13 00:07:24');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pma__tracking`
---
-
-CREATE TABLE `pma__tracking` (
-  `db_name` varchar(64) COLLATE utf8_bin NOT NULL,
-  `table_name` varchar(64) COLLATE utf8_bin NOT NULL,
-  `version` int(10) UNSIGNED NOT NULL,
-  `date_created` datetime NOT NULL,
-  `date_updated` datetime NOT NULL,
-  `schema_snapshot` text COLLATE utf8_bin NOT NULL,
-  `schema_sql` text COLLATE utf8_bin,
-  `data_sql` longtext COLLATE utf8_bin,
-  `tracking` set('UPDATE','REPLACE','INSERT','DELETE','TRUNCATE','CREATE DATABASE','ALTER DATABASE','DROP DATABASE','CREATE TABLE','ALTER TABLE','RENAME TABLE','DROP TABLE','CREATE INDEX','DROP INDEX','CREATE VIEW','ALTER VIEW','DROP VIEW') COLLATE utf8_bin DEFAULT NULL,
-  `tracking_active` int(1) UNSIGNED NOT NULL DEFAULT '1'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Database changes tracking for phpMyAdmin';
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pma__userconfig`
---
-
-CREATE TABLE `pma__userconfig` (
-  `username` varchar(64) COLLATE utf8_bin NOT NULL,
-  `timevalue` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `config_data` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='User preferences storage for phpMyAdmin';
-
---
--- Dumping data for table `pma__userconfig`
---
-
-INSERT INTO `pma__userconfig` (`username`, `timevalue`, `config_data`) VALUES
-('root', '2017-09-12 22:31:07', '{\"collation_connection\":\"utf8mb4_unicode_ci\"}');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pma__usergroups`
---
-
-CREATE TABLE `pma__usergroups` (
-  `usergroup` varchar(64) COLLATE utf8_bin NOT NULL,
-  `tab` varchar(64) COLLATE utf8_bin NOT NULL,
-  `allowed` enum('Y','N') COLLATE utf8_bin NOT NULL DEFAULT 'N'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='User groups with configured menu items';
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pma__users`
---
-
-CREATE TABLE `pma__users` (
-  `username` varchar(64) COLLATE utf8_bin NOT NULL,
-  `usergroup` varchar(64) COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Users and their assignments to user groups';
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `pma__bookmark`
---
-ALTER TABLE `pma__bookmark`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `pma__central_columns`
---
-ALTER TABLE `pma__central_columns`
-  ADD PRIMARY KEY (`db_name`,`col_name`);
-
---
--- Indexes for table `pma__column_info`
---
-ALTER TABLE `pma__column_info`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `db_name` (`db_name`,`table_name`,`column_name`);
-
---
--- Indexes for table `pma__designer_settings`
---
-ALTER TABLE `pma__designer_settings`
-  ADD PRIMARY KEY (`username`);
-
---
--- Indexes for table `pma__export_templates`
---
-ALTER TABLE `pma__export_templates`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `u_user_type_template` (`username`,`export_type`,`template_name`);
-
---
--- Indexes for table `pma__favorite`
---
-ALTER TABLE `pma__favorite`
-  ADD PRIMARY KEY (`username`);
-
---
--- Indexes for table `pma__history`
---
-ALTER TABLE `pma__history`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `username` (`username`,`db`,`table`,`timevalue`);
-
---
--- Indexes for table `pma__navigationhiding`
---
-ALTER TABLE `pma__navigationhiding`
-  ADD PRIMARY KEY (`username`,`item_name`,`item_type`,`db_name`,`table_name`);
-
---
--- Indexes for table `pma__pdf_pages`
---
-ALTER TABLE `pma__pdf_pages`
-  ADD PRIMARY KEY (`page_nr`),
-  ADD KEY `db_name` (`db_name`);
-
---
--- Indexes for table `pma__recent`
---
-ALTER TABLE `pma__recent`
-  ADD PRIMARY KEY (`username`);
-
---
--- Indexes for table `pma__relation`
---
-ALTER TABLE `pma__relation`
-  ADD PRIMARY KEY (`master_db`,`master_table`,`master_field`),
-  ADD KEY `foreign_field` (`foreign_db`,`foreign_table`);
-
---
--- Indexes for table `pma__savedsearches`
---
-ALTER TABLE `pma__savedsearches`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `u_savedsearches_username_dbname` (`username`,`db_name`,`search_name`);
-
---
--- Indexes for table `pma__table_coords`
---
-ALTER TABLE `pma__table_coords`
-  ADD PRIMARY KEY (`db_name`,`table_name`,`pdf_page_number`);
-
---
--- Indexes for table `pma__table_info`
---
-ALTER TABLE `pma__table_info`
-  ADD PRIMARY KEY (`db_name`,`table_name`);
-
---
--- Indexes for table `pma__table_uiprefs`
---
-ALTER TABLE `pma__table_uiprefs`
-  ADD PRIMARY KEY (`username`,`db_name`,`table_name`);
-
---
--- Indexes for table `pma__tracking`
---
-ALTER TABLE `pma__tracking`
-  ADD PRIMARY KEY (`db_name`,`table_name`,`version`);
-
---
--- Indexes for table `pma__userconfig`
---
-ALTER TABLE `pma__userconfig`
-  ADD PRIMARY KEY (`username`);
-
---
--- Indexes for table `pma__usergroups`
---
-ALTER TABLE `pma__usergroups`
-  ADD PRIMARY KEY (`usergroup`,`tab`,`allowed`);
-
---
--- Indexes for table `pma__users`
---
-ALTER TABLE `pma__users`
-  ADD PRIMARY KEY (`username`,`usergroup`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `pma__bookmark`
---
-ALTER TABLE `pma__bookmark`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `pma__column_info`
---
-ALTER TABLE `pma__column_info`
-  MODIFY `id` int(5) UNSIGNED NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `pma__export_templates`
---
-ALTER TABLE `pma__export_templates`
-  MODIFY `id` int(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
---
--- AUTO_INCREMENT for table `pma__history`
---
-ALTER TABLE `pma__history`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `pma__pdf_pages`
---
-ALTER TABLE `pma__pdf_pages`
-  MODIFY `page_nr` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `pma__savedsearches`
---
-ALTER TABLE `pma__savedsearches`
-  MODIFY `id` int(5) UNSIGNED NOT NULL AUTO_INCREMENT;--
--- Database: `test`
---
-CREATE DATABASE IF NOT EXISTS `test` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `test`;
-=======
->>>>>>> 32ff85785593f48f2bf2afdbcb17918a2de69ea7
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

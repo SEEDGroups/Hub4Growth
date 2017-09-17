@@ -47,7 +47,7 @@
                             <div class="form-group">
                             <label class="col-sm-2 control-label">Description</label>
                             <div class="col-sm-6">
-                             <textarea name="description" id="description" class="form-control" rows="7" style="resize:vertical;" placeholder="Vision Description"><?php echo $getVisionList['description']; ?></textarea>
+                             <textarea name="description" id="description" class="form-control" rows="7" style="resize:vertical;" placeholder="Vision Description"><?php echo html_entity_decode($getVisionList['description']); ?></textarea>
                             </div>
                           </div>
 
@@ -77,4 +77,6 @@
     </div>
     <!-- /#wrapper -->
 
-<?php include 'inc/footer.php'; ?>
+<?php
+include 'inc/tinymce_init.php';
+ include 'inc/footer.php'; ?>
