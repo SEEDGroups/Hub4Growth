@@ -12,7 +12,7 @@
                     <img src="<?php echo IMAGE_URL; ?>templatemo_event_01.jpg" class="img-responsive" alt="Web Design Trends" />
                 </div>
                 <div class="event_box_caption">
-                    <h1 data-toggle="modal" data-target="#myModal1"><?php echo $getEvents[0]['event_title']; ?></h1></a>
+                    <h1 data-toggle="modal" data-target="#eventModal1"><?php echo $getEvents[0]['event_title']; ?></h1></a>
                     <p><span class="glyphicon glyphicon-map-marker"></span> <?php echo $getEvents[0]['event_location']; ?>&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-calendar">&nbsp;<?php echo $getEvents[0]['event_date']; ?></span>&nbsp;&nbsp;&nbsp; <span class="glyphicon glyphicon-time"></span> <?php echo $getEvents[0]['event_time']; ?> </p>
                     <p><?php echo $getEvents[0]['event_summary']; ?></p>
                 </div>
@@ -24,7 +24,7 @@
                     <img src="<?php echo IMAGE_URL; ?>templatemo_event_02.jpg" class="img-responsive" alt="Free Bootstrap Seminar" />
                 </div>
                 <div class="event_box_caption">
-                    <h1 data-toggle="modal" data-target="#myModal2"><?php echo $getEvents[1]['event_title']; ?></h1> 
+                    <h1 data-toggle="modal" data-target="#eventModal2"><?php echo $getEvents[1]['event_title']; ?></h1> 
                     <p><span class="glyphicon glyphicon-map-marker"></span> <?php echo $getEvents[1]['event_location']; ?>&nbsp;&nbsp;&nbsp;<span <i class="glyphicon glyphicon-calendar">&nbsp;<?php echo $getEvents[1]['event_date']; ?></span>&nbsp;&nbsp;&nbsp; <span class="glyphicon glyphicon-time"></span> <?php echo $getEvents[1]['event_time']; ?> </p>                  
                     <p><?php echo $getEvents[1]['event_summary']; ?></p>
                 </div>
@@ -37,7 +37,7 @@
                     <img src="<?php echo IMAGE_URL; ?>templatemo_event_03.jpg" class="img-responsive" alt="" />
                 </div>
                 <div class="event_box_caption">
-                    <h1 data-target="#myModal3" data-toggle="modal"><?php echo $getEvents[2]['event_title']; ?></h1>
+                    <h1 data-target="#eventModal3" data-toggle="modal"><?php echo $getEvents[2]['event_title']; ?></h1>
                     <p><span class="glyphicon glyphicon-map-marker"></span> <?php echo $getEvents[2]['event_location']; ?>&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-calendar">&nbsp;<?php echo $getEvents[2]['event_date']; ?></span>&nbsp;&nbsp;&nbsp; <span class="glyphicon glyphicon-time"></span> <?php echo $getEvents[2]['event_time']; ?> </p> 
                     <p><?php echo $getEvents[2]['event_summary']; ?> </p>
                 </div>
@@ -49,7 +49,7 @@
                     <img src="<?php echo IMAGE_URL; ?>templatemo_event_04.jpg" class="img-responsive" alt="" />
                 </div>
                 <div class="event_box_caption">
-                    <h1 data-toggle="modal" data-target="#myModal4"><?php echo $getEvents[3]['event_title']; ?></h1>
+                    <h1 data-toggle="modal" data-target="#eventModal4"><?php echo $getEvents[3]['event_title']; ?></h1>
                      <p><span class="glyphicon glyphicon-map-marker"></span> <?php echo $getEvents[3]['event_location']; ?>&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-calendar">&nbsp;<?php echo $getEvents[3]['event_date']; ?></span>&nbsp;&nbsp;&nbsp; <span class="glyphicon glyphicon-time"></span> <?php echo $getEvents[3]['event_time']; ?> </p> 
                     <p><?php echo $getEvents[3]['event_summary']; ?> </p>
                 </div>
@@ -58,8 +58,8 @@
     </div>
 </div>
 
-<!-- modal for Contribution -->
-<div id="myModal1" class="modal fade" role="dialog" style="margin-top: 44px">
+<!-- modal for Event -->
+<div id="eventModal1" class="modal fade" role="dialog" style="margin-top: 44px">
     <div class="modal-dialog">
      
         <div class="modal-content modal-lg">
@@ -88,8 +88,8 @@
     </div>
 </div>
 
-<!-- modal for Contribution -->
-<div id="myModal2" class="modal fade" role="dialog" style="margin-top: 44px">
+<!-- modal for Event -->
+<div id="eventModal2" class="modal fade" role="dialog" style="margin-top: 44px">
     <div class="modal-dialog">
       
         <div class="modal-content modal-lg">
@@ -118,8 +118,8 @@
     </div>
 </div>
 
-<!-- modal for Contribution -->
-<div id="myModal3" class="modal fade" role="dialog" style="margin-top: 44px">
+<!-- modal for Event -->
+<div id="eventModal3" class="modal fade" role="dialog" style="margin-top: 44px">
     <div class="modal-dialog">
       
         <div class="modal-content modal-lg">
@@ -148,8 +148,8 @@
     </div>
 </div>
 
-<!-- modal for Contribution -->
-<div id="myModal4" class="modal fade" role="dialog" style="margin-top: 44px">
+<!-- modal for Event -->
+<div id="eventModal4" class="modal fade" role="dialog" style="margin-top: 44px">
     <div class="modal-dialog">
      
         <div class="modal-content modal-lg">

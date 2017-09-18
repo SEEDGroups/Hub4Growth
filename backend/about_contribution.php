@@ -31,6 +31,7 @@
                             <label class="col-sm-2 control-label">Summary</label>
                             <div class="col-sm-6">
                              <textarea name="summary" id="summary" class="form-control" rows="3" style="resize:vertical;" ><?php echo $getContributionList['summary']; ?></textarea>
+
                             </div>
                           </div>
 
