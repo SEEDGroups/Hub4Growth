@@ -13,13 +13,13 @@
 	  				<?php include 'inc/notification.php'; ?>
 					<form class="form-horizontal" method="POST" action="login-process.php">
 					  <div class="form-group">
-					    <label for="inputUsername"  class="col-sm-2 control-label login-ele">Username</label>
+					    <label for="inputUsername"  class="col-sm-2 control-label login-ele" style="color: white !important;">Username</label>
 					    <div class="col-sm-10">
 					      <input type="text" required class="form-control" id="inputUsername" placeholder="Username" name="username">
 					    </div>
 					  </div>
 					  <div class="form-group">
-					    <label for="inputPassword3" class="col-sm-2 control-label login-ele">Password</label>
+					    <label for="inputPassword3" class="col-sm-2 control-label login-ele"  style="color: white !important;">Password</label>
 					    <div class="col-sm-10">
 					      <input type="password" required class="form-control" id="inputPassword3" placeholder="Password" name="password">
 					    </div>
@@ -27,7 +27,7 @@
 					  <div class="form-group">
 					    <div class="col-sm-offset-2 col-sm-10">
 					      <div class="checkbox">
-					        <label class="login-ele">
+					        <label class="login-ele"  style="color: white !important;">
 					          <input type="checkbox" name="remember" value="1"> Remember me
 					        </label>
 					      </div>

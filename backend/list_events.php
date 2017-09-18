@@ -36,6 +36,11 @@
                       <?php include 'inc/notification.php'; ?>
                         <h1 class="page-header">
                           Events List
+                          <small class="pull-right">
+                            <a href="events" class="btn btn-success">
+                              <i class="fa fa-fw fa-plus"></i> Add Events
+                            </a>
+                          </small>
                         </h1>
 
                     </div>

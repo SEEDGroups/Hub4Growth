@@ -7,7 +7,7 @@
             <li><a href="#templatemo_timeline"><i class="glyphicon glyphicon-calendar"></i> &nbsp; Timeline</a></li>
             <li><a rel="nofollow" href="http://www.google.com" class="external-link"><i class="glyphicon glyphicon-export"></i> &nbsp; External</a></li>
             <li><a href="#templatemo_contact"><i class="glyphicon glyphicon-phone-alt"></i> &nbsp; Contact</a></li>
-        </ul>
+          </ul>
 </div>
 <div class="container_wapper">
     <div id="templatemo_banner_menu" style="background-color: white !important;">

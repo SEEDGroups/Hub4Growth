@@ -43,7 +43,13 @@
                     <div class="col-lg-12">
 
                       <?php include 'inc/notification.php';?>
-                        <h1 class="page-header"> <?php echo $page; ?> Event / Timeline </h1>
+                        <h1 class="page-header"> <?php echo $page; ?> Event 
+                        <small>
+                          <a href="list_events" style="text-decoration: none;">
+                            <i class="fa fa-fw fa-undo"></i> Go back
+                          </a>
+                        </small>
+                      </h1>
                     </div>
 
                 </div>

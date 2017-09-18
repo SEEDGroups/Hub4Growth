@@ -38,7 +38,7 @@
                     <div class="col-lg-12">
                       <?php include 'inc/notification.php'; ?>
                         <h1 class="page-header">
-                          Banner List
+                          Banner List <small class="pull-right"><a href="add_banner" class="btn btn-success"><i class="fa fa-fw fa-plus"></i> Add Banner</i></a></small>
                         </h1>
 
                     </div>

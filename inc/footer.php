@@ -56,23 +56,22 @@
                     <textarea name="message" required id="message"  placeholder="Write your message here..."></textarea>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-offset-6">
-                    <button type="submit" onclick="notifyMe()">Send</button>
+                    <button type="submit" name="enquiry_sent" value="1">Send</button>
                 </div>
                 <div class="col-xs-6 col-sm-3">
                     <button type="reset">Reset</button>
-                   
+
                 </div>
-                
+
             </div>
         </form>
     </div>
-    
-</div>
 
+</div>
 
 <div id="templatemo_footer">
     <div  class="container-fluid">
-        
+
         <p  id="footer">Copyright &copy; 2015 HUB4GROWTH  <span  class="pull-right" > Designed & Developed by Seeds Group</span> </p>
 
     </div>

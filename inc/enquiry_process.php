@@ -17,12 +17,12 @@
 		exit;
 */
 		if($query){
-			$_SESSION['success'] = "Enquiry successfully.";
+			
 			
 			@header('location: ../');
 			exit;
 		}else{
-			$_SESSION['warning'] = "Enquiry could not be sent at this moment!";
+			
 			@header('location: ../');
 			exit;
 		}		

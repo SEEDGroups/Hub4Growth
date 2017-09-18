@@ -1,24 +1,4 @@
-<?php session_start(); include 'inc/config.php'; include 'inc/dbconnect.php'; include 'inc/function.php';  include 'security_inside.php';?>
-<?php include 'inc/header.php';	 ?>
-<?php
-  include 'inc/navigation.php';
-?>
-<div id="wrapper">
-  <?php include 'inc/navigation.php';?>
-    <div id="page-wrapper">
-      <div class="container-fluid">
-        <!-- Page Heading -->
-        <div class="row">
-          <?php $Collaboration=getCollaboration(); ?>
-                    <div class="col-lg-12">
-                      <?php include 'inc/notification.php';?>
-
-                        <h1 class="page-header">Update Collaboration </h1>
-
-                    </div>
-                </div>
-                <!-- /.row -->
-                <div class="row">
+<?php $Collaboration = getCollaboration(); ?>
                  <form class="form-horizontal" method="POST" action="inc/about_process">
                  <?php foreach($Collaboration as $getCollaborationList){ ?>
 
@@ -48,23 +28,11 @@
                               <button type="submit" class="btn btn-success">Update</button>
                             </div>
                           </div>
-
+                          <?php
+                             }
+                              ?>
                     </form>
-                  </div>
-               <?php
-                  }
-                   ?>
-                <!-- /.row -->
 
-            </div>
-            <!-- /.container-fluid -->
 
-        </div>
-        <!-- /#page-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
-
-<?php
-include 'inc/tinymce_init.php';
-include 'inc/footer.php'; ?>
+<?php include_once 'inc/tinymce_init.php';
+?>

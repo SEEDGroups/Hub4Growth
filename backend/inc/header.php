@@ -39,6 +39,9 @@
         li.active a{
           background-color: darkcyan !important;
         }
+        label{
+          color: black !important;
+        }
     </style>
 </head>
 

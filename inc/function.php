@@ -117,9 +117,10 @@ function getContribution (){
 			}return $data;
 		}
 	}
+
 	function getTimeline(){
 		global $conn;
-		$sql = "SELECT * FROM achievement WHERE event_type = 2 ORDER BY event_date DESC";
+		$sql = "SELECT * FROM achievement WHERE event_type = 2 AND ORDER BY event_date DESC";
 		$query = mysqli_query($conn, $sql);
 		if(mysqli_num_rows($query) <1){
 			return 0;

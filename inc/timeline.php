@@ -18,17 +18,17 @@
 </div>
 
 <!-- modal for Timeline -->
-<?php 
+<?php
 
 for($i=0;$i<6;$i++){
   ?>
 <div id="timelineModal<?php echo $i;?>" class="modal fade" role="dialog" style="margin-top: 44px">
     <div class="modal-dialog">
-      
+
         <div class="modal-content modal-lg">
             <div class="modal-header" style="padding: 25px;">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                 
+
                 <h3 class="modal-title" style="text-align-last: center"><?php echo $getTimeline[$i]['event_title']; ?></h3>
                 <medium>
                   <p class="pull-left"><i class="fa fa-fw fa-map-marker"></i><?php echo $getTimeline[$i]['event_location']; ?></p>
@@ -43,14 +43,14 @@ for($i=0;$i<6;$i++){
               <div class="row" style="margin-top: 15px;">
                 <label class="col-sm-2 control-label">Description</label>
                 <div class = "col-sm-10"><?php echo html_entity_decode($getTimeline[$i]['event_description']); ?></div>
-             
+
               </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
             </div>
         </div>
- 
+
 
 </div>
 </div>
