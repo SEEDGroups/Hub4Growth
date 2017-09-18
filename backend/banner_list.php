@@ -68,7 +68,7 @@
                                  <td><?php echo $getBanner['caption'];?></td>
                                  <td><?php echo $getBanner['description'];?></td>
                                  <td>
-                                 <a onclick="return confirm('Are you sure you want to delete this Member?')" href="banner_list?id=<?php echo $getBanner['id']; ?>&act=<?php echo substr(sha1('delete-'.$getBanner['id']), 4, 9);?>" style="text-decoration: none;"><i class="fa fa-fw fa-trash fa-2x"></i></a>
+                                 <a onclick="return confirm('Are you sure you want to delete this Banner?')" href="banner_list?id=<?php echo $getBanner['id']; ?>&act=<?php echo substr(sha1('delete-'.$getBanner['id']), 4, 9);?>" style="text-decoration: none;"><i class="fa fa-fw fa-trash fa-2x"></i></a>
                                  </td>
                                <!--   <td><?php //echo $getPosition['pos_description'];?></td>  -->
                               </tr>

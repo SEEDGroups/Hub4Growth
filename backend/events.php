@@ -2,12 +2,12 @@
 <?php session_start(); include 'inc/config.php'; include 'inc/dbconnect.php'; include 'inc/function.php'; $page="Add"; ?>
 <?php include 'inc/header.php'; ?>
 
-<?php 
-      include 'security_inside.php'; 
+<?php
+      include 'security_inside.php';
       if(isset($_GET['id']) && isset($_GET['act'])){
         $id=sanitize($_GET['id']);
         $confirm=substr(sha1("edit-".$id), 4,9);
-         
+
           if($confirm== $_GET['act']){
 
             $confirmId=confirmId($id);
@@ -17,13 +17,13 @@
             }else{
               $_SESSION['info']="Event does not exist";
               @header('location: list_events');
-              exit;          
+              exit;
             }
           } else{
             $_SESSION['info']="Invalid Request";
             @header('location: list_events');
             exit;
-          }     
+          }
       }
 ?>
 
@@ -39,13 +39,13 @@
                 <div class="row">
                   <?php $Event=getEvents();
                    ?>
-                   
+
                     <div class="col-lg-12">
 
                       <?php include 'inc/notification.php';?>
                         <h1 class="page-header"> <?php echo $page; ?> Event / Timeline </h1>
                     </div>
-                  
+
                 </div>
                 <!-- /.row -->
                  <div class="row">
@@ -100,17 +100,17 @@
                             <label class="col-sm-2 control-label">
                                   Event type
                             </label>
-                  
+
                             <div class="col-sm-6">
-                                
+
                                 <select class="form-control" name="event_type">
                                     <option selected="" disabled="">---- Select any ----</option>
-                                    
+
                                      <option value="1" selected="event">Event</option>
                                      <option value="2">Timeline</option>
                                 </select>
-                            </div>  
-                          </div>         
+                            </div>
+                          </div>
 
                           <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-6">
@@ -120,7 +120,7 @@
                           </div>
                         </form>
                   </div>
-               
+
                 <!-- /.row -->
 
             </div>
@@ -132,6 +132,6 @@
     </div>
     <!-- /#wrapper -->
 
-<?php 
+<?php
 include 'inc/tinymce_init.php';
 include 'inc/footer.php';?>

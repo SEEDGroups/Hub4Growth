@@ -9,8 +9,8 @@ const SITE_URL = "http://localhost/seeds/hub4growth/";
 	const FONTAWE_URL = ASSETS_URL.'fonts/';
 	const UPLOADED_IMAGE = SITE_URL."backend/inc/uploads/Hub4Growth/";
 
-	const DBNAME = 'cids';
-	const DBHOST = 'localhost';
-	const DBPASSWORD = '';
-	const DBUSER = 'root';
+	const DB_NAME = 'cids';
+	const DB_HOST = 'localhost';
+	const DB_PASSWORD = '';
+	const DB_USER = 'root';
 ?>

@@ -20,7 +20,7 @@
             </div>
             <div class="col-sm-8 hidden-xs">
                 <ul class="nav nav-justified">
-                    <li><a href="#templatemo_banner_slide">Home</a></li>
+                    <li><a href="#carousel-example-generic">Home</a></li>
                     <li><a href="#templatemo_about">About</a></li>
                     <li><a href="#templatemo_events">Events</a></li>
                     <li><a href="#templatemo_timeline">Timeline</a></li>

@@ -106,7 +106,7 @@ function getContribution (){
 
 	function getEvents(){
 		global $conn;
-		$sql = "SELECT * FROM achievement WHERE event_type=1";
+		$sql = "SELECT * FROM achievement WHERE event_type = 1";
 		$query = mysqli_query($conn, $sql);
 		if(mysqli_num_rows($query) <1){
 			return 0;
@@ -119,7 +119,7 @@ function getContribution (){
 	}
 	function getTimeline(){
 		global $conn;
-		$sql = "SELECT * FROM achievement WHERE event_type=2";
+		$sql = "SELECT * FROM achievement WHERE event_type = 2 ORDER BY event_date DESC";
 		$query = mysqli_query($conn, $sql);
 		if(mysqli_num_rows($query) <1){
 			return 0;

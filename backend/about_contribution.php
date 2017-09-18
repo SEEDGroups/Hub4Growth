@@ -32,6 +32,7 @@
                             <label class="col-sm-2 control-label">Summary</label>
                             <div class="col-sm-6">
                              <textarea name="summary" id="summary" class="form-control" rows="3" style="resize:vertical;" ><?php echo $getContributionList['summary']; ?></textarea>
+
                             </div>
                           </div>
                           
@@ -45,8 +46,8 @@
                             <div class="form-group">
                             <label class="col-sm-2 control-label">Description</label>
                             <div class="col-sm-6">
-                             <textarea name="description" id="description" class="form-control" rows="7" style="resize:vertical;" ><?php echo html_entity_decode($getContributionList['description'];) ?></textarea>
-                            </div>
+                             <textarea name="description" id="description" class="form-control" rows="7" style="resize:vertical;"><?php echo html_entity_decode($getContributionList['description']); ?></textarea>
+                             
                           </div
 
                                         
