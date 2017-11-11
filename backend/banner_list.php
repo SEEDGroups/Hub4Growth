@@ -1,25 +1,34 @@
 
-<?php session_start(); include 'inc/config.php'; include 'inc/dbconnect.php';?>
+<?php session_start(); ?>
+<?php include 'inc/config.php'; include 'inc/dbconnect.php'; include 'inc/function.php'; include 'security_inside.php';?>
 <?php include 'inc/header.php'; ?>
 <?php
-         include 'inc/function.php';
-        include 'security_inside.php';
-
-        if(isset($_GET['id']) && !empty($_GET['act'])) {
+         if(isset($_GET['id']) && !empty($_GET['act'])) {
             $id = sanitize($_GET['id']);
-            $field = "id";
-            $tableName = "banner_info";
-            $del = deleteData($tableName, $field, $id);
-
+            
+            $getBannerInfo = getBannerInfoById($id);
+            $image_title = $getBannerInfo['banner_title'];
+            $del = deleteData('banner_info', 'id', $id);
             if($del == 1){
+              $delImage = deleteData('banner_image', 'id', $id);
+                unlink("inc/uploads/Hub4Growth/".$image_title);
                 $_SESSION['success'] = "Banner has been removed successfully";
-                @header('location: banner_list');
-            exit;
+                ?>
+                 <script type="text/javascript">
+                 // window.location.href= "http://hub4growthtu.edu.np/backend/banner_list.php";
+              </script>
+                <?php              
+            
             }else{
                 $_SESSION['error'] = "Banner couldn't be removed at this moment. Please try again later.";
-                @header('location: banner_list');
-            exit;
+                ?>
+                 <script type="text/javascript">
+                  //window.location.href= "http://hub4growthtu.edu.np/backend/banner_list.php";    
+              </script>
+                <?php
+            
             }
+             header('location: banner_list.php');
         }
 ?>
 <?php include 'datatable_css.php';?>
@@ -38,14 +47,14 @@
                     <div class="col-lg-12">
                       <?php include 'inc/notification.php'; ?>
                         <h1 class="page-header">
-                          Banner List <small class="pull-right"><a href="add_banner" class="btn btn-success"><i class="fa fa-fw fa-plus"></i> Add Banner</i></a></small>
+                          Banner List <small class="pull-right"><a href="add_banner.php" class="btn btn-success"><i class="fa fa-fw fa-plus"></i> Add Banner</i></a></small>
                         </h1>
 
                     </div>
                 </div>
                 <!-- /.row -->
                 <div class="row">
-                 <?php $getBanners = getBanners(); //debugger($getBanners); exit;?>
+                 <?php $getBanners = getBanners();// debugger($getBanners); //exit;?>
                       <table id="getBanners" class="table table-bordered">
                         <thead>
                         <tr>
@@ -65,12 +74,14 @@
                               <tr>
                                 <td><?php echo $i; $i++;?></td>
                                  <td><img src="<?php echo MEMBER_IMAGE_URL.$getBanner['banner_title'];?>" class="img img-responsive" style="max-width:100%; height: 25%;"></td>
-                                 <td><?php echo $getBanner['caption'];?></td>
-                                 <td><?php echo $getBanner['description'];?></td>
+                                 <td><?php echo html_entity_decode($getBanner['caption']);?></td>
+                                 <td><?php echo html_entity_decode($getBanner['description']);?></td>
                                  <td>
-                                 <a onclick="return confirm('Are you sure you want to delete this Banner?')" href="banner_list?id=<?php echo $getBanner['id']; ?>&act=<?php echo substr(sha1('delete-'.$getBanner['id']), 4, 9);?>" style="text-decoration: none;"><i class="fa fa-fw fa-trash fa-2x"></i></a>
+
+                                  <a href="add_banner.php?id=<?php echo $getBanner['id']; ?>&act=<?php echo substr(sha1('update-'.$getBanner['id']), 4, 9);?>" style="text-decoration: none; border-radius: 50% !important;" class="btn btn-success"><i class="fa fa-fw fa-pencil fa-lg"></i></a>
+                                  <a onclick="return confirm('Are you sure you want to delete this Banner?')" href="banner_list.php?id=<?php echo $getBanner['id']; ?>&act=<?php echo substr(sha1('delete-'.$getBanner['id']), 4, 9);?>" style="text-decoration: none; border-radius: 50% !important;" class="btn btn-danger"><i class="fa fa-fw fa-trash fa-lg"></i></a>
                                  </td>
-                               <!--   <td><?php //echo $getPosition['pos_description'];?></td>  -->
+                              
                               </tr>
                               <?php
                               }

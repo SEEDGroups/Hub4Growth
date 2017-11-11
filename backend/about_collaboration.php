@@ -1,11 +1,11 @@
 <?php $Collaboration = getCollaboration(); ?>
-                 <form class="form-horizontal" method="POST" action="inc/about_process">
+                 <form class="form-horizontal" method="POST" action="inc/about_process.php">
                  <?php foreach($Collaboration as $getCollaborationList){ ?>
 
                           <div class="form-group">
                             <label class="col-sm-2 control-label">Summary</label>
-                            <div class="col-sm-6">
-                             <textarea name="summary" id="summary" class="form-control" rows="3" style="resize:vertical;" ><?php echo $getCollaborationList['summary']; ?></textarea>
+                            <div class="col-sm-10">
+                             <textarea name="summary" id="collaboration_summary" class="form-control" rows="3" style="resize:vertical;" ><?php echo html_entity_decode($getCollaborationList['summary']); ?></textarea>
                             </div>
                           </div>
 
@@ -18,8 +18,8 @@
 
                           <div class="form-group">
                             <label class="col-sm-2 control-label">Description</label>
-                            <div class="col-sm-6">
-                             <textarea name="description" id="description" class="form-control" rows="7" style="resize:vertical;"><?php echo html_entity_decode($getCollaborationList['description']); ?></textarea>
+                            <div class="col-sm-10">
+                             <textarea name="description" id="collaboration_description" class="form-control" rows="7" style="resize:vertical;"><?php echo html_entity_decode($getCollaborationList['description']); ?></textarea>
                             </div>
                           </div>
 
@@ -32,7 +32,3 @@
                              }
                               ?>
                     </form>
-
-
-<?php include_once 'inc/tinymce_init.php';
-?>

@@ -1,4 +1,6 @@
-
-# HTID:2219101: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
-php_value display_errors 1
-# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:2219101:
+options +MultiViews
+DefaultType  application/x-httpd-php
+Options -Indexes
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html

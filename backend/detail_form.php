@@ -1,8 +1,8 @@
 
 <?php session_start(); include 'inc/config.php'; include 'inc/dbconnect.php'; include 'inc/function.php';?>
 <?php include 'inc/header.php'; ?>
-<?php 
-      include 'security_inside.php'; 
+<?php
+      include 'security_inside.php';
 ?>
 
     <div id="wrapper">
@@ -15,15 +15,15 @@
 
                 <!-- Page Heading -->
                 <div class="row">
-                   
+
                     <div class="col-lg-12">
 
                       <?php include 'inc/notification.php';?>
                         <h1 class="page-header">
-                         <?php 
-                            if($act['edit']){ 
+                         <?php
+                            if($act['edit']){
                               echo "User Edit";
-                            } 
+                            }
                             else {
                                 echo "User Registration";
                               }
@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <!-- /.row -->
-                <!-- <?php 
+                <!-- <?php
                         // if(isset($act['edit'])){
                         //   echo "user_update.php?id=".$user_info['id'];
                         // } else{
@@ -52,7 +52,7 @@
                               <input type="email" class="form-control" name="email" placeholder="Pokharel" value="">
                             </div>
                           </div>
-                          
+
                            <div class="form-group">
                             <label class="col-sm-2 control-label">
                                 Position
@@ -64,12 +64,12 @@
                                     <?php $i=1;
                                       foreach ($getPositions as $getPosition){ ?>
                                     <option value="<?php echo $getPosition['id'];?>"><?php echo $getPosition['pos_title'];?></option>
-                                   <?php } ?>  
+                                   <?php } ?>
                                   </select>
 
                             </div>
-                        </div>  
-                        
+                        </div>
+
                           <div class="form-group">
                             <label class="col-sm-2 control-label">Username</label>
                             <div class="col-sm-10">
@@ -81,7 +81,7 @@
                             <div class="col-sm-10">
                               <input type="password" class="form-control" disabled id="inputPassword3" name="password" placeholder="Password">
                             </div>
-                          </div>                 
+                          </div>
                           <div class="form-group">
                             <label class="col-sm-2 control-label">Address</label>
                             <div class="col-sm-10">
@@ -106,7 +106,7 @@
                             <label class="col-sm-2 control-label"> Nationality</label>
                             <div class="col-sm-10">
                                <input type="text" name="nationality" id="nationality" class="form-control" value="<?php if(isset($act['edit'])){ echo $user_info['nationality'];} ?>">
-                                   
+
                                 </select>
                             </div>
                         </div>
@@ -114,7 +114,7 @@
                             <label class="col-sm-2 control-label">Phone number</label>
                             <div class="col-sm-10">
                                <input type="text" name="phoneNumber" id="phoneNumber" class="form-control" value="<?php if(isset($act['edit'])){ echo $user_info['phone-number'];} ?>">
-                                   
+
                                 </select>
                             </div>
                         </div>
@@ -137,7 +137,7 @@
                                   </select>
 
                             </div>
-                        </div>  
+                        </div>
 
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Status</label>
@@ -151,14 +151,14 @@
                         </div>
                           <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
-                              <button type="submit" class="btn btn-success" value="1"?>Register 
+                              <button type="submit" class="btn btn-success" value="1"?>Register
                               </button>
                               <button type="reset" class="btn btn-danger">Reset</button>
                             </div>
-                        
+
                         </form>
                   </div>
-               
+
                 <!-- /.row -->
 
             </div>
@@ -171,4 +171,3 @@
     <!-- /#wrapper -->
 
 <?php include 'inc/footer.php';?>
-

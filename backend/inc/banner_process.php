@@ -6,8 +6,8 @@
 	// debugger($_POST);  debugger($_FILES); debugger($_FILES['images']['tmp_name']); exit;
 	if(isset($_POST) && !empty($_POST)){
 		$data = array();
-		$data['caption']= sanitize($_POST['caption']);
-		$data['description'] = sanitize($_POST['description']);
+		$data['caption']= addslashes(htmlentities($_POST['caption']));
+		$data['description'] = addslashes(htmlentities($_POST['description']));
 
 		$banner_id = addBannerInfo($data);
 		//debugger($banner_id); exit;
@@ -47,25 +47,25 @@
 					}
                             if($uploads){
                                 $_SESSION['success'] = "Banner has been added successfully";
-                                @header("location: ../banner_list");
+                                @header("location: ../banner_list.php");
                                 exit;
 							}
 							else{
 									$_SESSION['info'] = "Banner data has been added but banner image wasn't ";
-									@header("location: ../banner_list");
+									@header("location: ../banner_list.php");
 									exit;
 							}
 
 
 					}else{
 							$_SESSION['error'] = "Banner data hasn't been updated!";
-							@header('location: ../banner_list');
+							@header('location: ../banner_list.php');
 							exit;
 			 }
 
 	}else{
 			$_SESSION['warning'] = "Invalid entry!!";
-			@header('location: ../banner_list');
+			@header('location: ../banner_list'.php);
 			exit;
 	}
 

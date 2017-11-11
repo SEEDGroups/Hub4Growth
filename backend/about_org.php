@@ -1,4 +1,5 @@
-<?php session_start(); include 'inc/config.php'; include 'inc/dbconnect.php'; include 'inc/function.php'; include 'security_inside.php';?>
+<?php session_start(); ?>
+<?php include 'inc/config.php'; include 'inc/dbconnect.php'; include 'inc/function.php'; include 'security_inside.php';?>
 <?php include 'inc/header.php';	 ?>
 <?php
 	include 'inc/navigation.php';

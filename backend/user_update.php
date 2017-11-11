@@ -15,7 +15,7 @@ if(isset($_POST) && !empty($_POST)){
   $added_by = $_SESSION['user_id'];
   $id = sanitize($_GET['id']);
 
-  $sql= "UPDATE user_registration SET firstname = '$firstname', lastname = '$lastname', email = '$email', gender = '$gender', address = '$address', user_status = $status, nationality = '$nationality', 
+  $sql= "UPDATE user_registration SET firstname = '$firstname', lastname = '$lastname', email = '$email', gender = '$gender', address = '$address', user_status = $status, nationality = '$nationality',
   added_by = '$added_by',role_id = '$role_id' WHERE id = $id";
 
   $query= mysqli_query($conn, $sql);
