@@ -9,7 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin - Bootstrap Admin Template</title>
+    <title>HUB4GROWTH</title>
+    <meta name="description" content ="ERASMUS + HUB4GROWTH Project"/>
+    <meta name="author" content="">
+    <link rel = "shortcut icon" href="logo.PNG">
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo CSS_URL; ?>bootstrap.min.css" rel="stylesheet">
@@ -41,6 +44,19 @@
         }
         label{
           color: black !important;
+        }
+        .headerBtn{
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .action{
+          text-align: center;
+        }
+        a.actionBtn{
+          border-radius: 50%;
+          text-decoration: none;
+          cursor: pointer;
         }
     </style>
 </head>

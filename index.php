@@ -1,14 +1,7 @@
-<?php
-    include 'inc/config1.php';
-    include 'inc/dbconnect.php';
-    include 'inc/function.php';
-?>
-<?php
-    include 'inc/header.php';
-    include 'inc/banner.php';
-    include 'inc/navigation.php';
-    include 'inc/about.php';
-    include 'inc/events.php';
-    include 'inc/timeline.php';
-    include 'inc/footer.php';
-?>
+<?php include "inc/header.php"; include 'backend/datatable_css.php';?>
+	<div id="fh5co-page">
+		<?php include "pages/navigation.php"; ?>
+			<?php include "pages/mainContent.php"; ?>
+	</div>
+<?php include "inc/footer.php"; ?>
+<?php include 'backend/inc/dataTables.php';?>

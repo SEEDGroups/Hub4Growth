@@ -1,17 +1,17 @@
 <?php session_start();
-	include 'config1.php';
+	include 'config.php';
 	include 'dbconnect.php';
 	include 'function.php';
 	
 	if(isset($_POST) && !empty($_POST)){
-		$fullname= sanitize($_POST['name']);
+		$name= sanitize($_POST['name']);
 		$email = sanitize($_POST['email']);
-		$subject = sanitize($_POST['subject']);
+		$phone = sanitize($_POST['phone']);
 		$message=sanitize($_POST['message']);
 		
 		global $conn;
 
-		$sql = "INSERT INTO enquiry SET fullname='$fullname', email='$email', subject='$subject', message='$message'";
+		$sql = "INSERT INTO enquiry SET name='$name', email='$email', phone='$phone', message='$message'";
 		$query = mysqli_query($conn, $sql);
 		/*debugger($_POST);
 		exit;

@@ -16,4 +16,26 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$('#listEvents').dataTable();
 });
+
+$(document).ready(function(){
+	$('#getBanners').dataTable();
+});
+
+$(document).ready(function(){
+	$('#listTimeline').dataTable();
+});
+
+$(document).ready(function(){
+	$('#notices').dataTable();
+});
+$(document).ready(function(){
+	$('#developmentWorks').dataTable();
+});
+$(document).ready(function(){
+	$('#knowledge').dataTable();
+});
+
+$(document).ready(function(){
+	$('#third_whatWeDo').dataTable();
+});
 </script>

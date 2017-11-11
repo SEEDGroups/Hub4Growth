@@ -21,7 +21,7 @@
                     <div class="col-lg-12">
                       <?php include 'inc/notification.php'; ?>
                         <h1 class="page-header">
-                          Positions List <small><a href="position" style="text-decoration: none;"><i class="fa fa-fw fa-undo"></i> Go back</a></small>
+                          Positions List <small><a href="position.php" style="text-decoration: none;"><i class="fa fa-fw fa-undo"></i> Go back</a></small>
                         </h1>
                        
                     </div>

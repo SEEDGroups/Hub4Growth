@@ -1,0 +1,683 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Nov 11, 2017 at 01:16 PM
+-- Server version: 10.1.26-MariaDB
+-- PHP Version: 7.1.8
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `ioecids`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `aboutcids`
+--
+
+CREATE TABLE `aboutcids` (
+  `id` int(11) NOT NULL,
+  `title` int(11) DEFAULT NULL,
+  `summary` text COLLATE utf8_unicode_ci,
+  `description` text COLLATE utf8_unicode_ci,
+  `gallery` text COLLATE utf8_unicode_ci,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_date` datetime DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `aboutcids`
+--
+
+INSERT INTO `aboutcids` (`id`, `title`, `summary`, `description`, `gallery`, `added_date`, `updated_date`) VALUES
+(1, 1, '', '', '', '2017-11-05 16:06:18', '2017-11-05 16:06:18'),
+(2, 2, '&lt;p&gt;Contribution updated Summary&lt;/p&gt;', '&lt;p&gt;Contribution&amp;nbsp;updated Description&lt;/p&gt;', '&lt;p&gt;Contribution&amp;nbsp;updated Gallery&lt;/p&gt;', '2017-11-05 16:06:18', '2017-11-05 16:06:18'),
+(3, 3, 'collabration summary', 'collabration description', NULL, '2017-11-05 16:07:04', '2017-11-05 16:07:04'),
+(4, 4, 'shared Summary', 'shared Description', NULL, '2017-11-05 16:07:04', '2017-11-05 16:07:04');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `aboutcidstitle`
+--
+
+CREATE TABLE `aboutcidstitle` (
+  `id` int(11) NOT NULL,
+  `title` text COLLATE utf8_unicode_ci,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `aboutcidstitle`
+--
+
+INSERT INTO `aboutcidstitle` (`id`, `title`, `added_date`, `updated_date`) VALUES
+(1, 'Mission and Vision', '2017-11-05 16:03:40', NULL),
+(2, 'Contribution to National Development', '2017-11-05 16:03:40', NULL),
+(3, 'Collabration', '2017-11-05 16:03:40', NULL),
+(4, 'Shared values', '2017-11-05 16:03:40', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `about_org`
+--
+
+CREATE TABLE `about_org` (
+  `id` int(11) NOT NULL,
+  `about_org_id` int(11) DEFAULT NULL,
+  `summary` text,
+  `description` text,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `about_org`
+--
+
+INSERT INTO `about_org` (`id`, `about_org_id`, `summary`, `description`, `added_date`, `updated_date`) VALUES
+(7, 1, '&lt;p&gt;Current status of our society is traditional. The industries are based on traditional methodology and outmoded technology. Their productivity is substandard and competence is low. But they can be transformed and revitalized by the knowledge resources of the Universities. Small and medium scale Enterprises can be uplifted to larger capacity. Increased capacity means larger productivity, greater Employability, better Income and increased life standard of the society. New startup Enterprises and Entrepreneurship can be supported through Research and Innovative ideas. This will open new stream of opportunities, increase employability and generate new sources of income. In return, the Universities will get bolstered by the exposure to Industrial sector that will expand their knowledge pool, uplift their expertise, extend their resources and open new possibilities through research, innovation and leadership.&lt;/p&gt;\r\n&lt;p&gt;&amp;nbsp;The vision of this Center is to support the EU SDGs through the collaboration between the National University, Enterprises of Nepal, Government and other stakeholders for promoting Research and Development (R&amp;amp;D), plan and policy formulation and development of new products and markets that will create a sustainable chain between the knowledge resources and physical and financial resources of Nepal. Hence mutual Capacity Building is achieved through synergy.&lt;/p&gt;\r\n&lt;p&gt;&lt;strong&gt;Mission of &lt;/strong&gt;&lt;strong&gt;HUB4GROWTH, TRIBHUVAN UNIVERSITY, IOE, NEPAL&lt;/strong&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n&lt;li&gt;Creating University enterprise linkage for knowledge and resource transfer.&lt;/li&gt;\r\n&lt;li&gt;Research and Development for Capacity Building of both Enterprises and Universities.&lt;/li&gt;\r\n&lt;li&gt;Building Entrepreneur environment for Enterprise creation through Universities.&lt;/li&gt;\r\n&lt;li&gt;Create and change market trends through Innovative Technology.&lt;/li&gt;\r\n&lt;li&gt;Provide support for Employbility, Entrepreneurship and new products.&lt;/li&gt;\r\n&lt;li&gt;Help in the Socio-Economic Development of the Nation.&lt;/li&gt;\r\n&lt;/ul&gt;', '&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;color: black; font-size: 14pt;&quot;&gt;Current status of our society is traditional. The industries are based on traditional methodology and outmoded technology. Their productivity is substandard and competence is low. But they can be transformed and revitalized by the knowledge resources of the Universities. Small and medium scale Enterprises can be uplifted to larger capacity. Increased capacity means larger productivity, greater Employability, better Income and increased life standard of the society. New startup Enterprises and Entrepreneurship can be supported through Research and Innovative ideas. This will open new stream of opportunities, increase employability and generate new sources of income. In return, the Universities will get bolstered by the exposure to Industrial sector that will expand their knowledge pool, uplift their expertise, extend their resources and open new possibilities through research, innovation and leadership. &lt;/span&gt;&lt;/p&gt;\r\n&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&lt;span style=&quot;mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: Calibri; color: black;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri; mso-bidi-font-family: Calibri; color: black;&quot;&gt;The vision of this Center is to support the EU SDGs through the collaboration between the National University, Enterprises of Nepal, Government and other stakeholders for promoting Research and Development (R&amp;amp;D), &lt;a name=&quot;_Hlk492988317&quot;&gt;&lt;/a&gt;plan and policy formulation and development of new products and markets that will create a sustainable chain between the knowledge resources and physical and financial resources of Nepal. Hence mutual Capacity Building is achieved through synergy. &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\r\n&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&lt;strong&gt;Mission of &lt;/strong&gt;&lt;strong&gt;&lt;span lang=&quot;X-NONE&quot;&gt;HUB4GROWTH, TRIBHUVAN UNIVERSITY, IOE, NEPAL&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;\r\n&lt;ul style=&quot;margin-top: 0in;&quot; type=&quot;disc&quot;&gt;\r\n&lt;li class=&quot;MsoNormal&quot; style=&quot;margin-bottom: 0.0001pt; line-height: normal; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;Creating University enterprise linkage for knowledge and resource transfer.&lt;/span&gt;&lt;/li&gt;\r\n&lt;li class=&quot;MsoNormal&quot; style=&quot;margin-bottom: 0.0001pt; line-height: normal; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;Research and Development for Capacity Building of both Enterprises and Universities.&lt;/span&gt;&lt;/li&gt;\r\n&lt;li class=&quot;MsoNormal&quot; style=&quot;margin-bottom: 0.0001pt; line-height: normal; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;Building Entrepreneur environment for Enterprise creation through Universities.&lt;/span&gt;&lt;/li&gt;\r\n&lt;li class=&quot;MsoNormal&quot; style=&quot;margin-bottom: 0.0001pt; line-height: normal; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;Create and change market trends through Innovative Technology.&lt;/span&gt;&lt;/li&gt;\r\n&lt;li class=&quot;MsoNormal&quot; style=&quot;margin-bottom: 0.0001pt; line-height: normal; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;Provide support for Employbility, Entrepreneurship and new products.&lt;/span&gt;&lt;/li&gt;\r\n&lt;li class=&quot;MsoNormal&quot; style=&quot;margin-bottom: 0.0001pt; line-height: normal; text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;Help in the Socio-Economic Development of the Nation.&lt;/span&gt;&lt;/li&gt;\r\n&lt;/ul&gt;', '2017-09-20 03:28:00', '2017-11-11 13:57:58'),
+(8, 2, '&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;The vision of this Center is to boost the Nation development through the collaboration between the National University, Enterprises of Nepal, Government and other stakeholders for promoting Research and Development (R&amp;amp;D).&lt;/span&gt;&lt;/p&gt;', '', '2017-09-20 03:28:00', '2017-10-12 06:17:04'),
+(9, 3, '&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;HUB4GROWTH has collaborated with following institutions :&lt;/span&gt;&lt;/p&gt;\r\n&lt;ul style=&quot;list-style-type: disc;&quot;&gt;\r\n&lt;li&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&lt;a title=&quot;National Business Initiative&quot; href=&quot;http://www.nbinepal.org.np&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;National Business Initiative&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;\r\n&lt;li&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&lt;a title=&quot;Federation of Nepalese Chamber of Commerce &amp;amp; Industries (FNCCI)&quot; href=&quot;http://www.fncci.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Federation of Nepalese Chamber of Commerce &amp;amp; Industries (FNCCI)&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;\r\n&lt;li&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&lt;a title=&quot; National Planning Commission (NPC)&quot; href=&quot;http://www.npc.gov.np&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&amp;nbsp;National Planning Commission (NPC)&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;\r\n&lt;li&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&lt;a title=&quot;Research Centre for Applied Science and Technology (RECAST)&quot; href=&quot;http://www.recast.edu.np/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Research Centre for Applied Science and Technology (RECAST)&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;and other institutions .&lt;/span&gt;&lt;/p&gt;', '&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;HUB4GROWTH has collaborated with following institutions :&lt;/span&gt;&lt;/p&gt;\r\n&lt;ul style=&quot;list-style-type: disc;&quot;&gt;\r\n&lt;li&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&lt;a title=&quot;National Business Initiative&quot; href=&quot;http://www.nbinepal.org.np&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;National Business Initiative&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;\r\n&lt;li&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&lt;a title=&quot;Federation of Nepalese Chamber of Commerce &amp;amp; Industries (FNCCI)&quot; href=&quot;http://www.fncci.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Federation of Nepalese Chamber of Commerce &amp;amp; Industries (FNCCI)&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;\r\n&lt;li&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&lt;a title=&quot; National Planning Commission (NPC)&quot; href=&quot;http://www.npc.gov.np&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&amp;nbsp;National Planning Commission (NPC)&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;\r\n&lt;li&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&lt;a title=&quot;Research Centre for Applied Science and Technology (RECAST)&quot; href=&quot;http://www.recast.edu.np/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Research Centre for Applied Science and Technology (RECAST)&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;and other institutions .&lt;/span&gt;&lt;/p&gt;', '2017-09-20 03:28:00', '2017-11-11 13:58:08'),
+(10, 4, '&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;HUB&lt;/span&gt;&lt;span style=&quot;color: #33cccc;&quot;&gt;4&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;GROWTH&lt;/span&gt;&lt;/strong&gt; TU, Nepal operates by following different guideline.&lt;/span&gt;&lt;/p&gt;', '&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;HUB&lt;/span&gt;&lt;span style=&quot;color: #33cccc;&quot;&gt;4&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;GROWTH&nbsp;&lt;/span&gt;TU, Nepal operates by the following guiding principles:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n&lt;li&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;Enabling cluster development: University provides knowledge to Business and the Business provides support to the Universities,&lt;/span&gt;&lt;/li&gt;\r\n&lt;li&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;Success of the Enterprises, Universities and the community together,&lt;/span&gt;&lt;/li&gt;\r\n&lt;li&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;Bring back the economic benefit of the Enterprises to the Society,&lt;/span&gt;&lt;/li&gt;\r\n&lt;li&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;Collaborative research for Innovation and meeting National Needs and Demands,&lt;/span&gt;&lt;/li&gt;\r\n&lt;li&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;Redefine the market through new innovations and new products,&lt;/span&gt;&lt;/li&gt;\r\n&lt;li&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;Entrepreneur support to students for creation of new enterprises and new market,&lt;/span&gt;&lt;/li&gt;\r\n&lt;li&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;Knowledge and resource transfer for synergy,&lt;/span&gt;&lt;/li&gt;\r\n&lt;li&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;Curriculum development for progressive knowledge.&lt;/span&gt;&lt;/li&gt;\r\n&lt;/ul&gt;', '2017-09-20 03:28:00', '2017-11-09 11:35:43');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `about_org_id`
+--
+
+CREATE TABLE `about_org_id` (
+  `id` int(11) NOT NULL,
+  `about_title` text,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `about_org_id`
+--
+
+INSERT INTO `about_org_id` (`id`, `about_title`, `added_date`, `updated_date`) VALUES
+(1, 'Vision and Mission', '2017-09-13 14:07:22', NULL),
+(2, 'Contribution to National Development', '2017-09-13 14:07:22', NULL),
+(3, 'Collaboration', '2017-09-13 14:07:22', NULL),
+(4, 'Research & Technology', '2017-09-13 14:07:22', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `banner_image`
+--
+
+CREATE TABLE `banner_image` (
+  `id` int(11) NOT NULL,
+  `banner_title` text COLLATE utf8_unicode_ci,
+  `banner_id` int(11) DEFAULT NULL,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `banner_image`
+--
+
+INSERT INTO `banner_image` (`id`, `banner_title`, `banner_id`, `added_date`, `updated_date`) VALUES
+(30, 'CIDS-449418736.PNG', 24, '2017-11-11 16:19:45', '2017-11-11 16:28:44'),
+(31, 'CIDS-449418736.PNG', 22, '2017-11-11 16:19:45', '2017-11-11 16:28:44'),
+(36, 'CIDS-238721358.PNG', 26, '2017-11-11 16:46:55', NULL),
+(37, 'CIDS-877261916.PNG', 25, '2017-11-11 16:47:05', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `banner_info`
+--
+
+CREATE TABLE `banner_info` (
+  `id` int(11) NOT NULL,
+  `caption` text COLLATE utf8_unicode_ci,
+  `description` text COLLATE utf8_unicode_ci,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `banner_info`
+--
+
+INSERT INTO `banner_info` (`id`, `caption`, `description`, `added_date`, `updated_date`) VALUES
+(0, '&lt;p&gt;dfsadfa&lt;/p&gt;', '&lt;p&gt;asdfasdf&lt;/p&gt;', '2017-11-11 13:24:44', NULL),
+(19, '&lt;p&gt;asdfasfd&lt;/p&gt;', '&lt;p&gt;asdfasdfasf&lt;/p&gt;', '2017-11-08 21:24:32', NULL),
+(20, '&lt;p&gt;zxcvzxcvzzxv&lt;/p&gt;', '&lt;p&gt;zxvczxv&lt;/p&gt;', '2017-11-08 21:33:22', NULL),
+(21, '&lt;p&gt;asdf&lt;/p&gt;', '&lt;p&gt;asdfasdf&lt;/p&gt;', '2017-11-08 21:34:22', NULL),
+(22, '&lt;p&gt;asdfasf&lt;/p&gt;', '&lt;p&gt;asdfasdf&lt;/p&gt;', '2017-11-08 21:35:56', NULL),
+(24, '&lt;p&gt;sfasfd&lt;/p&gt;', '&lt;p&gt;asdfasdf&lt;/p&gt;', '2017-11-08 21:43:40', NULL),
+(25, '&lt;p&gt;kjhkhkjAASFASF&lt;/p&gt;', '&lt;p&gt;jhkhkhjASFASFasfasfd&lt;/p&gt;', '2017-11-08 21:45:47', '2017-11-08 22:02:11'),
+(26, '&lt;p&gt;asdfas&lt;/p&gt;', '&lt;p&gt;asfdasf&lt;/p&gt;', '2017-11-08 22:02:54', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact`
+--
+
+CREATE TABLE `contact` (
+  `id` int(11) NOT NULL,
+  `email` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `address` text COLLATE utf8_unicode_ci,
+  `phone` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `status` tinyint(4) DEFAULT NULL,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `update_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`id`, `email`, `address`, `phone`, `status`, `added_date`, `update_date`) VALUES
+(1, 'info@cidsioe.edu.np', 'Pulchowk, Lalitpur.', '123456789', NULL, '2017-10-15 14:38:35', '2017-11-11 13:09:38');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `enquiry`
+--
+
+CREATE TABLE `enquiry` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `email` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `phone` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `message` text COLLATE utf8_unicode_ci,
+  `status` tinyint(4) DEFAULT NULL,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `update_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `enquiry`
+--
+
+INSERT INTO `enquiry` (`id`, `name`, `email`, `phone`, `message`, `status`, `added_date`, `update_date`) VALUES
+(2, 'admin', 'admin@cids.com', '123456789', 'this is test from database', NULL, '2017-10-15 14:30:09', NULL),
+(3, 'ansuman', 'pokharel@gmail.com', 'asldfkl', 'kalsdfalsdkfjasdf', NULL, '2017-10-27 16:41:39', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `events`
+--
+
+CREATE TABLE `events` (
+  `id` int(11) NOT NULL,
+  `title` text COLLATE utf8_unicode_ci,
+  `summary` text COLLATE utf8_unicode_ci,
+  `description` text COLLATE utf8_unicode_ci,
+  `eventDate` date DEFAULT NULL,
+  `location` text COLLATE utf8_unicode_ci,
+  `eventStatus` int(11) DEFAULT NULL,
+  `is_featured` varchar(3) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `events`
+--
+
+INSERT INTO `events` (`id`, `title`, `summary`, `description`, `eventDate`, `location`, `eventStatus`, `is_featured`, `added_date`, `updated_date`) VALUES
+(1, 'asdfasdf', '<p>adsfadf</p>', '<p>asdfasdf</p>', '2017-11-08', 'asdfasdf', 1, NULL, '2017-11-09 16:02:47', NULL),
+(2, 'asdfasdf', '&lt;p&gt;adsfadf&lt;/p&gt;', '&lt;p&gt;asdfasdf&lt;/p&gt;', '2017-11-08', 'asdfasdf', 1, NULL, '2017-11-09 16:03:05', NULL),
+(4, 'asdfas', '<p>asfd</p>', '<p>asfd</p>', '2017-11-16', 'asfd', 0, 'off', '2017-11-11 11:58:44', '2017-11-11 12:59:06'),
+(5, 'asdfas', '&lt;p&gt;asfd&lt;/p&gt;', '&lt;p&gt;asfd&lt;/p&gt;', '2017-11-16', 'asfd', 1, 'on', '2017-11-11 12:53:57', '2017-11-11 12:59:35'),
+(6, 'Xzc', '&lt;p&gt;ZXcZXC&lt;/p&gt;', '&lt;p&gt;ZXCZXC&lt;/p&gt;', '2017-11-07', 'ZXC', 1, 'on', '2017-11-11 13:39:29', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gallery`
+--
+
+CREATE TABLE `gallery` (
+  `id` int(11) NOT NULL,
+  `title` text COLLATE utf8_unicode_ci,
+  `picInfo` text COLLATE utf8_unicode_ci,
+  `status` int(11) DEFAULT NULL,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `member_image`
+--
+
+CREATE TABLE `member_image` (
+  `id` int(11) NOT NULL,
+  `image_title` text COLLATE utf8_unicode_ci,
+  `member_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `member_image`
+--
+
+INSERT INTO `member_image` (`id`, `image_title`, `member_id`) VALUES
+(5, 'CIDS-637060134.jpg', 14),
+(6, 'CIDS-820765768.png', 13),
+(7, 'CIDS-580906493.png', 12);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `positions`
+--
+
+CREATE TABLE `positions` (
+  `id` int(11) NOT NULL,
+  `name` text COLLATE utf8_unicode_ci NOT NULL,
+  `pos_title` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `pos_description` text COLLATE utf8_unicode_ci,
+  `message` text COLLATE utf8_unicode_ci,
+  `list_pos` int(11) DEFAULT NULL,
+  `added_by` int(11) DEFAULT NULL,
+  `type` int(11) DEFAULT NULL,
+  `status` int(11) DEFAULT NULL,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `positions`
+--
+
+INSERT INTO `positions` (`id`, `name`, `pos_title`, `pos_description`, `message`, `list_pos`, `added_by`, `type`, `status`, `added_date`, `updated_date`) VALUES
+(12, 'asdfasdf', 'asdfasdf', NULL, '&lt;p&gt;asdf&lt;/p&gt;', 2, NULL, 1, 1, '2017-11-09 14:01:33', NULL),
+(13, 'asdfasdf', 'asdfasdf', NULL, '&lt;p&gt;asdf&lt;/p&gt;', 2, NULL, 1, 1, '2017-11-09 14:01:57', NULL),
+(14, 'asdfasdas', 'asdfasdf', NULL, '&lt;p&gt;asdfasdf&lt;/p&gt;', 5, NULL, 1, 1, '2017-11-09 14:02:43', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `password` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `status` tinyint(4) DEFAULT '1',
+  `role_id` int(11) DEFAULT NULL,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `password`, `status`, `role_id`, `added_date`, `updated_date`) VALUES
+(1, 'admin', 'f865b53623b121fd34ee5426c792e5c33af8c227', 1, 1, '2017-10-14 14:53:55', '2017-10-15 15:41:44'),
+(2, 'ioecids', '60944e5702bdafb74ec9614120a88bdfa7084da0', 1, NULL, '2017-10-15 15:43:33', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `whatwedo`
+--
+
+CREATE TABLE `whatwedo` (
+  `id` int(11) NOT NULL,
+  `title` text COLLATE utf8_unicode_ci,
+  `status` int(11) DEFAULT NULL,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `whatwedofile`
+--
+
+CREATE TABLE `whatwedofile` (
+  `id` int(11) NOT NULL,
+  `fileTitle` text COLLATE utf8_unicode_ci,
+  `whatWeDo_id` int(11) DEFAULT NULL,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `whatwedofile`
+--
+
+INSERT INTO `whatwedofile` (`id`, `fileTitle`, `whatWeDo_id`, `added_date`, `updated_date`) VALUES
+(7, 'CIDS-228590820.png', 1, '2017-11-11 16:56:36', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `whatwedohome`
+--
+
+CREATE TABLE `whatwedohome` (
+  `id` int(11) NOT NULL,
+  `bannerContent` text COLLATE utf8_unicode_ci,
+  `title` text COLLATE utf8_unicode_ci,
+  `bannerDContent` text COLLATE utf8_unicode_ci,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `whatwedohome`
+--
+
+INSERT INTO `whatwedohome` (`id`, `bannerContent`, `title`, `bannerDContent`, `added_date`, `updated_date`) VALUES
+(1, '&lt;p&gt;Banner \'info&lt;/p&gt;', 'What We Do', '&lt;p&gt;Banner Descriptionasdfasdf&lt;/p&gt;', '2017-11-05 17:47:27', '2017-11-09 14:58:01');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `whatwedoinfo`
+--
+
+CREATE TABLE `whatwedoinfo` (
+  `id` int(11) NOT NULL,
+  `title` text COLLATE utf8_unicode_ci,
+  `info` text COLLATE utf8_unicode_ci,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `whatwedoinfo`
+--
+
+INSERT INTO `whatwedoinfo` (`id`, `title`, `info`, `added_date`, `updated_date`) VALUES
+(1, 'Development Works', 'Development Works Development Works Development Works Development WorksDevelopment Works Development Works', '2017-11-06 14:03:24', '2017-11-06 14:26:10'),
+(2, 'Knowledge and Innovation', 'Knowledge and Innovationabc', '2017-11-06 14:03:24', '2017-11-06 14:26:24'),
+(3, 'Products &amp; Services', 'Knowledge and Innovation', '2017-11-06 14:03:24', '2017-11-06 14:26:30');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `youtube`
+--
+
+CREATE TABLE `youtube` (
+  `id` int(11) NOT NULL,
+  `title` text COLLATE utf8_unicode_ci,
+  `description` text COLLATE utf8_unicode_ci,
+  `videoId` text COLLATE utf8_unicode_ci,
+  `status` int(11) DEFAULT NULL,
+  `added_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `youtube`
+--
+
+INSERT INTO `youtube` (`id`, `title`, `description`, `videoId`, `status`, `added_date`, `updated_date`) VALUES
+(1, 'Too good at goodbye by Sam Smith', '', 'J_ub7Etch2U', NULL, '2017-10-23 13:18:52', NULL),
+(2, 'Something Just like this', '', 'FM7MFYoylVs', NULL, '2017-10-23 13:22:45', NULL),
+(3, 'Attention by Charlie Puth', '', 'nfs8NYg7yQM', NULL, '2017-10-23 13:40:33', NULL),
+(5, 'Too good at goodbye by Sam Smith', '&lt;p&gt;&lt;strong&gt;Theres Nothing Holdin Me Back&lt;/strong&gt;&lt;/p&gt;\r\n&lt;div&gt;I wanna follow where she goes&lt;br /&gt;I think about her and she knows it&lt;br /&gt;I wanna let her take control&lt;br /&gt;Cause every time that she gets close, yeah&lt;br /&gt;&lt;br /&gt;She pulls me in enough to keep me guessing, mmm&lt;br /&gt;And maybe I should stop and start confessing&lt;br /&gt;Confessing, yeah&lt;br /&gt;&lt;br /&gt;Oh, Ive been shaking&lt;br /&gt;I love it when you go crazy&lt;br /&gt;You take all my inhibitions&lt;br /&gt;Baby, theres nothing holdin me back&lt;br /&gt;&lt;br /&gt;You take me places that tear up my reputation&lt;br /&gt;Manipulate my decisions&lt;br /&gt;Baby, theres nothing holdin me back&lt;br /&gt;&lt;br /&gt;Theres nothing holdin me back&lt;br /&gt;Theres nothing holdin me back&lt;br /&gt;&lt;br /&gt;She says that she is never afraid&lt;br /&gt;Just picture everybody naked&lt;br /&gt;She really does not like to wait&lt;br /&gt;Not really into hesitation&lt;br /&gt;&lt;br /&gt;Pulls me in enough to keep me guessing, whoa&lt;br /&gt;And maybe I should stop and start confessing&lt;br /&gt;Confessing, yeah&lt;br /&gt;&lt;br /&gt;Oh, I have been shaking&lt;br /&gt;I love it when you go crazy&lt;br /&gt;You take all my inhibitions&lt;br /&gt;Baby, there is nothing holding me back&lt;br /&gt;&lt;br /&gt;You take me places that tear up my reputation&lt;br /&gt;Manipulate my decisions&lt;br /&gt;Baby, there is nothing holding me back&lt;br /&gt;&lt;br /&gt;There is nothing holding me back&lt;br /&gt;&lt;br /&gt;Cause if we lost our minds&lt;br /&gt;And we took it way too far&lt;br /&gt;I know we would be alright,&lt;br /&gt;Know we would be alright&lt;br /&gt;&lt;br /&gt;If you were by my side&lt;br /&gt;And we stumbled in the dark&lt;br /&gt;I know we would be alright,&lt;br /&gt;I know we would be alright&lt;br /&gt;&lt;br /&gt;Cause if we lost our minds&lt;br /&gt;And we took it way too far&lt;br /&gt;I know we would be alright,&lt;br /&gt;I know we would be alright&lt;br /&gt;&lt;br /&gt;If you were by my side&lt;br /&gt;And we stumbled in the dark&lt;br /&gt;I know we would be alright,&lt;br /&gt;We would be alright&lt;br /&gt;&lt;br /&gt;Oh, I have been shaking&lt;br /&gt;I love it when you go crazy&lt;br /&gt;You take all my inhibitions&lt;br /&gt;Baby, there is nothing holding me back&lt;br /&gt;&lt;br /&gt;You take me places that tear up my reputation&lt;br /&gt;Manipulate my decisions&lt;br /&gt;Baby, there is nothing holding me back&lt;br /&gt;&lt;br /&gt;There is nothing holding me back&lt;br /&gt;&lt;br /&gt;I feel so free&lt;br /&gt;When you are with me,&lt;br /&gt;Baby&lt;br /&gt;&lt;br /&gt;Baby, there is nothing holding me back&lt;/div&gt;', 'dT2owtxkU8k', NULL, '2017-10-23 13:58:14', NULL),
+(6, 'Treat you better', '', 'lY2yjAdbvdQ', NULL, '2017-10-23 14:00:32', NULL),
+(8, 'Shawn Mendes - Stitches (Official Video)', '&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;&amp;quot;Stitches&amp;quot;&amp;lt;/strong&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;/p&amp;gt;\r\n&amp;lt;div&amp;gt;I thought that I&amp;#39;d been hurt before&amp;lt;br /&amp;gt;But no one&amp;#39;s ever left me quite this sore&amp;lt;br /&amp;gt;Your words cut deeper than a knife&amp;lt;br /&amp;gt;Now I need someone to breathe me back to life&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;Got a feeling that I&amp;#39;m going under&amp;lt;br /&amp;gt;But I know that I&amp;#39;ll make it out alive&amp;lt;br /&amp;gt;If I quit calling you my lover&amp;lt;br /&amp;gt;Move on&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;You watch me bleed until I can&amp;#39;t breathe&amp;lt;br /&amp;gt;Shaking, falling onto my knees&amp;lt;br /&amp;gt;And now that I&amp;#39;m without your kisses&amp;lt;br /&amp;gt;I&amp;#39;ll be needing stitches&amp;lt;br /&amp;gt;Tripping over myself&amp;lt;br /&amp;gt;Aching, begging you to come help&amp;lt;br /&amp;gt;And now that I&amp;#39;m without your kisses&amp;lt;br /&amp;gt;I&amp;#39;ll be needing stitches&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;Just like a moth drawn to a flame&amp;lt;br /&amp;gt;Oh, you lured me in, I couldn&amp;#39;t sense the pain&amp;lt;br /&amp;gt;Your bitter heart cold to the touch&amp;lt;br /&amp;gt;Now I&amp;#39;m gonna reap what I sow&amp;lt;br /&amp;gt;I&amp;#39;m left seeing red on my own&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;Got a feeling that I&amp;#39;m going under&amp;lt;br /&amp;gt;But I know that I&amp;#39;ll make it out alive&amp;lt;br /&amp;gt;If I quit calling you my lover&amp;lt;br /&amp;gt;Move on&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;You watch me bleed until I can&amp;#39;t breathe&amp;lt;br /&amp;gt;Shaking, falling onto my knees&amp;lt;br /&amp;gt;And now that I&amp;#39;m without your kisses&amp;lt;br /&amp;gt;I&amp;#39;ll be needing stitches&amp;lt;br /&amp;gt;Tripping over myself,&amp;lt;br /&amp;gt;Aching, begging you to come help&amp;lt;br /&amp;gt;And now that I&amp;#39;m without your kisses&amp;lt;br /&amp;gt;I&amp;#39;ll be needing stitches&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;em&amp;gt;[x3:]&amp;lt;/em&amp;gt;&amp;lt;br /&amp;gt;Needle and the thread,&amp;lt;br /&amp;gt;Gotta get you out of my head&amp;lt;br /&amp;gt;Needle and the thread,&amp;lt;br /&amp;gt;Gonna wind up dead&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;Needle and the thread,&amp;lt;br /&amp;gt;Gotta get you out of my head, get you out of my head&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;You watch me bleed until I can&amp;#39;t breathe&amp;lt;br /&amp;gt;Shaking, falling onto my knees (falling on my knees)&amp;lt;br /&amp;gt;And now that I&amp;#39;m without your kisses&amp;lt;br /&amp;gt;I&amp;#39;ll be needing stitches (and I&amp;#39;ll be needing stitches)&amp;lt;br /&amp;gt;Tripping over myself,&amp;lt;br /&amp;gt;Aching, begging you to come help (begging, &amp;quot;Baby, please.&amp;quot;)&amp;lt;br /&amp;gt;And now that I&amp;#39;m without your kisses&amp;lt;br /&amp;gt;I&amp;#39;ll be needing stitches&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;(And now that)&amp;lt;br /&amp;gt;I&amp;#39;m without your kisses&amp;lt;br /&amp;gt;I&amp;#39;ll be needing stitches&amp;lt;br /&amp;gt;(And now that)&amp;lt;br /&amp;gt;I&amp;#39;m without your kisses&amp;lt;br /&amp;gt;I&amp;#39;ll be needing stitches&amp;lt;/div&amp;gt;', 'VbfpW0pbvaU', NULL, '2017-10-23 14:16:32', NULL),
+(9, 'Shawn Mendes - Stitches (Official Video)', '&lt;p&gt;&lt;strong&gt;&quot;There&amp;amp;#39;s Nothing Holdin&amp;amp;#39; Me Back&quot;&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;\r\n&lt;div&gt;I wanna follow where she goes&lt;br /&gt;I think about her and she knows it&lt;br /&gt;I wanna let her take control&lt;br /&gt;&amp;amp;#39;Cause every time that she gets close, yeah&lt;br /&gt;&lt;br /&gt;She pulls me in enough to keep me guessing, mmm&lt;br /&gt;And maybe I should stop and start confessing&lt;br /&gt;Confessing, yeah&lt;br /&gt;&lt;br /&gt;Oh, I&amp;amp;#39;ve been shaking&lt;br /&gt;I love it when you go crazy&lt;br /&gt;You take all my inhibitions&lt;br /&gt;Baby, there&amp;amp;#39;s nothing holdin&amp;amp;#39; me back&lt;br /&gt;&lt;br /&gt;You take me places that tear up my reputation&lt;br /&gt;Manipulate my decisions&lt;br /&gt;Baby, there&amp;amp;#39;s nothing holdin&amp;amp;#39; me back&lt;br /&gt;&lt;br /&gt;There&amp;amp;#39;s nothing holdin&amp;amp;#39; me back&lt;br /&gt;There&amp;amp;#39;s nothing holdin&amp;amp;#39; me back&lt;br /&gt;&lt;br /&gt;She says that she&amp;amp;#39;s never afraid&lt;br /&gt;Just picture everybody naked&lt;br /&gt;She really doesn&amp;amp;#39;t like to wait&lt;br /&gt;Not really into hesitation&lt;br /&gt;&lt;br /&gt;Pulls me in enough to keep me guessing, whoa&lt;br /&gt;And maybe I should stop and start confessing&lt;br /&gt;Confessing, yeah&lt;br /&gt;&lt;br /&gt;Oh, I&amp;amp;#39;ve been shaking&lt;br /&gt;I love it when you go crazy&lt;br /&gt;You take all my inhibitions&lt;br /&gt;Baby, there&amp;amp;#39;s nothing holdin&amp;amp;#39; me back&lt;br /&gt;&lt;br /&gt;You take me places that tear up my reputation&lt;br /&gt;Manipulate my decisions&lt;br /&gt;Baby, there&amp;amp;#39;s nothing holdin&amp;amp;#39; me back&lt;br /&gt;&lt;br /&gt;There&amp;amp;#39;s nothing holdin&amp;amp;#39; me back&lt;br /&gt;&lt;br /&gt;&amp;amp;#39;Cause if we lost our minds&lt;br /&gt;And we took it way too far&lt;br /&gt;I know we&amp;amp;#39;d be alright,&lt;br /&gt;Know we would be alright&lt;br /&gt;&lt;br /&gt;If you were by my side&lt;br /&gt;And we stumbled in the dark&lt;br /&gt;I know we&amp;amp;#39;d be alright,&lt;br /&gt;I know we would be alright&lt;br /&gt;&lt;br /&gt;&amp;amp;#39;Cause if we lost our minds&lt;br /&gt;And we took it way too far&lt;br /&gt;I know we&amp;amp;#39;d be alright,&lt;br /&gt;I know we would be alright&lt;br /&gt;&lt;br /&gt;If you were by my side&lt;br /&gt;And we stumbled in the dark&lt;br /&gt;I know we&amp;amp;#39;d be alright,&lt;br /&gt;We would be alright&lt;br /&gt;&lt;br /&gt;Oh, I&amp;amp;#39;ve been shaking&lt;br /&gt;I love it when you go crazy&lt;br /&gt;You take all my inhibitions&lt;br /&gt;Baby, there&amp;amp;#39;s nothing holdin&amp;amp;#39; me back&lt;br /&gt;&lt;br /&gt;You take me places that tear up my reputation&lt;br /&gt;Manipulate my decisions&lt;br /&gt;Baby, there&amp;amp;#39;s nothing holdin&amp;amp;#39; me back&lt;br /&gt;&lt;br /&gt;There&amp;amp;#39;s nothing holdin&amp;amp;#39; me back&lt;br /&gt;&lt;br /&gt;I feel so free&lt;br /&gt;When you&amp;amp;#39;re with me,&lt;br /&gt;Baby&lt;br /&gt;&lt;br /&gt;Baby, there&amp;amp;#39;s nothing holdin&amp;amp;#39; me back&lt;/div&gt;', 'VbfpW0pbvaU', NULL, '2017-10-23 14:23:33', NULL),
+(10, 'Just like you', '', 'qvXXMsiQBDg', NULL, '2017-10-23 14:56:00', NULL),
+(11, 'Imagine Dragons - Thunder (Lyrics / Lyric Video)', '', 'wFhs7WVvuXk', NULL, '2017-10-30 17:05:35', NULL),
+(12, 'Whatever it takes by Imagine Dragon', '&lt;div class=&quot;ringtone&quot;&gt;&amp;nbsp;&lt;/div&gt;\r\n&lt;p&gt;&lt;strong&gt;&quot;Whatever It Takes&quot;&lt;/strong&gt;&lt;/p&gt;\r\n&lt;div&gt;Falling too fast to prepare for this&lt;br /&gt; Tripping in the world could be dangerous&lt;br /&gt; Everybody circling is vulturous&lt;br /&gt; Negative, nepotist&lt;br /&gt; &lt;br /&gt; Everybody waiting for the fall of man&lt;br /&gt; Everybody praying for the end of times&lt;br /&gt; Everybody hoping they could be the one&lt;br /&gt; I was born to run, I was born for this&lt;br /&gt; &lt;br /&gt; Whip, whip&lt;br /&gt; Run me like a racehorse&lt;br /&gt; Pull me like a ripcord&lt;br /&gt; Break me down and build me up&lt;br /&gt; I wanna be the slip, slip&lt;br /&gt; Word upon your lip, lip&lt;br /&gt; Letter that you rip, rip&lt;br /&gt; Break me down and build me up&lt;br /&gt; &lt;br /&gt; Whatever it takes&lt;br /&gt; Cause I love the adrenaline in my veins&lt;br /&gt; I do whatever it takes&lt;br /&gt; Cause I love how it feels when I break the chains&lt;br /&gt; Whatever it takes&lt;br /&gt; Yeah take me to the top I\'m ready for&lt;br /&gt; Whatever it takes&lt;br /&gt; Cause I love the adrenaline in my veins&lt;br /&gt; I do what it takes&lt;br /&gt; &lt;br /&gt; Always had a fear of being typical&lt;br /&gt; Looking at my body feeling miserable&lt;br /&gt; Always hanging on to the visual&lt;br /&gt; I wanna be invisible&lt;br /&gt; &lt;br /&gt; Looking at my years like a martyrdom&lt;br /&gt; Everybody needs to be a part of them&lt;br /&gt; Never be enough, I\'m the prodigal son&lt;br /&gt; I was born to run, I was born for this&lt;br /&gt; &lt;br /&gt; Whip, whip&lt;br /&gt; Run me like a racehorse&lt;br /&gt; Pull me like a ripcord&lt;br /&gt; Break me down and build me up&lt;br /&gt; I wanna be the slip, slip&lt;br /&gt; Word upon your lip, lip&lt;br /&gt; Letter that you rip, rip&lt;br /&gt; Break me down and build me up&lt;br /&gt; &lt;br /&gt; Whatever it takes&lt;br /&gt; Cause I love the adrenaline in my veins&lt;br /&gt; I do whatever it takes&lt;br /&gt; Cause I love how it feels when I break the chains&lt;br /&gt; Whatever it takes&lt;br /&gt; Yeah take me to the top, I\'m ready for&lt;br /&gt; Whatever it takes&lt;br /&gt; Cause I love the adrenaline in my veins&lt;br /&gt; I do what it takes&lt;br /&gt; &lt;br /&gt; Hypocritical, egotistical&lt;br /&gt; Don\'t wanna be the parenthetical, hypothetical&lt;br /&gt; Working hard on something that I\'m proud of, out of the box&lt;br /&gt; An epoxy to the world and the vision we\'ve lost&lt;br /&gt; I\'m an apostrophe&lt;br /&gt; I\'m just a symbol to remind you that there\'s more to see&lt;br /&gt; I\'m just a product of the system of catastrophe&lt;br /&gt; And yet a masterpiece, and yet I\'m half-diseased&lt;br /&gt; And when I am deceased&lt;br /&gt; At least I\'ll go down to the grave and die happily&lt;br /&gt; And leave the body and my soul to be a part of thee&lt;br /&gt; I do what it takes&lt;br /&gt; &lt;br /&gt; Whatever it takes&lt;br /&gt; Cause I love the adrenaline in my veins&lt;br /&gt; I do whatever it takes&lt;br /&gt; Cause I love how it feels when I break the chains&lt;br /&gt; Whatever it takes&lt;br /&gt; Yeah take me to the top, I\'m ready for&lt;br /&gt; Whatever it takes&lt;br /&gt; Cause I love the adrenaline in my veins&lt;br /&gt; I do what it takes&lt;/div&gt;', 'gOsM-DYAEhY', 1, '2017-11-03 16:53:11', '2017-11-11 13:10:40'),
+(13, 'Viral Bhaidiyo - Manas Raj | Beest Production (Official Music Video)', '', 'NDKkuOuRwJw', NULL, '2017-11-11 13:24:15', NULL);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `aboutcids`
+--
+ALTER TABLE `aboutcids`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `title` (`title`);
+
+--
+-- Indexes for table `aboutcidstitle`
+--
+ALTER TABLE `aboutcidstitle`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `about_org`
+--
+ALTER TABLE `about_org`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `about_org_id` (`about_org_id`);
+
+--
+-- Indexes for table `about_org_id`
+--
+ALTER TABLE `about_org_id`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `banner_image`
+--
+ALTER TABLE `banner_image`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `banner_id` (`banner_id`),
+  ADD KEY `banner_id_2` (`banner_id`);
+
+--
+-- Indexes for table `banner_info`
+--
+ALTER TABLE `banner_info`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `enquiry`
+--
+ALTER TABLE `enquiry`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `events`
+--
+ALTER TABLE `events`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `gallery`
+--
+ALTER TABLE `gallery`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `member_image`
+--
+ALTER TABLE `member_image`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `member_id` (`member_id`);
+
+--
+-- Indexes for table `positions`
+--
+ALTER TABLE `positions`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `added_by` (`added_by`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `whatwedo`
+--
+ALTER TABLE `whatwedo`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `whatwedofile`
+--
+ALTER TABLE `whatwedofile`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `whatWeDo_id` (`whatWeDo_id`);
+
+--
+-- Indexes for table `whatwedohome`
+--
+ALTER TABLE `whatwedohome`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `whatwedoinfo`
+--
+ALTER TABLE `whatwedoinfo`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `youtube`
+--
+ALTER TABLE `youtube`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `aboutcids`
+--
+ALTER TABLE `aboutcids`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `aboutcidstitle`
+--
+ALTER TABLE `aboutcidstitle`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `banner_image`
+--
+ALTER TABLE `banner_image`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+--
+-- AUTO_INCREMENT for table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `enquiry`
+--
+ALTER TABLE `enquiry`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `events`
+--
+ALTER TABLE `events`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `gallery`
+--
+ALTER TABLE `gallery`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `member_image`
+--
+ALTER TABLE `member_image`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT for table `positions`
+--
+ALTER TABLE `positions`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `whatwedo`
+--
+ALTER TABLE `whatwedo`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `whatwedofile`
+--
+ALTER TABLE `whatwedofile`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT for table `whatwedohome`
+--
+ALTER TABLE `whatwedohome`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `whatwedoinfo`
+--
+ALTER TABLE `whatwedoinfo`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `youtube`
+--
+ALTER TABLE `youtube`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `aboutcids`
+--
+ALTER TABLE `aboutcids`
+  ADD CONSTRAINT `aboutcids_ibfk_1` FOREIGN KEY (`title`) REFERENCES `aboutcidstitle` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `banner_image`
+--
+ALTER TABLE `banner_image`
+  ADD CONSTRAINT `banner_image_ibfk_1` FOREIGN KEY (`banner_id`) REFERENCES `banner_info` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `positions`
+--
+ALTER TABLE `positions`
+  ADD CONSTRAINT `positions_ibfk_1` FOREIGN KEY (`added_by`) REFERENCES `users` (`id`) ON DELETE SET NULL ON UPDATE CASCADE;
+
+--
+-- Constraints for table `whatwedofile`
+--
+ALTER TABLE `whatwedofile`
+  ADD CONSTRAINT `whatwedofile_ibfk_1` FOREIGN KEY (`whatWeDo_id`) REFERENCES `whatwedoinfo` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

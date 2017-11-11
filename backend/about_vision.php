@@ -1,9 +1,9 @@
-<?php session_start(); include 'inc/config.php'; include 'inc/dbconnect.php'; include 'inc/function.php'; include 'inc/navigation.php';?>
+<?php session_start(); ?>
+<?php include 'inc/config.php'; include 'inc/dbconnect.php'; include 'inc/function.php'; include 'inc/navigation.php'; include 'security_inside.php';?>
 <?php include 'inc/header.php';	 ?>
-<?php
-	include 'security_inside.php';
 
-?>
+        <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=vac10evlzh1ylmepy70qr1q28wkygjzqa36g98uakma5l2jc"></script>
+
 <style>
 ul>li.active>a{
 	font-weight: 700 !important;
@@ -30,7 +30,7 @@ ul>li>a{
                     <div class="col-lg-12">
                       <?php include 'inc/notification.php';?>
 
-                        <h1 class="page-header">Update info about Hub4Growthtu.edu.np</h1>
+                        <h1 class="page-header">Update info about Hub4Growth</h1>
 												</div>
                 </div>
 								<div class="row">
@@ -39,7 +39,7 @@ ul>li>a{
 										<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Vision and Mission</a></li>
 										<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Collaboration</a></li>
 										<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Contribution</a></li>
-										<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Research</a></li>
+										<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Shared Values</a></li>
 									</ul>
 								</div>
                 <!-- /.row -->
@@ -53,13 +53,13 @@ ul>li>a{
 											<br/>
 									    <div role="tabpanel" class="tab-pane active" id="home" style="color: white">
 
-												<form class="form-horizontal" method="POST" action="inc/about_process">
+												<form class="form-horizontal" method="POST" action="inc/about_process.php">
 												<?php foreach($vision as $getVisionList){
 												 ?>
 																 <div class="form-group">
 																	 <label class="col-sm-2 control-label" style="color: black;">Summary</label>
-																	 <div class="col-sm-6">
-																		<textarea name="summary" id="summary" class="form-control" rows="3" style="resize:vertical;" ><?php echo $getVisionList['summary']; ?></textarea>
+																	 <div class="col-sm-10">
+																		<textarea name="summary" id="vision_summary" class="form-control" rows="3" style="resize:vertical;" ><?php echo html_entity_decode($getVisionList['summary']); ?></textarea>
 																	 </div>
 																 </div>
 
@@ -72,8 +72,8 @@ ul>li>a{
 
 																	<div class="form-group">
 																	 <label class="col-sm-2 control-label">Description</label>
-																	 	<div class="col-sm-6">
-																			<textarea name="description" id="description" class="form-control" rows="7" style="resize:vertical;" placeholder="Vision Description"><?php echo html_entity_decode($getVisionList['description']); ?></textarea>
+																	 	<div class="col-sm-10">
+								<textarea name="description" id="vision_description" class="form-control" style="resize:vertical;"><?php echo html_entity_decode($getVisionList['description']); ?></textarea>
 																	 	</div>
 																 	</div>
 
@@ -114,7 +114,144 @@ ul>li>a{
 
     </div>
     <!-- /#wrapper -->
+    <script>
+         tinymce.init({
+            selector: '#vision_description',
+            height: 300,
+            theme: 'modern',
+             plugins: [
+                 'codesample imagetools',
+    'advlist autolink lists link image charmap print preview anchor textcolor',
+    'searchreplace visualblocks code fullscreen',
+    'insertdatetime media table contextmenu paste code help'
+  ],
+  toolbar: 'insert | undo redo |  styleselect | bold italic forecolor backcolor  | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help | fontsizeselect ',
+  content_css: [
+    '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+    '//www.tinymce.com/css/codepen.min.css']
+         });
+      </script>
+      <script>
+         tinymce.init({
+            selector: '#collaboration_description',
+            height: 300,
+            theme: 'modern',
+             plugins: [
+                  'codesample imagetools',
+    'advlist autolink lists link image charmap print preview anchor textcolor',
+    'searchreplace visualblocks code fullscreen',
+    'insertdatetime media table contextmenu paste code help'
+  ],
+  toolbar: 'insert | undo redo |  styleselect | bold italic forecolor backcolor  | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help | fontsizeselect',
+  content_css: [
+    '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+    '//www.tinymce.com/css/codepen.min.css']
+         });
+      </script>
+      <script>
+         tinymce.init({
+            selector: '#contribution_description',
+            height: 300,
+            theme: 'modern',
+             plugins: [
+                  'codesample imagetools',
+    'advlist autolink lists link image charmap print preview anchor textcolor',
+    'searchreplace visualblocks code fullscreen',
+    'insertdatetime media table contextmenu paste code help'
+  ],
+  toolbar: 'insert | undo redo |  styleselect | bold italic forecolor backcolor  | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help | fontsizeselect',
+  content_css: [
+    '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+    '//www.tinymce.com/css/codepen.min.css']
+         });
+      </script>
+      <script>
+         tinymce.init({
+            selector: '#research_description',
+            height: 300,
+            theme: 'modern',
+             plugins: [
+                  'codesample imagetools',
+    'advlist autolink lists link image charmap print preview anchor textcolor',
+    'searchreplace visualblocks code fullscreen',
+    'insertdatetime media table contextmenu paste code help'
+  ],
+  toolbar: 'insert | undo redo |  styleselect | bold italic forecolor backcolor  | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help | fontsizeselect',
+  content_css: [
+    '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+    '//www.tinymce.com/css/codepen.min.css']
+         });
+      </script>
 
-<?php
-include_once 'inc/tinymce_init.php';
- include 'inc/footer.php'; ?>
+     /*  ===========================================  summary ko script tags ===================================================== */
+      
+      <script>
+         tinymce.init({
+            selector: '#vision_summary',
+            height: 300,
+            theme: 'modern',
+             plugins: [
+                 'codesample imagetools',
+    'advlist autolink lists link image charmap print preview anchor textcolor',
+    'searchreplace visualblocks code fullscreen',
+    'insertdatetime media table contextmenu paste code help'
+  ],
+  toolbar: 'insert | undo redo |  styleselect | bold italic forecolor backcolor  | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help | fontsizeselect ',
+  content_css: [
+    '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+    '//www.tinymce.com/css/codepen.min.css']
+         });
+      </script>
+      <script>
+         tinymce.init({
+            selector: '#collaboration_summary',
+            height: 300,
+            theme: 'modern',
+             plugins: [
+                  'codesample imagetools',
+    'advlist autolink lists link image charmap print preview anchor textcolor',
+    'searchreplace visualblocks code fullscreen',
+    'insertdatetime media table contextmenu paste code help'
+  ],
+  toolbar: 'insert | undo redo |  styleselect | bold italic forecolor backcolor  | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help | fontsizeselect',
+  content_css: [
+    '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+    '//www.tinymce.com/css/codepen.min.css']
+         });
+      </script>
+      <script>
+         tinymce.init({
+            selector: '#contribution_summary',
+            height: 300,
+            theme: 'modern',
+             plugins: [
+                  'codesample imagetools',
+    'advlist autolink lists link image charmap print preview anchor textcolor',
+    'searchreplace visualblocks code fullscreen',
+    'insertdatetime media table contextmenu paste code help'
+  ],
+  toolbar: 'insert | undo redo |  styleselect | bold italic forecolor backcolor  | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help | fontsizeselect',
+  content_css: [
+    '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+    '//www.tinymce.com/css/codepen.min.css']
+         });
+      </script>
+      <script>
+         tinymce.init({
+            selector: '#research_summary',
+            height: 300,
+            theme: 'modern',
+             plugins: [
+                  'codesample imagetools',
+    'advlist autolink lists link image charmap print preview anchor textcolor',
+    'searchreplace visualblocks code fullscreen',
+    'insertdatetime media table contextmenu paste code help'
+  ],
+  toolbar: 'insert | undo redo |  styleselect | bold italic forecolor backcolor  | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help | fontsizeselect',
+  content_css: [
+    '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+    '//www.tinymce.com/css/codepen.min.css']
+         });
+      </script>
+<?php include 'inc/footer.php'; ?>
+

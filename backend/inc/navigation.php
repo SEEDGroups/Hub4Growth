@@ -9,12 +9,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index">HUB4GROWTH Admin Panel</a>
+                <a class="navbar-brand" href="index">CIDS Admin Panel</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
               <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $_SESSION['fullname'];?>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $_SESSION['username'];?>
 
                      <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -31,13 +31,15 @@
                     <li class="<?php echo ($current_page_active == "dashboard") ? 'active' : ''; ?>">
                         <a href="dashboard" title="Dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
-
-                    <li class="<?php echo ($current_page_active == "about_vision" || $current_page_active == "about_collaboration" || $current_page_active == "about_contribution" || $current_page_active == "about_research") ? 'active' : ''; ?>">
-                            <a href="about_vision" title="About Hub4Growth"><i class="fa fa-fw fa-header"></i> About Hub4Growth</a>
+                    <li class="<?php echo ($current_page_active == "whatwedo") ? 'active' : ''; ?>">
+                      <a href="introduction" title="What we do's main Page edit"><i class="fa fa-fw fa-bank"></i> What we do Main</a>
                     </li>
+                            <li class="<?php echo ($current_page_active == "about_vision" || $current_page_active == "about_collaboration" || $current_page_active == "about_contribution" || $current_page_active == "about_research") ? 'active' : ''; ?>">
+                            <a href="about_vision" title="About CIDS"><i class="fa fa-fw fa-header"></i> About CIDS</a>
 
-                    <li class="<?php echo ($current_page_active == "list_position") ? 'active' : ''; ?>">
-                            <a href="list_position" title="Member's lists"><i class="fa fa-fw fa-users"></i> List Members</a>
+                    </li>
+                            <li class="<?php echo ($current_page_active == "list_position") ? 'active' : ''; ?>">
+                                <a href="list_position" title="Member's lists"><i class="fa fa-fw fa-users"></i> Testimonials</a>
                     </li>
 
                     <li class="<?php echo ($current_page_active == "contact") ? 'active' : ''; ?>">
@@ -51,7 +53,9 @@
                     <li class="<?php echo ($current_page_active == "banner_list" || $current_page_active == "add_banner") ? 'active' : ''; ?>">
                             <a href="banner_list"><i class="fa fa-fw fa-picture-o"></i> Banners</a>
                     </li>
-
+                    <li class="<?php echo ($current_page_active == "videoAdd" || $current_page_active == "listVideos") ? 'active' : ''; ?>">
+                            <a href="listVideos"><i class="fa fa-fw fa-youtube"></i>Video</a>
+                    </li>
                     <li class="<?php echo ($current_page_active == "enquiry") ? 'active' : ''; ?>">
                             <a href="enquiry"><i class="fa fa-fw fa-server"></i> List Enquries</a>
                     </li>
